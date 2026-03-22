@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { QuizCard } from './components/QuizCard'
 import { ResultScreen } from './components/ResultScreen'
 import { StartModal } from './components/StartModal'
@@ -9,7 +9,6 @@ function App() {
     units,
     isLoading,
     error,
-    totalBankQuestions,
     selectedPercentage,
     setSelectedPercentage,
     showStartModal,
@@ -31,6 +30,8 @@ function App() {
     restart,
   } = useQuiz()
 
+  const [selectedSubject, setSelectedSubject] = useState<'embedded' | 'flutter'>('embedded')
+
   useEffect(() => {
     void initialize()
   }, [initialize])
@@ -42,7 +43,25 @@ function App() {
     { label: '100%', value: 1 },
   ]
 
-  const selectedCount = Math.floor(totalBankQuestions * selectedPercentage)
+  const subjectOptions = [
+    { key: 'embedded', label: 'Embedded' },
+    { key: 'flutter', label: 'Flutter' },
+  ] as const
+
+  const filteredUnits = useMemo(() => {
+    if (selectedSubject === 'flutter') {
+      return units.filter((unit) => unit.unit_number >= 7)
+    }
+
+    return units.filter((unit) => unit.unit_number <= 6)
+  }, [selectedSubject, units])
+
+  const selectedBankQuestions = useMemo(
+    () => filteredUnits.reduce((sum, unit) => sum + unit.questions.length, 0),
+    [filteredUnits],
+  )
+
+  const selectedCount = Math.floor(selectedBankQuestions * selectedPercentage)
 
   return (
     <main className="relative h-dvh overflow-hidden bg-[radial-gradient(circle_at_20%_20%,#fde68a_0%,transparent_35%),radial-gradient(circle_at_80%_0%,#fca5a5_0%,transparent_30%),linear-gradient(135deg,#f7f8fb_0%,#edf0f9_60%,#e5e7f1_100%)] px-2 py-2 md:px-3 md:py-3">
@@ -54,10 +73,10 @@ function App() {
         {questions.length === 0 && (
           <header className="sticky top-2 z-40 rounded-2xl border border-zinc-200/80 bg-white/90 p-4 shadow-lg backdrop-blur md:p-5">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500">
-              Embedded Practice Exam
+              Practice Exam
             </p>
             <h1 className="mt-1.5 text-xl font-black text-zinc-900 md:text-3xl">
-              ระบบฝึกทำข้อสอบวิชาระบบฝังตัวภาคปลาย
+              ระบบฝึกทำข้อสอบ
             </h1>
           </header>
         )}
@@ -76,9 +95,28 @@ function App() {
 
         {!isLoading && !error && questions.length === 0 && !isFinished && (
           <section className="rounded-2xl border border-zinc-200 bg-white/95 p-4 shadow-xl md:p-6">
+            <h2 className="text-xl font-semibold text-zinc-900">เลือกวิชา (เลือกได้ 1 วิชา)</h2>
+
+            <div className="mt-3 grid grid-cols-1 gap-2.5 md:grid-cols-3">
+              {subjectOptions.map((subject) => (
+                <button
+                  key={subject.key}
+                  type="button"
+                  onClick={() => setSelectedSubject(subject.key)}
+                  className={`rounded-xl border px-3 py-2.5 text-center font-semibold transition ${
+                    selectedSubject === subject.key
+                      ? 'border-emerald-400 bg-emerald-100 text-zinc-900'
+                      : 'border-zinc-300 bg-white text-zinc-700 hover:border-zinc-500'
+                  }`}
+                >
+                  {subject.label}
+                </button>
+              ))}
+            </div>
+
             <h2 className="text-xl font-semibold text-zinc-900">เลือกขนาดข้อสอบ</h2>
             <p className="mt-1.5 text-zinc-600">
-              คลังข้อสอบทั้งหมด {totalBankQuestions} ข้อ จาก {units.length} ยูนิต
+              คลังข้อสอบที่เลือก {selectedBankQuestions} ข้อ จาก {filteredUnits.length} ยูนิต
             </p>
 
             <div className="mt-3 grid grid-cols-2 gap-2.5 md:grid-cols-4">
@@ -136,7 +174,7 @@ function App() {
       </div>
 
       {showStartModal && (
-        <StartModal onClose={closeStartModal} onConfirm={startExam} />
+        <StartModal onClose={closeStartModal} onConfirm={() => startExam(filteredUnits)} />
       )}
 
       <footer className="pointer-events-none absolute inset-x-0 bottom-2 text-center text-xs font-medium text-zinc-600 md:text-sm">

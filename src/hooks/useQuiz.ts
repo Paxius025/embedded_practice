@@ -4,12 +4,21 @@ import { buildExamQuestions } from '../utils/shuffle'
 import type { PreparedQuestion, ScoreSummary, UnitQuizData } from '../types/quiz'
 
 const UNIT_PATHS = [
-  '/data/unit-1.json',
-  '/data/unit-2.json',
-  '/data/unit-3.json',
-  '/data/unit-4.json',
-  '/data/unit-5.json',
-  '/data/unit-6.json',
+  '/data/embedded/final/unit-1.json',
+  '/data/embedded/final/unit-2.json',
+  '/data/embedded/final/unit-3.json',
+  '/data/embedded/final/unit-4.json',
+  '/data/embedded/final/unit-5.json',
+  '/data/embedded/final/unit-6.json',
+  '/data/flutter_qestion/final/flutter_unit_7.json',
+  '/data/flutter_qestion/final/flutter_unit_8.json',
+  '/data/flutter_qestion/final/flutter_unit_9.json',
+  '/data/flutter_qestion/final/flutter_unit_10.json',
+  '/data/flutter_qestion/final/flutter_unit_11.json',
+  '/data/flutter_qestion/final/flutter_unit_12.json',
+  '/data/flutter_qestion/final/flutter_unit_13.json',
+  '/data/flutter_qestion/final/flutter_unit_14.json',
+  '/data/flutter_qestion/final/flutter_unit_15.json',
 ]
 
 async function loadUnits(): Promise<UnitQuizData[]> {
@@ -85,8 +94,9 @@ export function useQuiz() {
     setShowStartModal(false)
   }
 
-  const startExam = () => {
-    const preparedQuestions = buildExamQuestions(units, selectedPercentage)
+  const startExam = (selectedUnits?: UnitQuizData[]) => {
+    const activeUnits = selectedUnits ?? units
+    const preparedQuestions = buildExamQuestions(activeUnits, selectedPercentage)
 
     setQuestions(preparedQuestions)
     setSelectedAnswers(new Array(preparedQuestions.length).fill(0))
