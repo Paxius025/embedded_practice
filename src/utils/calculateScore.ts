@@ -5,10 +5,23 @@ export function calculateScore(
   userAnswers: number[],
 ): ScoreSummary {
   let score = 0
+  const questionResults = questions.map((question, index) => {
+    const userAnswer = userAnswers[index] ?? 0
+    const isCorrect = userAnswer === question.answer
 
-  questions.forEach((question, index) => {
-    if (userAnswers[index] === question.answer) {
+    if (isCorrect) {
       score += 1
+    }
+
+    return {
+      questionNumber: index + 1,
+      question: question.question,
+      userAnswer,
+      userAnswerText:
+        userAnswer > 0 ? question.choices[userAnswer - 1] ?? '-' : '-',
+      correctAnswer: question.answer,
+      correctAnswerText: question.choices[question.answer - 1] ?? '-',
+      isCorrect,
     }
   })
 
@@ -23,5 +36,6 @@ export function calculateScore(
     correct,
     incorrect,
     percentage,
+    questionResults,
   }
 }

@@ -46,7 +46,11 @@ function App() {
 
   return (
     <main className="relative h-dvh overflow-hidden bg-[radial-gradient(circle_at_20%_20%,#fde68a_0%,transparent_35%),radial-gradient(circle_at_80%_0%,#fca5a5_0%,transparent_30%),linear-gradient(135deg,#f7f8fb_0%,#edf0f9_60%,#e5e7f1_100%)] px-2 py-2 md:px-3 md:py-3">
-      <div className="mx-auto flex h-full w-full max-w-4xl flex-col gap-3">
+      <div
+        className={`mx-auto flex h-full w-full max-w-4xl flex-col gap-3 ${
+          isFinished ? 'overflow-y-auto pb-12 pr-1' : 'overflow-hidden'
+        }`}
+      >
         {questions.length === 0 && (
           <header className="sticky top-2 z-40 rounded-2xl border border-zinc-200/80 bg-white/90 p-4 shadow-lg backdrop-blur md:p-5">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500">
@@ -123,7 +127,12 @@ function App() {
           />
         )}
 
-        {isFinished && result && <ResultScreen result={result} onRestart={restart} />}
+        {isFinished && result && (
+          <ResultScreen
+            result={result}
+            onRestart={restart}
+          />
+        )}
       </div>
 
       {showStartModal && (

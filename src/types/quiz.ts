@@ -27,4 +27,15 @@ export type ScoreSummary = {
   correct: number
   incorrect: number
   percentage: number
+  questionResults: QuestionResult[]
+}
+
+export type QuestionResult = {
+  questionNumber: number
+  question: string
+  userAnswer: number
+  userAnswerText: string
+  correctAnswer: number
+  correctAnswerText: string
+  isCorrect: boolean
 }
