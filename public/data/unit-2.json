@@ -1,0 +1,166 @@
+{
+  "unit_number": 2,
+  "unit_name": "อุปกรณ์ต่อพ่วงและโปรโตคอลการสื่อสาร (Peripheral & Protocols)",
+  "questions": [
+    {
+      "question": "อุปกรณ์ต่อพ่วง (Peripheral Interface) มักสื่อสารในรูปแบบใดเพื่อประหยัดสายสัญญาณ?",
+      "choice_1": "ขนาน (Parallel)",
+      "choice_2": "อนุกรม (Serial)",
+      "choice_3": "แอนะล็อกเท่านั้น",
+      "choice_4": "คลื่นวิทยุอย่างเดียว",
+      "answer": 2
+    },
+    {
+      "question": "โปรโตคอลใดที่เป็นการสื่อสารแบบซิงโครนัส (Synchronous) ความเร็วสูง?",
+      "choice_1": "UART",
+      "choice_2": "SPI",
+      "choice_3": "MQTT",
+      "choice_4": "HTTP",
+      "answer": 2
+    },
+    {
+      "question": "SPI ใช้สายสัญญาณหลักทั้งหมดกี่เส้น?",
+      "choice_1": "2 เส้น",
+      "choice_2": "3 เส้น",
+      "choice_3": "4 เส้น",
+      "choice_4": "5 เส้น",
+      "answer": 3
+    },
+    {
+      "question": "ขา SS (Slave Select) ในโปรโตคอล SPI มีไว้เพื่ออะไร?",
+      "choice_1": "ส่งสัญญาณนาฬิกา",
+      "choice_2": "เลือกอุปกรณ์ Slave ที่ต้องการสื่อสาร",
+      "choice_3": "ส่งข้อมูลจาก Master ไป Slave",
+      "choice_4": "รับข้อมูลจาก Slave มา Master",
+      "answer": 2
+    },
+    {
+      "question": "อุปกรณ์ Slave ในระบบ SPI จะทำงานเมื่อขา SS อยู่ในสถานะใด?",
+      "choice_1": "High",
+      "choice_2": "Low",
+      "choice_3": "ลอย (Floating)",
+      "choice_4": "สลับไปมา",
+      "answer": 2
+    },
+    {
+      "question": "การส่งข้อมูลแบบ Full-duplex ใน SPI หมายถึงอะไร?",
+      "choice_1": "ส่งได้ทีละทิศทาง",
+      "choice_2": "รับและส่งข้อมูลได้พร้อมกันสองทิศทาง",
+      "choice_3": "ต้องมี Master หลายตัว",
+      "choice_4": "ส่งข้อมูลผ่านคลาวด์",
+      "answer": 2
+    },
+    {
+      "question": "โปรโตคอล UART ใช้สายสัญญาณหลักกี่เส้น (ไม่รวม Ground)?",
+      "choice_1": "2 เส้น (TX, RX)",
+      "choice_2": "2 เส้น (SDA, SCL)",
+      "choice_3": "4 เส้น (MOSI, MISO)",
+      "choice_4": "1 เส้น (Data)",
+      "answer": 1
+    },
+    {
+      "question": "UART เป็นการสื่อสารแบบใด?",
+      "choice_1": "ซิงโครนัส",
+      "choice_2": "อะซิงโครนัส (ไม่ใช้สัญญาณนาฬิการ่วมกัน)",
+      "choice_3": "แอนะล็อก",
+      "choice_4": "Message-based",
+      "answer": 2
+    },
+    {
+      "question": "สิ่งที่ต้องตั้งค่าให้ตรงกันทั้งผู้รับและผู้ส่งใน UART คืออะไร?",
+      "choice_1": "IP Address",
+      "choice_2": "Baud Rate",
+      "choice_3": "SSID",
+      "choice_4": "Topic",
+      "answer": 2
+    },
+    {
+      "question": "I2C ย่อมาจากคำว่าอะไร?",
+      "choice_1": "Internal Interface Circuit",
+      "choice_2": "Inter-Integrated Circuit",
+      "choice_3": "Intelligent Interface Control",
+      "choice_4": "Integrated Internet Connection",
+      "answer": 2
+    },
+    {
+      "question": "โปรโตคอล I2C ใช้สายสัญญาณกี่เส้น?",
+      "choice_1": "2 เส้น (SDA, SCL)",
+      "choice_2": "3 เส้น (TX, RX, CLK)",
+      "choice_3": "4 เส้น (MOSI, MISO, SCK, SS)",
+      "choice_4": "1 เส้น (One-wire)",
+      "answer": 1
+    },
+    {
+      "question": "SDA และ SCL ใน I2C ย่อมาจากอะไร?",
+      "choice_1": "Serial Data และ Serial Clock",
+      "choice_2": "System Data และ System Control",
+      "choice_3": "Serial Direct และ Serial Connect",
+      "choice_4": "Simple Data และ Simple Clock",
+      "answer": 1
+    },
+    {
+      "question": "อุปกรณ์ Slave ในระบบ I2C ถูกระบุตัวตนด้วยสิ่งใด?",
+      "choice_1": "ขา SS",
+      "choice_2": "Address เฉพาะตัว",
+      "choice_3": "ลำดับการต่อสาย",
+      "choice_4": "สีของสายสัญญาณ",
+      "answer": 2
+    },
+    {
+      "question": "ทำไม I2C จึงต้องมี Pull-up Resistor?",
+      "choice_1": "เพื่อเพิ่มความเร็ว",
+      "choice_2": "เพื่อให้สัญญาณบนบัสเสถียร",
+      "choice_3": "เพื่อลดความร้อน",
+      "choice_4": "เพื่อป้องกันไฟย้อนกลับ",
+      "answer": 2
+    },
+    {
+      "question": "CAN Bus ถูกออกแบบมาเพื่อใช้งานหลักในด้านใด?",
+      "choice_1": "การตกแต่งภาพ",
+      "choice_2": "ยานยนต์และอุตสาหกรรม",
+      "choice_3": "ระบบบัญชี",
+      "choice_4": "เกมออนไลน์",
+      "answer": 2
+    },
+    {
+      "question": "จุดเด่นที่สุดของ CAN Bus คืออะไร?",
+      "choice_1": "ใช้สายไฟจำนวนมาก",
+      "choice_2": "ทนทานต่อสัญญาณรบกวนได้ดีมาก",
+      "choice_3": "ต้องมีคอมพิวเตอร์แม่ข่ายควบคุมเสมอ",
+      "choice_4": "มีราคาถูกที่สุด",
+      "answer": 2
+    },
+    {
+      "question": "CAN Bus ใช้สายสัญญาณกี่เส้น?",
+      "choice_1": "2 เส้น (CAN High, CAN Low)",
+      "choice_2": "4 เส้น",
+      "choice_3": "8 เส้น",
+      "choice_4": "1 เส้น",
+      "answer": 1
+    },
+    {
+      "question": "สถานะ Dominant ใน CAN Bus หมายถึงลอจิกใด?",
+      "choice_1": "ลอจิก 0 (CANH > CANL)",
+      "choice_2": "ลอจิก 1 (CANH < CANL)",
+      "choice_3": "สถานะว่าง",
+      "choice_4": "สถานะผิดพลาด",
+      "answer": 1
+    },
+    {
+      "question": "CAN Frame ชนิดใดใช้สำหรับส่งข้อมูลปกติ?",
+      "choice_1": "Data frame",
+      "choice_2": "Remote frame",
+      "choice_3": "Error frame",
+      "choice_4": "Overload frame",
+      "answer": 1
+    },
+    {
+      "question": "มาตรฐาน IEEE สำหรับ Ethernet คืออะไร?",
+      "choice_1": "IEEE 802.11",
+      "choice_2": "IEEE 802.3",
+      "choice_3": "IEEE 1149.1",
+      "choice_4": "IEEE 1394",
+      "answer": 2
+    }
+  ]
+}

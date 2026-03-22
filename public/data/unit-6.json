@@ -1,0 +1,206 @@
+{
+  "unit_number": 6,
+  "unit_name": "การสื่อสารในระบบฝังตัวและระบบคลาวด์",
+  "questions": [
+    {
+      "question": "โปรโตคอลใดที่เป็นมาตรฐานหลักของอินเทอร์เน็ต?",
+      "choice_1": "TCP/IP",
+      "choice_2": "I2C",
+      "choice_3": "SPI",
+      "choice_4": "CAN",
+      "answer": 1
+    },
+    {
+      "question": "TCP แตกต่างจาก IP อย่างไร?",
+      "choice_1": "TCP เน้นการส่งข้อมูลที่เชื่อถือได้ ส่วน IP เน้นการกำหนดเส้นทาง (Routing)",
+      "choice_2": "TCP เป็นไร้สาย IP เป็นมีสาย",
+      "choice_3": "TCP ส่งช้ากว่า IP",
+      "choice_4": "เหมือนกันทุกประการ",
+      "answer": 1
+    },
+    {
+      "question": "กระบวนการเริ่มต้นเชื่อมต่อของ TCP เรียกว่าอะไร?",
+      "choice_1": "2-Way Handshake",
+      "choice_2": "3-Way Handshake",
+      "choice_3": "4-Way Handshake",
+      "choice_4": "Quick Connect",
+      "answer": 2
+    },
+    {
+      "question": "ขั้นตอนการปิดการเชื่อมต่อ TCP ใช้กระบวนการใด?",
+      "choice_1": "2-Way Handshake",
+      "choice_2": "3-Way Handshake",
+      "choice_3": "4-Way Handshake",
+      "choice_4": "Reset Connect",
+      "answer": 3
+    },
+    {
+      "question": "ข้อดีของโปรโตคอล MQTT เมื่อเทียบกับ TCP/IP ในงาน IoT คืออะไร?",
+      "choice_1": "ส่งข้อมูลขนาดใหญ่ได้ดีกว่า",
+      "choice_2": "ใช้พลังงานต่ำและโครงสร้างง่ายกว่า",
+      "choice_3": "ไม่ต้องพึ่งพา Broker",
+      "choice_4": "มีความซับซ้อนสูงกว่า",
+      "answer": 2
+    },
+    {
+      "question": "รูปแบบการสื่อสารของ TCP/IP คือแบบใด?",
+      "choice_1": "Publish-Subscribe",
+      "choice_2": "Client-Server",
+      "choice_3": "Master-Slave",
+      "choice_4": "Multi-master",
+      "answer": 2
+    },
+    {
+      "question": "อุปกรณ์ที่รวบรวมข้อมูลจากเซ็นเซอร์หลายตัวก่อนส่งไป Cloud เรียกว่าอะไร?",
+      "choice_1": "Publisher",
+      "choice_2": "Gateway",
+      "choice_3": "Broker",
+      "choice_4": "Switch",
+      "answer": 2
+    },
+    {
+      "question": "Cloud Integration มีความสำคัญอย่างไรต่อระบบ IoT?",
+      "choice_1": "ทำให้ไม่ต้องใช้ MCU",
+      "choice_2": "ช่วยจัดเก็บและประมวลผลข้อมูลขนาดใหญ่",
+      "choice_3": "ทำให้ราคาเซ็นเซอร์ถูกลง",
+      "choice_4": "เพิ่มความแรงของสัญญาณ Wi-Fi",
+      "answer": 2
+    },
+    {
+      "question": "โปรโตคอลใดเหมาะสำหรับการส่งข้อมูลแบบสองทาง (Bi-Directional) แบบเรียลไทม์บนหน้าเว็บ?",
+      "choice_1": "HTTP",
+      "choice_2": "WebSocket",
+      "choice_3": "FTP",
+      "choice_4": "SMTP",
+      "answer": 2
+    },
+    {
+      "question": "บริการคลาวด์ตัวอย่างในระบบเกษตรอัจฉริยะคือข้อใด?",
+      "choice_1": "Siemens MindSphere",
+      "choice_2": "Microsoft Azure IoT",
+      "choice_3": "Netflix",
+      "choice_4": "Google Search",
+      "answer": 2
+    },
+    {
+      "question": "ในระบบสุขภาพ (Healthcare) IoT มีบทบาทอย่างไร?",
+      "choice_1": "ทำการรักษาโรคโดยตรง",
+      "choice_2": "ให้แพทย์ติดตามสถานะผู้ป่วยได้แบบเรียลไทม์ผ่านคลาวด์",
+      "choice_3": "เพิ่มอายุขัยของมนุษย์",
+      "choice_4": "ลดการใช้ยารักษาโรค",
+      "answer": 2
+    },
+    {
+      "question": "ระบบเฝ้าติดตาม (Monitoring) ที่ต้องการความเสถียรและความปลอดภัยสูงควรใช้เทคโนโลยีใด?",
+      "choice_1": "Wi-Fi",
+      "choice_2": "Ethernet",
+      "choice_3": "Bluetooth",
+      "choice_4": "Zigbee",
+      "answer": 2
+    },
+    {
+      "question": "Wi-Fi ทำงานบนมาตรฐาน IEEE ใด?",
+      "choice_1": "IEEE 802.3",
+      "choice_2": "IEEE 802.11",
+      "choice_3": "IEEE 1149.1",
+      "choice_4": "IEEE 1394",
+      "answer": 2
+    },
+    {
+      "question": "ข้อเสียของ Wi-Fi เมื่อเทียบกับ Ethernet คืออะไร?",
+      "choice_1": "ความเสถียรอาจถูกรบกวนได้ง่ายและใช้พลังงานมากกว่า",
+      "choice_2": "ติดตั้งยากกว่า",
+      "choice_3": "ส่งข้อมูลได้ช้ากว่ามาก",
+      "choice_4": "ไม่รองรับ IoT",
+      "answer": 1
+    },
+    {
+      "question": "โปรโตคอล HTTP/REST API เหมาะกับงานประเภทใด?",
+      "choice_1": "การส่งข้อมูลเรียลไทม์ต่อเนื่อง",
+      "choice_2": "การส่งข้อมูลแบบที่ไม่ต้องการการเชื่อมต่อถาวร",
+      "choice_3": "การควบคุมมอเตอร์โดยตรง",
+      "choice_4": "การดีบักฮาร์ดแวร์",
+      "answer": 2
+    },
+    {
+      "question": "ในโค้ดเชื่อมต่อ Wi-Fi ของ ESP32 ฟังก์ชันใดใช้สำหรับตรวจสอบสถานะการเชื่อมต่อ?",
+      "choice_1": "WiFi.begin()",
+      "choice_2": "WiFi.status()",
+      "choice_3": "WiFi.localIP()",
+      "choice_4": "WiFi.disconnect()",
+      "answer": 2
+    },
+    {
+      "question": "หากต้องการส่งข้อมูลอุณหภูมิไปยัง AWS IoT Core ผ่าน MQTT ต้องระบุสิ่งใด?",
+      "choice_1": "ชื่อเล่นผู้ใช้งาน",
+      "choice_2": "Endpoint ของ Broker และพอร์ต 8883 (Secure)",
+      "choice_3": "หมายเลขโทรศัพท์",
+      "choice_4": "จำนวนขาของ ESP32",
+      "answer": 2
+    },
+    {
+      "question": "มาตรฐาน USB ในระบบฝังตัวมีบทบาทอย่างไร?",
+      "choice_1": "จ่ายพลังงานและใช้ดาวน์โหลดโค้ด (Firmware Update)",
+      "choice_2": "วัดความชื้นในอากาศ",
+      "choice_3": "แทนที่หน่วยความจำ RAM",
+      "choice_4": "เชื่อมต่อดาวเทียม",
+      "answer": 1
+    },
+    {
+      "question": "ชิปยอดนิยมที่เป็นพื้นฐานของอุปกรณ์ Wi-Fi IoT คือข้อใด?",
+      "choice_1": "STM32",
+      "choice_2": "ESP8266 หรือ ESP32",
+      "choice_3": "PIC16F",
+      "choice_4": "8051",
+      "answer": 2
+    },
+    {
+      "question": "ระบบอุตสาหกรรม (IIoT) มักใช้คลาวด์ในเรื่องใด?",
+      "choice_1": "การเล่นเกม",
+      "choice_2": "การแจ้งเตือนเมื่อเครื่องจักรมีปัญหาหรือต้องบำรุงรักษา",
+      "choice_3": "การขายสินค้าออนไลน์",
+      "choice_4": "การสตรีมภาพยนตร์",
+      "answer": 2
+    },
+    {
+      "question": "ความถี่ Wi-Fi ที่นิยมใช้ในอุปกรณ์ฝังตัวคือช่วงใด?",
+      "choice_1": "2.4 GHz หรือ 5 GHz",
+      "choice_2": "100 MHz",
+      "choice_3": "900 MHz",
+      "choice_4": "10 GHz",
+      "answer": 1
+    },
+    {
+      "question": "สัญญาณ PWM ของเซอร์โวมอเตอร์ใช้ควบคุมสิ่งใด?",
+      "choice_1": "ความร้อน",
+      "choice_2": "ตำแหน่งหรือองศาของการหมุน",
+      "choice_3": "แรงดันไฟฟ้าของแบตเตอรี่",
+      "choice_4": "ความสว่างของหน้าจอ",
+      "answer": 2
+    },
+    {
+      "question": "การใช้ Ethernet ในโรงงานอุตสาหกรรมมีจุดประสงค์หลักเพื่ออะไร?",
+      "choice_1": "เพื่อความสวยงาม",
+      "choice_2": "เพื่อความน่าเชื่อถือและความปลอดภัยในการส่งข้อมูล",
+      "choice_3": "เพื่อลดจำนวนสายไฟ",
+      "choice_4": "เพื่อให้พนักงานเล่นอินเทอร์เน็ตได้",
+      "answer": 2
+    },
+    {
+      "question": "ในการประยุกต์ใช้งาน ESP32 อ่านค่าจาก DHT22 และแสดงผลบน OLED ต้องใช้โปรโตคอลใดสื่อสารกับจอ?",
+      "choice_1": "UART",
+      "choice_2": "I2C (SDA, SCL)",
+      "choice_3": "SPI",
+      "choice_4": "CAN",
+      "answer": 2
+    },
+    {
+      "question": "ฟังก์ชัน display.display() ในไลบรารี Adafruit SSD1306 มีหน้าที่อะไร?",
+      "choice_1": "ล้างหน้าจอ",
+      "choice_2": "ส่งข้อมูลจาก Buffer ไปแสดงผลบนหน้าจอจริง",
+      "choice_3": "เปลี่ยนสีตัวอักษร",
+      "choice_4": "ปิดหน้าจอ",
+      "answer": 2
+    }
+  ]
+}
