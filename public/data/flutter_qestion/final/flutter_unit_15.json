@@ -1,0 +1,22 @@
+﻿{
+    "unit_number":  15,
+    "unit_name":  "App Name \u0026 Icon",
+    "questions":  [
+                      {
+                          "question":  "à¸«à¸²à¸à¸•à¹‰à¸­à¸‡à¸à¸²à¸£à¹€à¸›à¸¥à¸µà¹ˆà¸¢à¸™ \"à¸Šà¸·à¹ˆà¸­à¹à¸­à¸›à¸žà¸¥à¸´à¹€à¸„à¸Šà¸±à¸™\" (App Name) à¸ªà¸³à¸«à¸£à¸±à¸š Android à¸•à¹‰à¸­à¸‡à¹à¸à¹‰à¹„à¸‚à¸—à¸µà¹ˆà¹„à¸Ÿà¸¥à¹Œà¹ƒà¸”?",
+                          "choice_1":  "main.dart",
+                          "choice_2":  "pubspec.yaml",
+                          "choice_3":  "android/app/src/main/AndroidManifest.xml (à¸—à¸µà¹ˆ android:label)",
+                          "choice_4":  "build.gradle",
+                          "answer":  3
+                      },
+                      {
+                          "question":  "à¸„à¸³à¸ªà¸±à¹ˆà¸‡à¹ƒà¸”à¹ƒà¸Šà¹‰à¸ªà¸³à¸«à¸£à¸±à¸šà¸•à¸£à¸§à¸ˆà¸ªà¸­à¸šà¸„à¸§à¸²à¸¡à¸žà¸£à¹‰à¸­à¸¡à¸‚à¸­à¸‡ Flutter à¹à¸¥à¸°à¹€à¸„à¸£à¸·à¹ˆà¸­à¸‡à¸¡à¸·à¸­à¸—à¸µà¹ˆà¹€à¸à¸µà¹ˆà¸¢à¸§à¸‚à¹‰à¸­à¸‡?",
+                          "choice_1":  "flutter check",
+                          "choice_2":  "flutter doctor",
+                          "choice_3":  "flutter version",
+                          "choice_4":  "flutter health",
+                          "answer":  2
+                      }
+                  ]
+}
