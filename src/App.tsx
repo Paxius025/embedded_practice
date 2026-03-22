@@ -3,7 +3,7 @@ import { QuizCard } from './components/QuizCard'
 import { ResultScreen } from './components/ResultScreen'
 import { StartModal } from './components/StartModal'
 import { useQuiz } from './hooks/useQuiz'
-
+import { Analytics } from '@vercel/analytics/react'
 function App() {
   const {
     units,
@@ -180,6 +180,7 @@ function App() {
       <footer className="pointer-events-none absolute inset-x-0 bottom-2 text-center text-xs font-medium text-zinc-600 md:text-sm">
         จัดทำโดย Pantong Sanonok CPE9
       </footer>
+      <Analytics />
     </main>
   )
 }

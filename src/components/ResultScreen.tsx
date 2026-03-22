@@ -8,7 +8,16 @@ type ResultScreenProps = {
 export function ResultScreen({ result, onRestart }: ResultScreenProps) {
   return (
     <section className="w-full rounded-2xl border border-zinc-200 bg-white/95 p-5 text-zinc-900 shadow-xl md:p-6">
-      <h2 className="text-2xl font-bold">ผลคะแนน</h2>
+      <div className="flex items-start justify-between gap-3">
+        <h2 className="text-2xl font-bold">ผลคะแนน</h2>
+        <button
+          type="button"
+          onClick={onRestart}
+          className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-zinc-700 md:px-5 md:py-2.5"
+        >
+          เริ่มใหม่
+        </button>
+      </div>
 
       <div className="mt-4 grid gap-2 text-base md:text-lg">
         <p>
@@ -67,13 +76,16 @@ export function ResultScreen({ result, onRestart }: ResultScreenProps) {
         ))}
       </div>
 
-      <button
-        type="button"
-        onClick={onRestart}
-        className="mt-5 rounded-lg bg-zinc-900 px-6 py-2.5 font-semibold text-white transition hover:bg-zinc-700"
-      >
-        เริ่มใหม่
-      </button>
+      <div className="mt-6 flex justify-end">
+        <button
+          type="button"
+          onClick={onRestart}
+          className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-zinc-700 md:px-5 md:py-2.5"
+        >
+          เริ่มใหม่
+        </button>
+      </div>
+
     </section>
   )
 }
