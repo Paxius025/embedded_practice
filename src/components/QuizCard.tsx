@@ -31,7 +31,7 @@ export function QuizCard({
       <div className="mb-4">
         <div className="mb-2 flex flex-wrap items-center justify-between gap-2 text-sm text-zinc-600">
           <span className="rounded-full bg-zinc-100 px-3 py-1 font-medium">
-            Unit {question.unitNumber}: {question.unitName}
+            บทที่ {question.unitNumber}: {question.unitName}
           </span>
           <span>
             ตอบแล้ว {answeredCount}/{totalQuestions}

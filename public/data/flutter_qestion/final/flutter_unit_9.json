@@ -3,15 +3,15 @@
     "unit_name":  "Flutter \u0026 Firebase",
     "questions":  [
                       {
-                          "question":  "Cloud Firestore à¹€à¸›à¹‡à¸™à¸à¸²à¸™à¸‚à¹‰à¸­à¸¡à¸¹à¸¥à¸›à¸£à¸°à¹€à¸ à¸—à¹ƒà¸”?",
+                          "question":  "Cloud Firestore เป็นฐานข้อมูลประเภทใด?",
                           "choice_1":  "SQL",
-                          "choice_2":  "NoSQL à¸—à¸µà¹ˆà¸£à¸­à¸‡à¸£à¸±à¸š Realtime",
+                          "choice_2":  "NoSQL ที่รองรับ Realtime",
                           "choice_3":  "Relational Database",
-                          "choice_4":  "Offline Database à¹€à¸—à¹ˆà¸²à¸™à¸±à¹‰à¸™",
+                          "choice_4":  "Offline Database เท่านั้น",
                           "answer":  2
                       },
                       {
-                          "question":  "à¹‚à¸„à¸£à¸‡à¸ªà¸£à¹‰à¸²à¸‡à¸‚à¹‰à¸­à¸¡à¸¹à¸¥ Firestore à¸ªà¹ˆà¸§à¸™à¸—à¸µà¹ˆà¹€à¸›à¸£à¸µà¸¢à¸šà¹€à¸ªà¸¡à¸·à¸­à¸™ \"à¹à¸Ÿà¹‰à¸¡à¹€à¸à¹‡à¸šà¸‚à¹‰à¸­à¸¡à¸¹à¸¥\" à¸„à¸·à¸­à¸­à¸°à¹„à¸£?",
+                          "question":  "โครงสร้างข้อมูล Firestore ส่วนที่เปรียบเสมือน \"แฟ้มเก็บข้อมูล\" คืออะไร?",
                           "choice_1":  "Collection",
                           "choice_2":  "Document",
                           "choice_3":  "Data",
@@ -19,7 +19,7 @@
                           "answer":  1
                       },
                       {
-                          "question":  "à¹‚à¸„à¸£à¸‡à¸ªà¸£à¹‰à¸²à¸‡à¸‚à¹‰à¸­à¸¡à¸¹à¸¥ Firestore à¸ªà¹ˆà¸§à¸™à¸—à¸µà¹ˆà¹€à¸›à¸£à¸µà¸¢à¸šà¹€à¸ªà¸¡à¸·à¸­à¸™ \"à¸à¸£à¸°à¸”à¸²à¸©à¸—à¸µà¹ˆà¹ƒà¸Šà¹‰à¸šà¸±à¸™à¸—à¸¶à¸à¸£à¸²à¸¢à¸¥à¸°à¹€à¸­à¸µà¸¢à¸”\" à¸„à¸·à¸­à¸­à¸°à¹„à¸£?",
+                          "question":  "โครงสร้างข้อมูล Firestore ส่วนที่เปรียบเสมือน \"กระดาษที่ใช้บันทึกรายละเอียด\" คืออะไร?",
                           "choice_1":  "Collection",
                           "choice_2":  "Document",
                           "choice_3":  "Page",
@@ -27,7 +27,7 @@
                           "answer":  2
                       },
                       {
-                          "question":  "Firebase Realtime Database à¹€à¸à¹‡à¸šà¸‚à¹‰à¸­à¸¡à¸¹à¸¥à¹ƒà¸™à¸£à¸¹à¸›à¹à¸šà¸šà¹ƒà¸”?",
+                          "question":  "Firebase Realtime Database เก็บข้อมูลในรูปแบบใด?",
                           "choice_1":  "XML",
                           "choice_2":  "CSV",
                           "choice_3":  "JSON",
@@ -35,7 +35,7 @@
                           "answer":  3
                       },
                       {
-                          "question":  "Package à¸žà¸·à¹‰à¸™à¸à¸²à¸™à¸—à¸µà¹ˆà¸ˆà¸³à¹€à¸›à¹‡à¸™à¸—à¸µà¹ˆà¸ªà¸¸à¸”à¹ƒà¸™à¸à¸²à¸£à¹€à¸£à¸´à¹ˆà¸¡à¸•à¹‰à¸™à¹ƒà¸Šà¹‰à¸‡à¸²à¸™ Firebase à¹ƒà¸™ Flutter à¸„à¸·à¸­à¸­à¸°à¹„à¸£?",
+                          "question":  "Package พื้นฐานที่จำเป็นที่สุดในการเริ่มต้นใช้งาน Firebase ใน Flutter คืออะไร?",
                           "choice_1":  "cloud_firestore",
                           "choice_2":  "firebase_core",
                           "choice_3":  "firebase_auth",
@@ -43,7 +43,7 @@
                           "answer":  2
                       },
                       {
-                          "question":  "à¹„à¸Ÿà¸¥à¹Œà¸ªà¸³à¸„à¸±à¸à¸—à¸µà¹ˆà¸•à¹‰à¸­à¸‡à¸™à¸³à¹„à¸›à¸§à¸²à¸‡à¹ƒà¸™à¹‚à¸Ÿà¸¥à¹€à¸”à¸­à¸£à¹Œ android/app à¸„à¸·à¸­à¹„à¸Ÿà¸¥à¹Œà¹ƒà¸”?",
+                          "question":  "ไฟล์สำคัญที่ต้องนำไปวางในโฟลเดอร์ android/app คือไฟล์ใด?",
                           "choice_1":  "firebase-config.json",
                           "choice_2":  "google-services.json",
                           "choice_3":  "settings.gradle",
@@ -51,7 +51,7 @@
                           "answer":  2
                       },
                       {
-                          "question":  "à¸à¸²à¸£à¸¥à¸‡à¸—à¸°à¹€à¸šà¸µà¸¢à¸™à¹à¸­à¸› Android à¹ƒà¸™ Firebase à¸•à¹‰à¸­à¸‡à¸£à¸°à¸šà¸¸à¸„à¹ˆà¸²à¹ƒà¸”à¸—à¸µà¹ˆà¹„à¸”à¹‰à¸ˆà¸²à¸à¹„à¸Ÿà¸¥à¹Œ build.gradle?",
+                          "question":  "การลงทะเบียนแอป Android ใน Firebase ต้องระบุค่าใดที่ได้จากไฟล์ build.gradle?",
                           "choice_1":  "appName",
                           "choice_2":  "applicationId",
                           "choice_3":  "projectIdentifier",
@@ -59,7 +59,7 @@
                           "answer":  2
                       },
                       {
-                          "question":  "à¹ƒà¸™ Firebase Console à¹€à¸¡à¸™à¸¹à¹ƒà¸”à¹ƒà¸Šà¹‰à¸ªà¸³à¸«à¸£à¸±à¸šà¸ªà¸£à¹‰à¸²à¸‡à¸à¸²à¸™à¸‚à¹‰à¸­à¸¡à¸¹à¸¥ NoSQL à¸¢à¸¸à¸„à¹ƒà¸«à¸¡à¹ˆ?",
+                          "question":  "ใน Firebase Console เมนูใดใช้สำหรับสร้างฐานข้อมูล NoSQL ยุคใหม่?",
                           "choice_1":  "Realtime Database",
                           "choice_2":  "Firestore Database",
                           "choice_3":  "Authentication",
@@ -67,7 +67,7 @@
                           "answer":  2
                       },
                       {
-                          "question":  "à¸ªà¸³à¸«à¸£à¸±à¸šà¸à¸²à¸£à¸žà¸±à¸’à¸™à¸²à¹à¸­à¸›à¹€à¸šà¸·à¹‰à¸­à¸‡à¸•à¹‰à¸™ à¸„à¸§à¸£à¹€à¸¥à¸·à¸­à¸ Security Rules à¹ƒà¸™à¹‚à¸«à¸¡à¸”à¹ƒà¸”?",
+                          "question":  "สำหรับการพัฒนาแอปเบื้องต้น ควรเลือก Security Rules ในโหมดใด?",
                           "choice_1":  "Production mode",
                           "choice_2":  "Test mode",
                           "choice_3":  "Open mode",
@@ -75,7 +75,7 @@
                           "answer":  2
                       },
                       {
-                          "question":  "à¸„à¸³à¸ªà¸±à¹ˆà¸‡à¹ƒà¸”à¹ƒà¸Šà¹‰à¹€à¸žà¸·à¹ˆà¸­à¹€à¸£à¸´à¹ˆà¸¡à¸à¸²à¸£à¸—à¸³à¸‡à¸²à¸™à¸‚à¸­à¸‡ Firebase à¹ƒà¸™à¸Ÿà¸±à¸‡à¸à¹Œà¸Šà¸±à¸™ main()?",
+                          "question":  "คำสั่งใดใช้เพื่อเริ่มการทำงานของ Firebase ในฟังก์ชัน main()?",
                           "choice_1":  "Firebase.start()",
                           "choice_2":  "Firebase.initializeApp()",
                           "choice_3":  "Firebase.connect()",
@@ -83,7 +83,7 @@
                           "answer":  2
                       },
                       {
-                          "question":  "Widget à¹ƒà¸”à¹ƒà¸Šà¹‰à¸ªà¸³à¸«à¸£à¸±à¸šà¹à¸ªà¸”à¸‡à¸œà¸¥à¸‚à¹‰à¸­à¸¡à¸¹à¸¥à¸—à¸µà¹ˆà¹€à¸›à¸¥à¸µà¹ˆà¸¢à¸™à¹à¸›à¸¥à¸‡à¹à¸šà¸š Realtime à¸ˆà¸²à¸ Firestore?",
+                          "question":  "Widget ใดใช้สำหรับแสดงผลข้อมูลที่เปลี่ยนแปลงแบบ Realtime จาก Firestore?",
                           "choice_1":  "FutureBuilder",
                           "choice_2":  "StreamBuilder",
                           "choice_3":  "FirebaseBuilder",
@@ -91,11 +91,11 @@
                           "answer":  2
                       },
                       {
-                          "question":  "à¸«à¸²à¸à¹à¸­à¸›à¹à¸ªà¸”à¸‡ Error \"[core/not-initialized]\" à¸ªà¸²à¹€à¸«à¸•à¸¸à¸ªà¹ˆà¸§à¸™à¹ƒà¸«à¸à¹ˆà¹€à¸à¸´à¸”à¸ˆà¸²à¸à¸­à¸°à¹„à¸£?",
-                          "choice_1":  "à¸¥à¸·à¸¡à¹€à¸›à¸´à¸”à¸­à¸´à¸™à¹€à¸—à¸­à¸£à¹Œà¹€à¸™à¹‡à¸•",
-                          "choice_2":  "à¹„à¸¡à¹ˆà¹„à¸”à¹‰à¹€à¸£à¸µà¸¢à¸à¹ƒà¸Šà¹‰ Firebase.initializeApp() à¸à¹ˆà¸­à¸™à¹ƒà¸Šà¹‰à¸‡à¸²à¸™",
-                          "choice_3":  "à¹ƒà¸ªà¹ˆ API Key à¸œà¸´à¸”",
-                          "choice_4":  "à¹„à¸¡à¹ˆà¹„à¸”à¹‰à¸ªà¸£à¹‰à¸²à¸‡à¸à¸²à¸™à¸‚à¹‰à¸­à¸¡à¸¹à¸¥",
+                          "question":  "หากแอปแสดง Error \"[core/not-initialized]\" สาเหตุส่วนใหญ่เกิดจากอะไร?",
+                          "choice_1":  "ลืมเปิดอินเทอร์เน็ต",
+                          "choice_2":  "ไม่ได้เรียกใช้ Firebase.initializeApp() ก่อนใช้งาน",
+                          "choice_3":  "ใส่ API Key ผิด",
+                          "choice_4":  "ไม่ได้สร้างฐานข้อมูล",
                           "answer":  2
                       }
                   ]

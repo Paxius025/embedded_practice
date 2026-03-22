@@ -1,0 +1,856 @@
+[
+  {
+    "unit_number": 7,
+    "unit_name": "Navigation, Route & Tab Menu",
+    "questions": [
+      {
+        "question": "Navigator ใน Flutter จัดวางโครงสร้างข้อมูลแบบใด?",
+        "choice_1": "Queue",
+        "choice_2": "Stack",
+        "choice_3": "Linked List",
+        "choice_4": "Tree",
+        "answer": 2
+      },
+      {
+        "question": "หากต้องการสร้างไอคอนปุ่มกดบนแถบ AppBar เพื่อเชื่อมโยงหน้าแอป ต้องใช้ Property ใด?",
+        "choice_1": "leading",
+        "choice_2": "title",
+        "choice_3": "actions",
+        "choice_4": "flexibleSpace",
+        "answer": 3
+      },
+      {
+        "question": "คำสั่งใดใช้สำหรับ \"เปิด\" หรือ \"ซ้อน\" หน้าจอใหม่ทับหน้าจอเดิม?",
+        "choice_1": "Navigator.pop",
+        "choice_2": "Navigator.push",
+        "choice_3": "Navigator.replace",
+        "choice_4": "Navigator.remove",
+        "answer": 2
+      },
+      {
+        "question": "คลาสใดทำหน้าที่สร้างเส้นทางเพื่อนำไปสู่หน้าจอใหม่ในรูปแบบ Material Design?",
+        "choice_1": "RouteBuilder",
+        "choice_2": "MaterialPageRoute",
+        "choice_3": "ScreenNavigator",
+        "choice_4": "PageTransition",
+        "answer": 2
+      },
+      {
+        "question": "หากต้องการทำเมนูแบบแถบด้านข้าง (Sidebar Menu) ต้องใช้ Widget ใดใน Scaffold?",
+        "choice_1": "sidebar",
+        "choice_2": "drawer",
+        "choice_3": "bottomNavigationBar",
+        "choice_4": "endDrawer",
+        "answer": 2
+      },
+      {
+        "question": "การสร้าง Tab Menu องค์ประกอบใดทำหน้าที่ควบคุมระบบโดยรวม เช่น กำหนดจำนวนเมนู?",
+        "choice_1": "TabBar",
+        "choice_2": "DefaultTabController",
+        "choice_3": "TabBarView",
+        "choice_4": "TabScaffold",
+        "answer": 2
+      },
+      {
+        "question": "Widget ใดทำหน้าที่แสดงเนื้อหาของแต่ละหน้าในระบบ Tab เมื่อผู้ใช้สลับไปมา?",
+        "choice_1": "TabBar",
+        "choice_2": "TabBarView",
+        "choice_3": "TabContainer",
+        "choice_4": "PageView",
+        "answer": 2
+      },
+      {
+        "question": "หากต้องการใช้งานแถบเมนูที่เคลื่อนไหวได้ (Animated Curved Navigation Bar) ต้องติดตั้ง Plugin ใด?",
+        "choice_1": "fancy_navigation",
+        "choice_2": "curved_navigation_bar",
+        "choice_3": "animated_tab_bar",
+        "choice_4": "bottom_nav_curve",
+        "answer": 2
+      },
+      {
+        "question": "การกำหนดจำนวนหน้าใน Tab Menu ต้องระบุที่ Property ใดของ DefaultTabController?",
+        "choice_1": "count",
+        "choice_2": "items",
+        "choice_3": "length",
+        "choice_4": "pages",
+        "answer": 3
+      },
+      {
+        "question": "คำสั่ง Navigator.pushReplacement มีลักษณะการทำงานอย่างไร?",
+        "choice_1": "เปิดหน้าใหม่ซ้อนทับหน้าเดิม",
+        "choice_2": "เปิดหน้าใหม่และลบหน้าเดิมทิ้ง (ไม่สามารถกด Back กลับมาได้)",
+        "choice_3": "ใช้สำหรับปิดหน้าจอปัจจุบันเท่านั้น",
+        "choice_4": "ใช้เปลี่ยนเฉพาะสีของหน้าจอ",
+        "answer": 2
+      },
+      {
+        "question": "Widget ใดใช้สำหรับกำหนดรายการเมนูที่แสดงผลในแถบ Tab?",
+        "choice_1": "Tab",
+        "choice_2": "TabItem",
+        "choice_3": "TabIcon",
+        "choice_4": "TabLabel",
+        "answer": 1
+      },
+      {
+        "question": "การสร้าง Sidebar Menu มักใช้ Widget ใดร่วมกับ Drawer เพื่อแสดงรายการเมนู?",
+        "choice_1": "Column",
+        "choice_2": "ListTile",
+        "choice_3": "Row",
+        "choice_4": "GridView",
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "unit_number": 8,
+    "unit_name": "Flutter & Local Database",
+    "questions": [
+      {
+        "question": "Local Database คือการเก็บข้อมูลในรูปแบบใด?",
+        "choice_1": "เก็บไว้บน Cloud เสมอ",
+        "choice_2": "เก็บไว้ในพื้นที่เก็บข้อมูลของเครื่องนั้นๆ",
+        "choice_3": "เก็บไว้ในแรมเพียงชั่วคราว",
+        "choice_4": "ต้องเชื่อมต่ออินเทอร์เน็ตตลอดเวลา",
+        "answer": 2
+      },
+      {
+        "question": "ข้อเสียหลักของ Local Database คืออะไร?",
+        "choice_1": "ทำงานช้า",
+        "choice_2": "หากลบแอปหรือล้างเครื่อง ข้อมูลจะหายไป",
+        "choice_3": "มีค่าใช้จ่ายสูง",
+        "choice_4": "เก็บข้อมูลตัวเลขไม่ได้",
+        "answer": 2
+      },
+      {
+        "question": "ระบบ SQL มักเรียกข้อมูลในรูปแบบตารางว่าอะไร?",
+        "choice_1": "Collections",
+        "choice_2": "Table",
+        "choice_3": "Document",
+        "choice_4": "Field",
+        "answer": 2
+      },
+      {
+        "question": "ในระบบ NoSQL สิ่งที่เปรียบได้กับ \"Row\" (แถว) ใน SQL คืออะไร?",
+        "choice_1": "Field",
+        "choice_2": "Document",
+        "choice_3": "Collections",
+        "choice_4": "ObjectID",
+        "answer": 2
+      },
+      {
+        "question": "Package ใดใช้จัดการฐานข้อมูล Local แบบ NoSQL ใน Flutter?",
+        "choice_1": "sqflite",
+        "choice_2": "sembast",
+        "choice_3": "shared_preferences",
+        "choice_4": "hive",
+        "answer": 2
+      },
+      {
+        "question": "Package path_provider มีหน้าที่อะไร?",
+        "choice_1": "สร้างตารางข้อมูล",
+        "choice_2": "ดึงตำแหน่ง Directory ของเครื่องเพื่อเก็บฐานข้อมูล",
+        "choice_3": "ตรวจสอบความถูกต้องของข้อมูล",
+        "choice_4": "เชื่อมต่อ Firebase",
+        "answer": 2
+      },
+      {
+        "question": "การระบุที่จัดเก็บข้อมูลใน Sembast (เปรียบได้กับการสร้างตาราง) เรียกว่าอะไร?",
+        "choice_1": "Table",
+        "choice_2": "Store",
+        "choice_3": "Vault",
+        "choice_4": "Record",
+        "answer": 2
+      },
+      {
+        "question": "\"RecordSnapshot\" มีขึ้นเพื่อแก้ปัญหาอะไร?",
+        "choice_1": "เพื่อให้แอปทำงานเร็วขึ้น",
+        "choice_2": "เพื่อให้ข้อมูลทำงานข้าม Platform (Android/iOS) ได้",
+        "choice_3": "เพื่อใช้แทน JSON",
+        "choice_4": "เพื่อลดขนาดไฟล์ฐานข้อมูล",
+        "answer": 2
+      },
+      {
+        "question": "หากต้องการเรียงลำดับข้อมูลจาก \"มากไปหาน้อย\" ใน Sembast ต้องตั้งค่า SortOrder เป็นอะไร?",
+        "choice_1": "true",
+        "choice_2": "false",
+        "choice_3": "desc",
+        "choice_4": "asc",
+        "answer": 2
+      },
+      {
+        "question": "Attribute \"elevation\" ของ Card Widget ใช้สำหรับอะไร?",
+        "choice_1": "กำหนดความสูงของตัวอักษร",
+        "choice_2": "กำหนดเงาให้การ์ด",
+        "choice_3": "กำหนดความกว้างของการ์ด",
+        "choice_4": "กำหนดสีพื้นหลัง",
+        "answer": 2
+      },
+      {
+        "question": "Widget ใดใช้กำหนดระยะห่างของ Widget \"ออกจากขอบใน\" ของ Layout?",
+        "choice_1": "Margin",
+        "choice_2": "Padding",
+        "choice_3": "Spacer",
+        "choice_4": "Alignment",
+        "answer": 2
+      },
+      {
+        "question": "Property ใดใน TextFormField ใช้สั่งให้โฟกัสที่ช่องรับข้อมูลทันทีที่เปิดหน้าจอ?",
+        "choice_1": "selectAll",
+        "choice_2": "autoFocus",
+        "choice_3": "focusNode",
+        "choice_4": "initialValue",
+        "answer": 2
+      },
+      {
+        "question": "การกำหนดรูปแบบแป้นพิมพ์ให้รับเฉพาะตัวเลขต้องใช้ค่าใดใน keyboardType?",
+        "choice_1": "TextInputType.text",
+        "choice_2": "TextInputType.number",
+        "choice_3": "TextInputType.emailAddress",
+        "choice_4": "TextInputType.phone",
+        "answer": 2
+      },
+      {
+        "question": "ในระบบ State Management ส่วนที่ทำหน้าที่ \"ดูแลและจัดการข้อมูล\" คืออะไร?",
+        "choice_1": "Provider",
+        "choice_2": "Consumer",
+        "choice_3": "Manager",
+        "choice_4": "Receiver",
+        "answer": 1
+      },
+      {
+        "question": "ส่วนที่ทำหน้าที่ \"นำข้อมูลไปแสดงผลหรือสร้าง Widget\" คืออะไร?",
+        "choice_1": "Provider",
+        "choice_2": "Consumer",
+        "choice_3": "Dispatcher",
+        "choice_4": "Listener",
+        "answer": 2
+      },
+      {
+        "question": "คำสั่งใดใช้สำหรับแจ้งเตือน Consumer ให้ทำงานใหม่เมื่อข้อมูลใน Provider เปลี่ยนแปลง?",
+        "choice_1": "updateUI()",
+        "choice_2": "refresh()",
+        "choice_3": "notifyListeners()",
+        "choice_4": "sendData()",
+        "answer": 3
+      },
+      {
+        "question": "หากมีหลาย Provider ต้องใช้ Widget ใดรวบรวมเข้าด้วยกัน?",
+        "choice_1": "MultiConsumer",
+        "choice_2": "MultiProvider",
+        "choice_3": "ProviderGroup",
+        "choice_4": "CombineProvider",
+        "answer": 2
+      },
+      {
+        "question": "Package ใดใช้สำหรับการจัดการรูปแบบวันที่และเวลา (DateTime Format)?",
+        "choice_1": "date_format",
+        "choice_2": "intl",
+        "choice_3": "time_picker",
+        "choice_4": "flutter_datetime",
+        "answer": 2
+      },
+      {
+        "question": "การตรวจสอบจำนวนข้อมูลใน Provider เพื่อเช็คว่ามีข้อมูลหรือไม่ ควรใช้คำสั่งใด?",
+        "choice_1": "provider.count",
+        "choice_2": "provider.transactions.length",
+        "choice_3": "provider.size()",
+        "choice_4": "provider.total",
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "unit_number": 9,
+    "unit_name": "Flutter & Firebase",
+    "questions": [
+      {
+        "question": "Cloud Firestore เป็นฐานข้อมูลประเภทใด?",
+        "choice_1": "SQL",
+        "choice_2": "NoSQL ที่รองรับ Realtime",
+        "choice_3": "Relational Database",
+        "choice_4": "Offline Database เท่านั้น",
+        "answer": 2
+      },
+      {
+        "question": "โครงสร้างข้อมูล Firestore ส่วนที่เปรียบเสมือน \"แฟ้มเก็บข้อมูล\" คืออะไร?",
+        "choice_1": "Collection",
+        "choice_2": "Document",
+        "choice_3": "Data",
+        "choice_4": "Field",
+        "answer": 1
+      },
+      {
+        "question": "โครงสร้างข้อมูล Firestore ส่วนที่เปรียบเสมือน \"กระดาษที่ใช้บันทึกรายละเอียด\" คืออะไร?",
+        "choice_1": "Collection",
+        "choice_2": "Document",
+        "choice_3": "Page",
+        "choice_4": "Sheet",
+        "answer": 2
+      },
+      {
+        "question": "Firebase Realtime Database เก็บข้อมูลในรูปแบบใด?",
+        "choice_1": "XML",
+        "choice_2": "CSV",
+        "choice_3": "JSON",
+        "choice_4": "Binary",
+        "answer": 3
+      },
+      {
+        "question": "Package พื้นฐานที่จำเป็นที่สุดในการเริ่มต้นใช้งาน Firebase ใน Flutter คืออะไร?",
+        "choice_1": "cloud_firestore",
+        "choice_2": "firebase_core",
+        "choice_3": "firebase_auth",
+        "choice_4": "firebase_analytics",
+        "answer": 2
+      },
+      {
+        "question": "ไฟล์สำคัญที่ต้องนำไปวางในโฟลเดอร์ android/app คือไฟล์ใด?",
+        "choice_1": "firebase-config.json",
+        "choice_2": "google-services.json",
+        "choice_3": "settings.gradle",
+        "choice_4": "manifest.xml",
+        "answer": 2
+      },
+      {
+        "question": "การลงทะเบียนแอป Android ใน Firebase ต้องระบุค่าใดที่ได้จากไฟล์ build.gradle?",
+        "choice_1": "appName",
+        "choice_2": "applicationId",
+        "choice_3": "projectIdentifier",
+        "choice_4": "versionID",
+        "answer": 2
+      },
+      {
+        "question": "ใน Firebase Console เมนูใดใช้สำหรับสร้างฐานข้อมูล NoSQL ยุคใหม่?",
+        "choice_1": "Realtime Database",
+        "choice_2": "Firestore Database",
+        "choice_3": "Authentication",
+        "choice_4": "Hosting",
+        "answer": 2
+      },
+      {
+        "question": "สำหรับการพัฒนาแอปเบื้องต้น ควรเลือก Security Rules ในโหมดใด?",
+        "choice_1": "Production mode",
+        "choice_2": "Test mode",
+        "choice_3": "Open mode",
+        "choice_4": "Restricted mode",
+        "answer": 2
+      },
+      {
+        "question": "คำสั่งใดใช้เพื่อเริ่มการทำงานของ Firebase ในฟังก์ชัน main()?",
+        "choice_1": "Firebase.start()",
+        "choice_2": "Firebase.initializeApp()",
+        "choice_3": "Firebase.connect()",
+        "choice_4": "Firebase.setup()",
+        "answer": 2
+      },
+      {
+        "question": "Widget ใดใช้สำหรับแสดงผลข้อมูลที่เปลี่ยนแปลงแบบ Realtime จาก Firestore?",
+        "choice_1": "FutureBuilder",
+        "choice_2": "StreamBuilder",
+        "choice_3": "FirebaseBuilder",
+        "choice_4": "SnapshotBuilder",
+        "answer": 2
+      },
+      {
+        "question": "หากแอปแสดง Error \"[core/not-initialized]\" สาเหตุส่วนใหญ่เกิดจากอะไร?",
+        "choice_1": "ลืมเปิดอินเทอร์เน็ต",
+        "choice_2": "ไม่ได้เรียกใช้ Firebase.initializeApp() ก่อนใช้งาน",
+        "choice_3": "ใส่ API Key ผิด",
+        "choice_4": "ไม่ได้สร้างฐานข้อมูล",
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "unit_number": 10,
+    "unit_name": "Register & Login with Firebase",
+    "questions": [
+      {
+        "question": "เมนูใดใน Firebase Console ที่ใช้จัดการระบบสมาชิก?",
+        "choice_1": "Firestore",
+        "choice_2": "Authentication",
+        "choice_3": "Analytics",
+        "choice_4": "Storage",
+        "answer": 2
+      },
+      {
+        "question": "Package ใดใช้สำหรับจัดการระบบล็อกอินของ Firebase?",
+        "choice_1": "firebase_login",
+        "choice_2": "firebase_auth",
+        "choice_3": "auth_core",
+        "choice_4": "user_manager",
+        "answer": 2
+      },
+      {
+        "question": "วิธีการลงทะเบียนที่ใช้กันเป็นพื้นฐานในแล็บคือข้อใด?",
+        "choice_1": "Google Login",
+        "choice_2": "Email/Password",
+        "choice_3": "Phone Number",
+        "choice_4": "Anonymous",
+        "answer": 2
+      },
+      {
+        "question": "คำสั่งใดใช้สร้าง \"บัญชีผู้ใช้ใหม่\" ด้วยอีเมลและรหัสผ่าน?",
+        "choice_1": "signInWithEmailAndPassword",
+        "choice_2": "createUserWithEmailAndPassword",
+        "choice_3": "registerWithEmail",
+        "choice_4": "addNewAccount",
+        "answer": 2
+      },
+      {
+        "question": "คำสั่งใดใช้สำหรับ \"เข้าสู่ระบบ\" ด้วยอีเมลและรหัสผ่าน?",
+        "choice_1": "signInWithEmailAndPassword",
+        "choice_2": "loginWithEmailAndPassword",
+        "choice_3": "authenticateUser",
+        "choice_4": "startSession",
+        "answer": 1
+      },
+      {
+        "question": "Error code email-already-in-use หมายถึงอะไร?",
+        "choice_1": "รหัสผ่านผิด",
+        "choice_2": "อีเมลซ้ำ มีผู้ใช้อื่นใช้งานแล้ว",
+        "choice_3": "รูปแบบอีเมลไม่ถูกต้อง",
+        "choice_4": "ไม่พบอีเมลนี้ในระบบ",
+        "answer": 2
+      },
+      {
+        "question": "Error code weak-password ใน Firebase กำหนดว่ารหัสผ่านต้องมีความยาวอย่างน้อยกี่ตัวอักษร?",
+        "choice_1": "4 ตัว",
+        "choice_2": "6 ตัว",
+        "choice_3": "8 ตัว",
+        "choice_4": "10 ตัว",
+        "answer": 2
+      },
+      {
+        "question": "คำสั่งใดใช้ดึงข้อมูล \"อีเมลของผู้ใช้ที่ล็อกอินอยู่\" มาแสดงผล?",
+        "choice_1": "auth.user.email",
+        "choice_2": "auth.currentUser!.email",
+        "choice_3": "auth.getEmail()",
+        "choice_4": "auth.profile.email",
+        "answer": 2
+      },
+      {
+        "question": "หากต้องการซ่อนตัวอักษรขณะพิมพ์รหัสผ่าน ต้องตั้งค่า Property ใดใน TextFormField?",
+        "choice_1": "hideText: true",
+        "choice_2": "obscureText: true",
+        "choice_3": "passwordMode: true",
+        "choice_4": "secretField: true",
+        "answer": 2
+      },
+      {
+        "question": "form_field_validator มีประโยชน์อย่างไร?",
+        "choice_1": "ช่วยเชื่อมต่อฐานข้อมูล",
+        "choice_2": "ช่วยตรวจสอบความถูกต้องของข้อมูลในฟอร์ม เช่น ห้ามเว้นว่าง",
+        "choice_3": "ช่วยจำกัดความเร็วเน็ต",
+        "choice_4": "ช่วยสร้างไอคอนหน้าแอป",
+        "answer": 2
+      },
+      {
+        "question": "คำสั่ง formKey.currentState!.validate() มีไว้เพื่ออะไร?",
+        "choice_1": "บันทึกข้อมูลลง Firebase",
+        "choice_2": "สั่งให้ตรวจสอบค่าในฟอร์มทั้งหมดตามเงื่อนไขที่ตั้งไว้",
+        "choice_3": "ล้างข้อมูลในฟอร์มทั้งหมด",
+        "choice_4": "รีเซ็ตหน้าจอ",
+        "answer": 2
+      },
+      {
+        "question": "คำสั่ง Navigator.pushReplacement ในระบบล็อกอินมีประโยชน์อย่างไร?",
+        "choice_1": "ทำให้ล็อกอินเร็วขึ้น",
+        "choice_2": "ป้องกันการกดย้อนกลับ (Back) มาที่หน้าล็อกอินอีกหลังจากเข้าสู่ระบบแล้ว",
+        "choice_3": "ใช้สำหรับดาวน์โหลดโปรไฟล์",
+        "choice_4": "ใช้เปลี่ยนสีธีมของแอป",
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "unit_number": 11,
+    "unit_name": "Barcode, QR Code & Google Map",
+    "questions": [
+      {
+        "question": "หากต้องการสร้าง (Generate) QR Code ในแอป Flutter ควรใช้ Package ใด?",
+        "choice_1": "barcode_widget",
+        "choice_2": "qr_scanner",
+        "choice_3": "code_creator",
+        "choice_4": "flutter_barcode",
+        "answer": 1
+      },
+      {
+        "question": "หากต้องการสแกน (Scan) Barcode/QR Code ผ่านกล้องมือถือ ควรใช้ Package ใด?",
+        "choice_1": "camera_plugin",
+        "choice_2": "mobile_scanner",
+        "choice_3": "barcode_reader",
+        "choice_4": "vision_kit",
+        "answer": 2
+      },
+      {
+        "question": "Package geolocator มีหน้าที่อะไร?",
+        "choice_1": "แสดงแผนที่",
+        "choice_2": "หาตำแหน่งพิกัดปัจจุบันบนแผนที่",
+        "choice_3": "สร้างบาร์โค้ด",
+        "choice_4": "คำนวณระยะทางจากรูปภาพ",
+        "answer": 2
+      },
+      {
+        "question": "ในการใช้งาน Google Map พิกัดละติจูดและลองจิจูดเขียนย่อว่าอย่างไร?",
+        "choice_1": "PosX / PosY",
+        "choice_2": "Lat / Lng",
+        "choice_3": "Alt / Long",
+        "choice_4": "MapX / MapY",
+        "answer": 2
+      },
+      {
+        "question": "ข้อควรระวังในการตั้งชื่อโปรเจกต์ใหม่ที่เกี่ยวข้องกับการใช้งาน Package คืออะไร?",
+        "choice_1": "ต้องตั้งเป็นภาษาไทย",
+        "choice_2": "ชื่อโปรเจกต์ต้องไม่ซ้ำกับชื่อ Package ที่จะติดตั้ง",
+        "choice_3": "ต้องมีตัวเลขประกอบเสมอ",
+        "choice_4": "ห้ามเกิน 5 ตัวอักษร",
+        "answer": 2
+      },
+      {
+        "question": "หากต้องการตรวจสอบว่ามือถือรองรับบริการตำแหน่งที่ตั้งหรือไม่ ต้องใช้คำสั่งใดจาก geolocator?",
+        "choice_1": "isLocationServiceEnabled()",
+        "choice_2": "checkPermission()",
+        "choice_3": "getCurrentPosition()",
+        "choice_4": "startMap()",
+        "answer": 1
+      },
+      {
+        "question": "\"DetectionSpeed.noDuplicates\" ในระบบสแกนมีไว้เพื่ออะไร?",
+        "choice_1": "เพื่อให้สแกนได้ช้าลง",
+        "choice_2": "เพื่อป้องกันการสแกนซ้ำในรหัสเดิมต่อเนื่องกัน",
+        "choice_3": "เพื่อสแกนเฉพาะรหัสสีดำ",
+        "choice_4": "เพื่อให้สแกนได้เฉพาะ QR Code เท่านั้น",
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "unit_number": 12,
+    "unit_name": "API & Asynchronous Programming",
+    "questions": [
+      {
+        "question": "ฟังก์ชัน initState() จะทำงานเมื่อใด?",
+        "choice_1": "เมื่อแอปถูกปิด",
+        "choice_2": "เมื่อเริ่มต้นสร้าง State ของ Widget ครั้งแรก (ก่อนการแสดงผล)",
+        "choice_3": "เมื่อมีการกดปุ่มในแอป",
+        "choice_4": "เมื่อข้อมูลในอินเทอร์เน็ตมีการเปลี่ยนแปลง",
+        "answer": 2
+      },
+      {
+        "question": "การทำงานแบบ Synchronous มีลักษณะอย่างไร?",
+        "choice_1": "ทำงานพร้อมกันหลายงานได้",
+        "choice_2": "ทำงานตามลำดับ ต้องรอให้งานแรกเสร็จก่อนถึงจะเริ่มงานถัดไป",
+        "choice_3": "ทำงานโดยไม่ต้องรอผลตอบกลับ",
+        "choice_4": "ทำงานเฉพาะในโหมดเครื่องบินเท่านั้น",
+        "answer": 2
+      },
+      {
+        "question": "การทำงานแบบ Asynchronous (Non-blocking) มีข้อดีอย่างไร?",
+        "choice_1": "เข้าถึงข้อมูลได้แม่นยำกว่า",
+        "choice_2": "สามารถสลับไปทำงานอื่นได้โดยไม่ต้องรอให้ฟังก์ชันก่อนหน้าทำงานเสร็จ",
+        "choice_3": "ใช้ทรัพยากรน้อยกว่า",
+        "choice_4": "ทำงานได้โดยไม่ต้องใช้อินเทอร์เน็ต",
+        "answer": 2
+      },
+      {
+        "question": "\"Future\" ในภาษา Dart หมายถึงอะไร?",
+        "choice_1": "ข้อมูลในอดีต",
+        "choice_2": "Object ที่จะได้รับข้อมูลกลับมาในอนาคต (รูปแบบ Asynchronous)",
+        "choice_3": "การทำงานที่ล้มเหลว",
+        "choice_4": "ชื่อแอปพลิเคชันรูปแบบใหม่",
+        "answer": 2
+      },
+      {
+        "question": "คำสั่งใดใช้คู่กับ async เพื่อสั่งให้รอจนกว่างานนั้นจะเสร็จสิ้น?",
+        "choice_1": "wait",
+        "choice_2": "stop",
+        "choice_3": "await",
+        "choice_4": "pause",
+        "answer": 3
+      },
+      {
+        "question": "API คืออะไร?",
+        "choice_1": "ชื่อย่อของแอปพลิเคชัน",
+        "choice_2": "วิธีการเรียกใช้งานโปรแกรมแบบโปรแกรมกับโปรแกรมเพื่อแลกเปลี่ยนข้อมูล",
+        "choice_3": "ภาษาคอมพิวเตอร์ที่ใช้สร้างเว็บ",
+        "choice_4": "อุปกรณ์สำหรับต่ออินเทอร์เน็ต",
+        "answer": 2
+      },
+      {
+        "question": "ในระบบ API \"Client\" หมายถึงอะไร?",
+        "choice_1": "ผู้ให้บริการข้อมูล",
+        "choice_2": "ผู้เรียกใช้บริการข้อมูล (เช่น แอปบนมือถือของเรา)",
+        "choice_3": "ฐานข้อมูลคลาวด์",
+        "choice_4": "สายเคเบิลใต้น้ำ",
+        "answer": 2
+      },
+      {
+        "question": "\"OpenAPI\" มีลักษณะเด่นอย่างไร?",
+        "choice_1": "ต้องจ่ายเงินใช้งานเท่านั้น",
+        "choice_2": "เปิดให้คนภายนอกสามารถเข้าถึงหรือเรียกใช้ข้อมูลได้",
+        "choice_3": "เป็นระบบปิดที่ใช้เฉพาะภายในกระทรวง",
+        "choice_4": "API ที่ไม่มีรหัสผ่านป้องกัน",
+        "answer": 2
+      },
+      {
+        "question": "\"Response\" ในการสื่อสารผ่าน API คืออะไร?",
+        "choice_1": "การส่งคำขอข้อมูล",
+        "choice_2": "การส่งข้อมูลตอบกลับมาตามคำขอที่ส่งไป",
+        "choice_3": "การเชื่อมต่อล้มเหลว",
+        "choice_4": "การลบข้อมูลทิ้ง",
+        "answer": 2
+      },
+      {
+        "question": "\"Web API\" ส่วนใหญ่มักรับส่งข้อมูลผ่านโปรโตคอลใด?",
+        "choice_1": "FTP",
+        "choice_2": "HTTP",
+        "choice_3": "SMTP",
+        "choice_4": "SSH",
+        "answer": 2
+      },
+      {
+        "question": "รูปแบบข้อมูลที่เป็นที่นิยมที่สุดในการรับส่งผ่าน Web API คืออะไร?",
+        "choice_1": "XML",
+        "choice_2": "JSON",
+        "choice_3": "CSV",
+        "choice_4": "Plain Text",
+        "answer": 2
+      },
+      {
+        "question": "HTTP Method ใดใช้สำหรับ \"ร้องขอข้อมูล\" จาก Server?",
+        "choice_1": "GET",
+        "choice_2": "POST",
+        "choice_3": "PUT",
+        "choice_4": "DELETE",
+        "answer": 1
+      },
+      {
+        "question": "HTTP Method ใดใช้สำหรับ \"สร้างข้อมูลใหม่\" บน Server?",
+        "choice_1": "GET",
+        "choice_2": "POST",
+        "choice_3": "PUT",
+        "choice_4": "DELETE",
+        "answer": 2
+      },
+      {
+        "question": "HTTP Method ใดใช้สำหรับ \"อัปเดตข้อมูล\" ที่มีอยู่แล้ว?",
+        "choice_1": "GET",
+        "choice_2": "POST",
+        "choice_3": "PUT",
+        "choice_4": "DELETE",
+        "answer": 3
+      },
+      {
+        "question": "การใช้งาน Web API จำเป็นต้องมีการเชื่อมต่อสิ่งใด?",
+        "choice_1": "บลูทูธ",
+        "choice_2": "อินเทอร์เน็ต",
+        "choice_3": "สายแลนเท่านั้น",
+        "choice_4": "ดาวเทียมโดยตรง",
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "unit_number": 13,
+    "unit_name": "Authentication - JWT",
+    "questions": [
+      {
+        "question": "JWT ย่อมาจากอะไร?",
+        "choice_1": "Java Web Tool",
+        "choice_2": "Json Web Token",
+        "choice_3": "Joint Web Technology",
+        "choice_4": "Just Web Travel",
+        "answer": 2
+      },
+      {
+        "question": "Token ถูกนำมาใช้งานเพื่อวัตถุประสงค์ใด?",
+        "choice_1": "เพื่อใช้แทนรหัสผ่านถาวร",
+        "choice_2": "เพื่อใช้ระบุตัวตนของ Client แทนการใช้ Session Id",
+        "choice_3": "เพื่อเพิ่มพื้นที่ในมือถือ",
+        "choice_4": "เพื่อใช้เร่งความเร็วดาวน์โหลด",
+        "answer": 2
+      },
+      {
+        "question": "โครงสร้างของ JWT แบ่งออกเป็นกี่ส่วนหลัก?",
+        "choice_1": "2 ส่วน",
+        "choice_2": "3 ส่วน",
+        "choice_3": "4 ส่วน",
+        "choice_4": "5 ส่วน",
+        "answer": 2
+      },
+      {
+        "question": "ส่วนแรกของ JWT (XXXX) คือส่วนใด?",
+        "choice_1": "Payload",
+        "choice_2": "Signature",
+        "choice_3": "Header",
+        "choice_4": "Data",
+        "answer": 3
+      },
+      {
+        "question": "ส่วนที่มีข้อมูลผู้ใช้จริง เช่น ชื่อ หรือ ID ใน JWT คือส่วนใด?",
+        "choice_1": "Header",
+        "choice_2": "Payload",
+        "choice_3": "Signature",
+        "choice_4": "Meta",
+        "answer": 2
+      },
+      {
+        "question": "ส่วนประกอบใดใน JWT ที่ทำหน้าที่ยืนยันความถูกต้องและป้องกันการปลอมแปลงข้อมูล?",
+        "choice_1": "Header",
+        "choice_2": "Payload",
+        "choice_3": "Signature",
+        "choice_4": "Base64",
+        "answer": 3
+      },
+      {
+        "question": "ข้อมูลใน JWT ถูกเข้ารหัสในรูปแบบใดเพื่อให้ส่งต่อผ่าน URL ได้ง่าย?",
+        "choice_1": "Hexadecimal",
+        "choice_2": "Base64",
+        "choice_3": "ASCII",
+        "choice_4": "Binary",
+        "answer": 2
+      },
+      {
+        "question": "JWT แต่ละส่วนจะถูกคั่นด้วยเครื่องหมายใด?",
+        "choice_1": "คอมม่า ( , )",
+        "choice_2": "จุด ( . )",
+        "choice_3": "ทับ ( / )",
+        "choice_4": "ขีดกลาง ( - )",
+        "answer": 2
+      },
+      {
+        "question": "\"CORS\" (Cross-Origin Resource Sharing) คืออะไร?",
+        "choice_1": "การแชร์รหัสผ่าน",
+        "choice_2": "กลไกที่อนุญาตให้ส่ง Request ข้ามโดเมนได้",
+        "choice_3": "ระบบจัดการฐานข้อมูล",
+        "choice_4": "การตั้งชื่อแอป",
+        "answer": 2
+      },
+      {
+        "question": "ในกระบวนการสร้าง Signature ต้องใช้สิ่งใดเพื่อให้ข้อมูลปลอดภัยสูงสุด?",
+        "choice_1": "Public Name",
+        "choice_2": "SECRET_KEY",
+        "choice_3": "Shared ID",
+        "choice_4": "Admin Password",
+        "answer": 2
+      },
+      {
+        "question": "อัลกอริทึมที่นิยมใช้ในส่วน Header ของ JWT คืออะไร?",
+        "choice_1": "MD5",
+        "choice_2": "HS256",
+        "choice_3": "SHA-1",
+        "choice_4": "Blowfish",
+        "answer": 2
+      },
+      {
+        "question": "หากต้องการส่ง Token ไปกับ HTTP Header เพื่อยืนยันตัวตน มักแนบไปในรูปแบบใด?",
+        "choice_1": "Content-Type: Token",
+        "choice_2": "Authorization: Bearer",
+        "choice_3": "Set-Cookie: JWT",
+        "choice_4": "User-Agent: Member",
+        "answer": 2
+      },
+      {
+        "question": "Node.js Package ใดที่ทำหน้าที่เป็น Web Framework ยอดนิยมในแล็บ?",
+        "choice_1": "jsonwebtoken",
+        "choice_2": "Express",
+        "choice_3": "passport",
+        "choice_4": "mongoose",
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "unit_number": 14,
+    "unit_name": "Connected to API & Post Data",
+    "questions": [
+      {
+        "question": "Package ใดใช้สำหรับการเรียกใช้งาน HTTP Request ใน Flutter?",
+        "choice_1": "api_caller",
+        "choice_2": "http",
+        "choice_3": "url_launcher",
+        "choice_4": "network_io",
+        "answer": 2
+      },
+      {
+        "question": "Widget ใดใช้ควบคุมการแสดงผลข้อมูลที่ได้มาจาก Future?",
+        "choice_1": "StreamBuilder",
+        "choice_2": "FutureBuilder",
+        "choice_3": "ListBuilder",
+        "choice_4": "APIBuilder",
+        "answer": 2
+      },
+      {
+        "question": "ใน Android Emulator หากต้องการเรียก Localhost (เครื่องตนเอง) ต้องระบุ IP ใด?",
+        "choice_1": "127.0.0.1",
+        "choice_2": "10.0.2.2",
+        "choice_3": "192.168.1.1",
+        "choice_4": "0.0.0.0",
+        "answer": 2
+      },
+      {
+        "question": "คำสั่ง jsonDecode(response.body) มีหน้าที่อะไร?",
+        "choice_1": "เข้ารหัสเป็น JSON",
+        "choice_2": "แปลงข้อความ JSON จาก API เป็นโครงสร้างข้อมูลที่โปรแกรมใช้งานได้",
+        "choice_3": "ลบข้อมูลทิ้ง",
+        "choice_4": "ส่งข้อมูลไปยัง Server",
+        "answer": 2
+      },
+      {
+        "question": "เครื่องหมาย ?? (Null Coalescing) ในภาษา Dart ใช้ทำอะไร?",
+        "choice_1": "เปรียบเทียบค่าสองค่า",
+        "choice_2": "ตรวจสอบค่าว่าง (Null) หากว่างให้ใช้ค่าเริ่มต้นที่กำหนดแทน",
+        "choice_3": "บวกตัวเลขสองจำนวน",
+        "choice_4": "ค้นหาคำใน String",
+        "answer": 2
+      },
+      {
+        "question": "เว็บไซต์ใดช่วยแปลง JSON เป็นคลาสในภาษา Dart ได้รวดเร็ว?",
+        "choice_1": "google.com",
+        "choice_2": "app.quicktype.io",
+        "choice_3": "stackoverflow.com",
+        "choice_4": "github.com",
+        "answer": 2
+      },
+      {
+        "question": "การตั้งค่า Header Content-Type: application/json มีไว้เพื่ออะไร?",
+        "choice_1": "เพื่อเพิ่มความเร็วในการส่ง",
+        "choice_2": "เพื่อบอก Server ว่าข้อมูลที่ส่งไปอยู่ในรูปแบบ JSON",
+        "choice_3": "เพื่อระบุพิกัด GPS",
+        "choice_4": "เพื่อตรวจสอบเวอร์ชันมือถือ",
+        "answer": 2
+      },
+      {
+        "question": "คำสั่ง db.close() ในระบบฐานข้อมูลมีไว้เพื่ออะไร?",
+        "choice_1": "เพื่อลบข้อมูลทิ้ง",
+        "choice_2": "เพื่อปิดการเชื่อมต่อฐานข้อมูลเมื่อเลิกใช้งาน",
+        "choice_3": "เพื่อล็อกเครื่องไม่ให้ใช้แอป",
+        "choice_4": "เพื่อเปลี่ยนรหัสผ่าน",
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "unit_number": 15,
+    "unit_name": "App Name & Icon",
+    "questions": [
+      {
+        "question": "หากต้องการเปลี่ยน \"ชื่อแอปพลิเคชัน\" (App Name) สำหรับ Android ต้องแก้ไขที่ไฟล์ใด?",
+        "choice_1": "main.dart",
+        "choice_2": "pubspec.yaml",
+        "choice_3": "android/app/src/main/AndroidManifest.xml (ที่ android:label)",
+        "choice_4": "build.gradle",
+        "answer": 3
+      },
+      {
+        "question": "คำสั่งใดใช้สำหรับตรวจสอบความพร้อมของ Flutter และเครื่องมือที่เกี่ยวข้อง?",
+        "choice_1": "flutter check",
+        "choice_2": "flutter doctor",
+        "choice_3": "flutter version",
+        "choice_4": "flutter health",
+        "answer": 2
+      }
+    ]
+  }
+]

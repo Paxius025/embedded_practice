@@ -44,8 +44,8 @@ function App() {
   ]
 
   const subjectOptions = [
-    { key: 'embedded', label: 'Embedded' },
-    { key: 'flutter', label: 'Flutter' },
+    { key: 'embedded', label: '01204322 Embedded System' },
+    { key: 'flutter', label: '01219344 Mobile Software Development (Flutter)' },
   ] as const
 
   const filteredUnits = useMemo(() => {
@@ -73,7 +73,7 @@ function App() {
         {questions.length === 0 && (
           <header className="sticky top-2 z-40 rounded-2xl border border-zinc-200/80 bg-white/90 p-4 shadow-lg backdrop-blur md:p-5">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500">
-              Practice Exam
+              Exam Simulator
             </p>
             <h1 className="mt-1.5 text-xl font-black text-zinc-900 md:text-3xl">
               ระบบฝึกทำข้อสอบ
