@@ -1,0 +1,126 @@
+{
+  "unit_number": 3,
+  "unit_name": "ระบบสัญญาณผสม ADC และ DAC",
+  "questions": [
+    {
+      "question": "กระบวนการรวมสัญญาณแอนะล็อกและดิจิทัลเข้าด้วยกันเรียกว่าอะไร?",
+      "choice_1": "Signal Filtering",
+      "choice_2": "Signal Mixing",
+      "choice_3": "Signal Modulation",
+      "choice_4": "Signal Amplification",
+      "answer": 2
+    },
+    {
+      "question": "สัญญาณที่มีลักษณะต่อเนื่อง (Continuous) เรียกว่าสัญญาณอะไร?",
+      "choice_1": "ดิจิทัล",
+      "choice_2": "แอนะล็อก",
+      "choice_3": "พัลส์",
+      "choice_4": "สเต็ป",
+      "answer": 2
+    },
+    {
+      "question": "อุปกรณ์ใดทำหน้าที่แปลงค่าแอนะล็อกเป็นดิจิทัล?",
+      "choice_1": "DAC",
+      "choice_2": "ADC",
+      "choice_3": "Op-Amp",
+      "choice_4": "PWM",
+      "answer": 2
+    },
+    {
+      "question": "DSP ย่อมาจากคำว่าอะไร?",
+      "choice_1": "Direct Signal Process",
+      "choice_2": "Digital Signal Processing",
+      "choice_3": "Digital System Power",
+      "choice_4": "Data Signal Program",
+      "answer": 2
+    },
+    {
+      "question": "หากต้องการให้ไมโครคอนโทรลเลอร์อ่านค่าจากเซ็นเซอร์อุณหภูมิ LM35 ต้องใช้ขาใด?",
+      "choice_1": "ขา ADC",
+      "choice_2": "ขา DAC",
+      "choice_3": "ขา TX",
+      "choice_4": "ขา SS",
+      "answer": 1
+    },
+    {
+      "question": "หาก Arduino มี ADC ขนาด 10 บิต ค่าที่อ่านได้จะมีช่วงเท่าใด?",
+      "choice_1": "0-255",
+      "choice_2": "0-1023",
+      "choice_3": "0-4095",
+      "choice_4": "0-65535",
+      "answer": 2
+    },
+    {
+      "question": "ESP32 มี ADC ความละเอียดกี่บิต?",
+      "choice_1": "8 บิต",
+      "choice_2": "10 บิต",
+      "choice_3": "12 บิต (0-4095)",
+      "choice_4": "16 บิต",
+      "answer": 3
+    },
+    {
+      "question": "DAC มีหน้าที่หลักอย่างไร?",
+      "choice_1": "อ่านค่าแสง",
+      "choice_2": "แปลงค่าดิจิทัลเป็นแรงดันแอนะล็อก",
+      "choice_3": "ขยายสัญญาณเสียง",
+      "choice_4": "รับข้อมูลจาก Wi-Fi",
+      "answer": 2
+    },
+    {
+      "question": "ตัวอย่างการใช้งาน DAC คือข้อใด?",
+      "choice_1": "อ่านค่าจาก LDR",
+      "choice_2": "สร้างสัญญาณเสียงสำหรับลำโพง",
+      "choice_3": "วัดความชื้นในดิน",
+      "choice_4": "ตรวจจับการเคลื่อนไหว",
+      "answer": 2
+    },
+    {
+      "question": "ฟังก์ชัน dacWrite(dacPin, value) ใน ESP32 รองรับค่า value ในช่วงใด?",
+      "choice_1": "0-1023",
+      "choice_2": "0-255 (8 บิต)",
+      "choice_3": "0-4095",
+      "choice_4": "0-1",
+      "answer": 2
+    },
+    {
+      "question": "ข้อดีของการประมวลผลแบบแอนะล็อกคืออะไร?",
+      "choice_1": "ประมวลผลได้แบบเรียลไทม์และวงจรไม่ซับซ้อนในงานพื้นฐาน",
+      "choice_2": "ปรับแต่งง่ายผ่านซอฟต์แวร์",
+      "choice_3": "มีความแม่นยำสูงมาก",
+      "choice_4": "เก็บข้อมูลได้นาน",
+      "answer": 1
+    },
+    {
+      "question": "ข้อเสียของการประมวลผลแบบดิจิทัล (DSP) คืออะไร?",
+      "choice_1": "ความแม่นยำต่ำ",
+      "choice_2": "ต้องการทรัพยากรการประมวลผลมาก",
+      "choice_3": "ปรับแต่งยาก",
+      "choice_4": "ไม่รองรับ IoT",
+      "answer": 2
+    },
+    {
+      "question": "วงจรพื้นฐานที่ใช้ผสมสัญญาณแอนะล็อกคืออะไร?",
+      "choice_1": "Summing Amplifier (ใช้ Op-Amp)",
+      "choice_2": "Voltage Divider",
+      "choice_3": "Logic Gate",
+      "choice_4": "Flip-Flop",
+      "answer": 1
+    },
+    {
+      "question": "สัญญาณดิจิทัลมีลักษณะอย่างไร?",
+      "choice_1": "ต่อเนื่อง",
+      "choice_2": "ไม่ต่อเนื่อง (Discrete)",
+      "choice_3": "เป็นรูปไซน์เสมอ",
+      "choice_4": "มีความถี่คงที่เท่านั้น",
+      "answer": 2
+    },
+    {
+      "question": "การใช้ ADC และ DAC ร่วมกันใน ESP32 สามารถทำสิ่งใดได้?",
+      "choice_1": "อ่านค่าเซ็นเซอร์แล้วส่งสัญญาณควบคุมแอนะล็อกออกไป",
+      "choice_2": "เพิ่มความเร็ว CPU",
+      "choice_3": "ทำให้ไม่ต้องต่อไฟเลี้ยง",
+      "choice_4": "เชื่อมต่อดาวเทียม",
+      "answer": 1
+    }
+  ]
+}

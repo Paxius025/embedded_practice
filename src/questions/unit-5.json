@@ -1,0 +1,126 @@
+{
+  "unit_number": 5,
+  "unit_name": "เครื่องมือเสริม ซอฟต์แวร์ และการดีบัก",
+  "questions": [
+    {
+      "question": "เครื่องมือใดที่ใช้จำลองการทำงานของบอร์ด ESP32 บนเว็บเบราว์เซอร์ได้ฟรี?",
+      "choice_1": "Proteus",
+      "choice_2": "Wokwi",
+      "choice_3": "MATLAB",
+      "choice_4": "Keil",
+      "answer": 2
+    },
+    {
+      "question": "TinkerCad เหมาะสำหรับผู้ใช้งานกลุ่มใด?",
+      "choice_1": "วิศวกรระดับสูง",
+      "choice_2": "ผู้เริ่มต้น (Beginners)",
+      "choice_3": "นักวิจัยพลังงาน",
+      "choice_4": "ผู้เชี่ยวชาญด้านรถยนต์",
+      "answer": 2
+    },
+    {
+      "question": "ซอฟต์แวร์ใดที่เน้นการจำลองระบบด้วยโมเดลคณิตศาสตร์ที่ซับซ้อน?",
+      "choice_1": "TinkerCad",
+      "choice_2": "MATLAB/Simulink",
+      "choice_3": "Wokwi",
+      "choice_4": "Arduino IDE",
+      "answer": 2
+    },
+    {
+      "question": "ข้อเสียของซอฟต์แวร์ Proteus คืออะไร?",
+      "choice_1": "ใช้งานยากมาก",
+      "choice_2": "มีค่าใช้จ่ายสำหรับเวอร์ชันเต็ม",
+      "choice_3": "ไม่รองรับ Arduino",
+      "choice_4": "ไม่มีอุปกรณ์จำลอง",
+      "answer": 2
+    },
+    {
+      "question": "JTAG คือเครื่องมือประเภทใด?",
+      "choice_1": "จอแสดงผล",
+      "choice_2": "มาตรฐานการตรวจสอบและดีบักฮาร์ดแวร์",
+      "choice_3": "โปรโตคอลไร้สาย",
+      "choice_4": "ตัวแปลงสัญญาณเสียง",
+      "answer": 2
+    },
+    {
+      "question": "JTAG ใช้โปรโตคอลมาตรฐานใด?",
+      "choice_1": "IEEE 802.3",
+      "choice_2": "IEEE 1149.1",
+      "choice_3": "MQTT",
+      "choice_4": "UART",
+      "answer": 2
+    },
+    {
+      "question": "Logic Analyzer มีความสามารถหลักอย่างไร?",
+      "choice_1": "วัดแรงดันแอนะล็อก",
+      "choice_2": "วิเคราะห์สัญญาณและโปรโตคอลดิจิทัล",
+      "choice_3": "จ่ายพลังงานไฟฟ้า",
+      "choice_4": "เขียนโค้ดภาษา C",
+      "answer": 2
+    },
+    {
+      "question": "ข้อเสียเปรียบของ Logic Analyzer เมื่อเทียบกับ Oscilloscope คืออะไร?",
+      "choice_1": "วิเคราะห์สัญญาณแอนะล็อกไม่ได้",
+      "choice_2": "ราคาสูงกว่า",
+      "choice_3": "ใช้งานยากกว่า",
+      "choice_4": "ไม่มีซอฟต์แวร์รองรับ",
+      "answer": 1
+    },
+    {
+      "question": "เครื่องมือใดที่แสดงกราฟ \"แรงดันไฟฟ้าตามเวลา\"?",
+      "choice_1": "Power Analyzer",
+      "choice_2": "Oscilloscope",
+      "choice_3": "Multimeter",
+      "choice_4": "Logic Analyzer",
+      "answer": 2
+    },
+    {
+      "question": "Mixed Signal Oscilloscope (MSO) มีความโดดเด่นอย่างไร?",
+      "choice_1": "ราคาถูกที่สุด",
+      "choice_2": "รองรับทั้งสัญญาณแอนะล็อกและดิจิทัล",
+      "choice_3": "ใช้ในที่มืดได้",
+      "choice_4": "ไม่ต้องใช้หัววัด (Probe)",
+      "answer": 2
+    },
+    {
+      "question": "การตั้งค่า Trigger ใน Oscilloscope มีไว้เพื่ออะไร?",
+      "choice_1": "เพื่อขยายสัญญาณ",
+      "choice_2": "เพื่อให้รูปคลื่นบนหน้าจอหยุดนิ่งเพื่อการวิเคราะห์",
+      "choice_3": "เพื่อเปลี่ยนสีหน้าจอ",
+      "choice_4": "เพื่อล้างข้อมูล",
+      "answer": 2
+    },
+    {
+      "question": "เครื่องมือใดใช้สำหรับวัดประสิทธิภาพของแหล่งจ่ายไฟ (Efficiency)?",
+      "choice_1": "JTAG",
+      "choice_2": "Power Analyzer",
+      "choice_3": "Multimeter",
+      "choice_4": "Logic Analyzer",
+      "answer": 2
+    },
+    {
+      "question": "สูตรการคำนวณ Efficiency คือข้อใด?",
+      "choice_1": "(Power Output / Power Input) x 100",
+      "choice_2": "(Power Input / Power Output) x 100",
+      "choice_3": "Power Input + Power Output",
+      "choice_4": "Power Input - Power Output",
+      "answer": 1
+    },
+    {
+      "question": "\"Glitch\" ในสัญญาณไฟฟ้าหมายถึงอะไร?",
+      "choice_1": "สัญญาณที่สมบูรณ์",
+      "choice_2": "ความผิดพลาดหรือสัญญาณรบกวนในช่วงเวลาสั้นๆ",
+      "choice_3": "การประหยัดพลังงาน",
+      "choice_4": "รูปแบบสัญญาณไซน์",
+      "answer": 2
+    },
+    {
+      "question": "โหมดใดของ MCU ที่ใช้พลังงานต่ำที่สุดที่ตรวจวัดได้ด้วย Power Analyzer?",
+      "choice_1": "Active Mode",
+      "choice_2": "Sleep Mode",
+      "choice_3": "Deep Sleep Mode",
+      "choice_4": "Normal Mode",
+      "answer": 3
+    }
+  ]
+}
