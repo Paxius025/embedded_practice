@@ -3,6 +3,7 @@ import { QuizCard } from './components/QuizCard'
 import { ResultScreen } from './components/ResultScreen'
 import { StartModal } from './components/StartModal'
 import { useQuiz } from './hooks/useQuiz'
+import type { SubjectKey } from './hooks/useQuiz'
 import { Analytics } from '@vercel/analytics/react'
 function App() {
   const {
@@ -30,7 +31,7 @@ function App() {
     restart,
   } = useQuiz()
 
-  const [selectedSubject, setSelectedSubject] = useState<'embedded' | 'flutter'>('embedded')
+  const [selectedSubject, setSelectedSubject] = useState<SubjectKey>('embedded')
 
   useEffect(() => {
     void initialize()
@@ -46,14 +47,11 @@ function App() {
   const subjectOptions = [
     { key: 'embedded', label: '01204322 Embedded System' },
     { key: 'flutter', label: '01219344 Mobile Software Development (Flutter)' },
+    { key: 'economic', label: '01999041 Economics for Better Living' },
   ] as const
 
   const filteredUnits = useMemo(() => {
-    if (selectedSubject === 'flutter') {
-      return units.filter((unit) => unit.unit_number >= 7)
-    }
-
-    return units.filter((unit) => unit.unit_number <= 6)
+    return units.filter((unit) => unit.subject === selectedSubject)
   }, [selectedSubject, units])
 
   const selectedBankQuestions = useMemo(

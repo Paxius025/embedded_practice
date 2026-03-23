@@ -3,42 +3,59 @@ import { calculateScore } from '../utils/calculateScore'
 import { buildExamQuestions } from '../utils/shuffle'
 import type { PreparedQuestion, ScoreSummary, UnitQuizData } from '../types/quiz'
 
-const UNIT_PATHS = [
-  '/data/embedded/final/unit-1.json',
-  '/data/embedded/final/unit-2.json',
-  '/data/embedded/final/unit-3.json',
-  '/data/embedded/final/unit-4.json',
-  '/data/embedded/final/unit-5.json',
-  '/data/embedded/final/unit-6.json',
-  '/data/flutter_qestion/final/flutter_unit_7.json',
-  '/data/flutter_qestion/final/flutter_unit_8.json',
-  '/data/flutter_qestion/final/flutter_unit_9.json',
-  '/data/flutter_qestion/final/flutter_unit_10.json',
-  '/data/flutter_qestion/final/flutter_unit_11.json',
-  '/data/flutter_qestion/final/flutter_unit_12.json',
-  '/data/flutter_qestion/final/flutter_unit_13.json',
-  '/data/flutter_qestion/final/flutter_unit_14.json',
-  '/data/flutter_qestion/final/flutter_unit_15.json',
+export type SubjectKey = 'embedded' | 'flutter' | 'economic'
+
+export type SubjectUnitQuizData = UnitQuizData & {
+  subject: SubjectKey
+}
+
+const UNIT_SOURCES: { path: string; subject: SubjectKey }[] = [
+  { path: '/data/embedded/final/unit-1.json', subject: 'embedded' },
+  { path: '/data/embedded/final/unit-2.json', subject: 'embedded' },
+  { path: '/data/embedded/final/unit-3.json', subject: 'embedded' },
+  { path: '/data/embedded/final/unit-4.json', subject: 'embedded' },
+  { path: '/data/embedded/final/unit-5.json', subject: 'embedded' },
+  { path: '/data/embedded/final/unit-6.json', subject: 'embedded' },
+  { path: '/data/flutter_qestion/final/flutter_unit_7.json', subject: 'flutter' },
+  { path: '/data/flutter_qestion/final/flutter_unit_8.json', subject: 'flutter' },
+  { path: '/data/flutter_qestion/final/flutter_unit_9.json', subject: 'flutter' },
+  { path: '/data/flutter_qestion/final/flutter_unit_10.json', subject: 'flutter' },
+  { path: '/data/flutter_qestion/final/flutter_unit_11.json', subject: 'flutter' },
+  { path: '/data/flutter_qestion/final/flutter_unit_12.json', subject: 'flutter' },
+  { path: '/data/flutter_qestion/final/flutter_unit_13.json', subject: 'flutter' },
+  { path: '/data/flutter_qestion/final/flutter_unit_14.json', subject: 'flutter' },
+  { path: '/data/flutter_qestion/final/flutter_unit_15.json', subject: 'flutter' },
+  { path: '/data/economics/final/unit-8.json', subject: 'economic' },
+  { path: '/data/economics/final/unit-9.json', subject: 'economic' },
+  { path: '/data/economics/final/unit-10.json', subject: 'economic' },
+  { path: '/data/economics/final/unit-11.json', subject: 'economic' },
+  { path: '/data/economics/final/unit-12.json', subject: 'economic' },
 ]
 
-async function loadUnits(): Promise<UnitQuizData[]> {
-  const responses = await Promise.all(UNIT_PATHS.map((path) => fetch(path)))
+async function loadUnits(): Promise<SubjectUnitQuizData[]> {
+  const responses = await Promise.all(UNIT_SOURCES.map((source) => fetch(source.path)))
 
   responses.forEach((response, index) => {
     if (!response.ok) {
-      throw new Error(`Failed to load ${UNIT_PATHS[index]}`)
+      throw new Error(`Failed to load ${UNIT_SOURCES[index].path}`)
     }
   })
 
-  const data = (await Promise.all(
-    responses.map((response) => response.json()),
-  )) as UnitQuizData[]
+  const data = await Promise.all(
+    responses.map(async (response, index) => {
+      const payload = (await response.json()) as UnitQuizData
+      return {
+        ...payload,
+        subject: UNIT_SOURCES[index].subject,
+      }
+    }),
+  )
 
   return data.sort((a, b) => a.unit_number - b.unit_number)
 }
 
 export function useQuiz() {
-  const [units, setUnits] = useState<UnitQuizData[]>([])
+  const [units, setUnits] = useState<SubjectUnitQuizData[]>([])
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
@@ -94,7 +111,7 @@ export function useQuiz() {
     setShowStartModal(false)
   }
 
-  const startExam = (selectedUnits?: UnitQuizData[]) => {
+  const startExam = (selectedUnits?: SubjectUnitQuizData[]) => {
     const activeUnits = selectedUnits ?? units
     const preparedQuestions = buildExamQuestions(activeUnits, selectedPercentage)
 
