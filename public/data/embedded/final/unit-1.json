@@ -119,7 +119,7 @@
       "choice_1": "WiFi.h",
       "choice_2": "PubSubClient.h",
       "choice_3": "DHT.h",
-      "choice_4": "ถูกทั้ง ก และ ข",
+      "choice_4": "WiFi.h และ PubSubClient.h",
       "answer": 4
     }
   ]
