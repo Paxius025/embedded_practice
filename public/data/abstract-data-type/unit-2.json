@@ -1,0 +1,206 @@
+{
+  "unit_number": 2,
+  "unit_name": "โครงสร้างข้อมูลแบบลิงก์ลิสต์ (Linked List)",
+  "questions": [
+    {
+      "question": "ข้อใดคือลักษณะสำคัญของโครงสร้างข้อมูลแบบ Linked List?",
+      "choice_1": "เก็บข้อมูลในพื้นที่หน่วยความจำที่ต่อเนื่องกันเสมอ",
+      "choice_2": "แต่ละโหนด (Node) จะเก็บข้อมูลและตำแหน่งอ้างอิง (Pointer) ไปยังโหนดถัดไป",
+      "choice_3": "สามารถเข้าถึงข้อมูลแบบสุ่ม (Random Access) ได้เร็วมาก",
+      "choice_4": "ไม่สามารถเปลี่ยนขนาดของโครงสร้างได้หลังจากสร้างแล้ว",
+      "answer": 2
+    },
+    {
+      "question": "ส่วนประกอบหลักของโหนด (Node) ใน Singly Linked List คืออะไร?",
+      "choice_1": "Data และ Header",
+      "choice_2": "Pointer และ Index",
+      "choice_3": "Data และ Next Pointer",
+      "choice_4": "Prev Pointer และ Next Pointer",
+      "answer": 3
+    },
+    {
+      "question": "โหนดแรกสุดของ Linked List มักถูกเรียกว่าอะไร?",
+      "choice_1": "Top",
+      "choice_2": "Front",
+      "choice_3": "Head",
+      "choice_4": "Base",
+      "answer": 3
+    },
+    {
+      "question": "โหนดสุดท้ายของ Singly Linked List จะมี Next Pointer ชี้ไปที่ค่าใด?",
+      "choice_1": "Head",
+      "choice_2": "Null หรือ None",
+      "choice_3": "0",
+      "choice_4": "-1",
+      "answer": 2
+    },
+    {
+      "question": "ข้อดีของการใช้ Linked List เมื่อเทียบกับ Array คืออะไร?",
+      "choice_1": "เข้าถึงข้อมูลตรงกลางได้รวดเร็วกว่า",
+      "choice_2": "ประหยัดหน่วยความจำมากกว่าเสมอ",
+      "choice_3": "การเพิ่มและลดขนาด (Dynamic size) ทำได้ง่ายและรวดเร็ว",
+      "choice_4": "รองรับการทำงานร่วมกับ CPU Cache ได้ดีกว่า",
+      "answer": 3
+    },
+    {
+      "question": "ข้อเสียของ Linked List คืออะไร?",
+      "choice_1": "เพิ่มข้อมูลใหม่ได้ยาก",
+      "choice_2": "เปลืองพื้นที่หน่วยความจำในการเก็บ Pointer",
+      "choice_3": "มีขนาดจำกัด (Fixed-size)",
+      "choice_4": "ไม่สามารถเก็บข้อมูลประเภท Object ได้",
+      "answer": 2
+    },
+    {
+      "question": "หากต้องการค้นหาข้อมูลตำแหน่งที่ n ใน Singly Linked List จะต้องใช้ Time Complexity เท่าใด?",
+      "choice_1": "O(1)",
+      "choice_2": "O(log n)",
+      "choice_3": "O(n)",
+      "choice_4": "O(n^2)",
+      "answer": 3
+    },
+    {
+      "question": "การแทรกข้อมูล (Insertion) ที่ตำแหน่งแรก (Head) ของ Linked List ใช้เวลา (Time Complexity) เท่าใด?",
+      "choice_1": "O(1)",
+      "choice_2": "O(log n)",
+      "choice_3": "O(n)",
+      "choice_4": "O(n^2)",
+      "answer": 1
+    },
+    {
+      "question": "โครงสร้างของ Doubly Linked List แตกต่างจาก Singly Linked List อย่างไร?",
+      "choice_1": "ไม่มี Head node",
+      "choice_2": "มี Pointer ชี้ไปที่โหนดก่อนหน้า (Prev) และโหนดถัดไป (Next)",
+      "choice_3": "ชี้วนกลับมาที่โหนดแรกเสมอ",
+      "choice_4": "เก็บข้อมูลได้ 2 ชนิดในโหนดเดียว",
+      "answer": 2
+    },
+    {
+      "question": "ข้อใดคือลักษณะของ Circular Linked List?",
+      "choice_1": "โหนดสุดท้ายชี้กลับมาที่โหนดแรก (Head)",
+      "choice_2": "มีเพียงโหนดเดียวเชื่อมต่อเข้าหากัน",
+      "choice_3": "ไม่สามารถแทรกข้อมูลระหว่างกลางได้",
+      "choice_4": "Pointer ชี้ไปที่โหนดสุ่ม",
+      "answer": 1
+    },
+    {
+      "question": "ในภาษา C/C++ การสร้างโหนดของ Linked List นิยมใช้คำสั่งใด?",
+      "choice_1": "create()",
+      "choice_2": "new หรือ malloc()",
+      "choice_3": "alloc()",
+      "choice_4": "node()",
+      "answer": 2
+    },
+    {
+      "question": "หากต้องการลบโหนดที่ตำแหน่งแรก (Head) ของ Linked List ขั้นตอนที่ถูกต้องคืออะไร?",
+      "choice_1": "ลบ Head ทิ้งเลย",
+      "choice_2": "เปลี่ยน Head ไปชี้ที่ Null",
+      "choice_3": "กำหนดให้ Head = Head->next แล้วลบโหนดเดิมทิ้ง",
+      "choice_4": "สลับตำแหน่ง Head กับ Tail",
+      "answer": 3
+    },
+    {
+      "question": "การเพิ่มโหนดใหม่ที่ท้าย Linked List (เมื่อไม่มี Tail pointer) ต้องใช้ Time Complexity เท่าใด?",
+      "choice_1": "O(1)",
+      "choice_2": "O(log n)",
+      "choice_3": "O(n)",
+      "choice_4": "O(n log n)",
+      "answer": 3
+    },
+    {
+      "question": "หาก Linked List มีการเก็บ Pointer ตัวสุดท้าย (Tail) เพิ่มเติม การเพิ่มโหนดที่ท้ายแถวจะใช้เวลาเท่าใด?",
+      "choice_1": "O(1)",
+      "choice_2": "O(log n)",
+      "choice_3": "O(n)",
+      "choice_4": "O(n^2)",
+      "answer": 1
+    },
+    {
+      "question": "การแทรกโหนดระหว่างโหนด A และโหนด B ใน Singly Linked List ต้องอัปเดต Pointer ใดบ้าง?",
+      "choice_1": "Pointer ของโหนด B ชี้ไปที่โหนดใหม่",
+      "choice_2": "Pointer ของโหนด A ชี้ไปที่โหนดใหม่ และโหนดใหม่ชี้ไปที่โหนด B",
+      "choice_3": "Pointer ของโหนดใหม่ชี้ไปที่โหนด A",
+      "choice_4": "ไม่ต้องอัปเดต Pointer",
+      "answer": 2
+    },
+    {
+      "question": "Doubly Linked List มีข้อดีกว่า Singly Linked List อย่างไร?",
+      "choice_1": "ประหยัดหน่วยความจำมากกว่า",
+      "choice_2": "สามารถท่องไปในทิศทางย้อนกลับ (Backward Traversal) ได้อย่างรวดเร็ว",
+      "choice_3": "สามารถใช้ Binary Search ได้",
+      "choice_4": "การสร้างโหนดใช้เวลาน้อยกว่า",
+      "answer": 2
+    },
+    {
+      "question": "ในการลบโหนดตัวสุดท้ายของ Singly Linked List (โดยที่ไม่มี Tail pointer) มีความจำเป็นต้องทำสิ่งใด?",
+      "choice_1": "เดิน (Traverse) ไปจนถึงโหนดรองสุดท้าย (Second to last)",
+      "choice_2": "เดินไปจนถึงโหนดสุดท้ายเท่านั้น",
+      "choice_3": "ไม่ต้องเดิน สามารถลบได้ทันที",
+      "choice_4": "ลบโหนดแรกก่อน",
+      "answer": 1
+    },
+    {
+      "question": "หากต้องการตรวจสอบว่า Linked List ว่างหรือไม่ (Empty List) วิธีใดถูกต้องที่สุด?",
+      "choice_1": "ตรวจสอบว่า Head == Null หรือไม่",
+      "choice_2": "นับจำนวนโหนดว่าเท่ากับ 0 หรือไม่",
+      "choice_3": "ตรวจสอบโหนดที่ 2 ว่าเป็น Null หรือไม่",
+      "choice_4": "ตรวจสอบ Data ของโหนดแรกว่ามีค่าหรือไม่",
+      "answer": 1
+    },
+    {
+      "question": "หากโหนด p ชี้ไปยังโหนดที่ต้องการลบใน Singly Linked List เราสามารถลบโหนด p ได้ทันทีหรือไม่ (โดยไม่ทราบโหนดก่อนหน้า)?",
+      "choice_1": "ได้ โดยใช้คำสั่ง delete p ทันที",
+      "choice_2": "ได้ โดยคัดลอกข้อมูลจากโหนดถัดไปมาใส่ p แล้วลบโหนดถัดไปทิ้ง (ยกเว้น p เป็นโหนดสุดท้าย)",
+      "choice_3": "ไม่ได้ ต้องเริ่มจาก Head เสมอ",
+      "choice_4": "ไม่ได้ เพราะ Pointer จะสูญหายทั้งหมด",
+      "answer": 2
+    },
+    {
+      "question": "ข้อใดไม่สามารถทำได้โดยตรงกับ Singly Linked List มาตรฐาน?",
+      "choice_1": "การค้นหาข้อมูลจากต้นไปจบ",
+      "choice_2": "การเพิ่มโหนดที่ตำแหน่งแรกสุด",
+      "choice_3": "การค้นหาโหนดก่อนหน้า (Previous Node) ในเวลา O(1)",
+      "choice_4": "การลบโหนดถัดไป (Next Node) ในเวลา O(1)",
+      "answer": 3
+    },
+    {
+      "question": "ในแง่ของ Cache Locality (การทำงานร่วมกับหน่วยความจำแคชของ CPU) Array หรือ Linked List มีประสิทธิภาพดีกว่ากัน?",
+      "choice_1": "Linked List ดีกว่า เพราะข้อมูลแยกกันอิสระ",
+      "choice_2": "Array ดีกว่า เพราะข้อมูลอยู่ติดกันในหน่วยความจำ",
+      "choice_3": "เท่ากัน เพราะเก็บข้อมูลใน RAM เหมือนกัน",
+      "choice_4": "ขึ้นอยู่กับความเร็วของ CPU",
+      "answer": 2
+    },
+    {
+      "question": "โครงสร้างข้อมูลใดเหมาะสมที่สุดในการนำมาประยุกต์สร้างอัลกอริทึม LRU Cache?",
+      "choice_1": "Singly Linked List คู่กับ Array",
+      "choice_2": "Doubly Linked List คู่กับ Hash Map",
+      "choice_3": "Stack คู่กับ Queue",
+      "choice_4": "Binary Tree คู่กับ Graph",
+      "answer": 2
+    },
+    {
+      "question": "การหาความยาว (จำนวนโหนด) ของ Linked List ปกติใช้เวลา (Time Complexity) เท่าใด?",
+      "choice_1": "O(1)",
+      "choice_2": "O(n)",
+      "choice_3": "O(log n)",
+      "choice_4": "O(n^2)",
+      "answer": 2
+    },
+    {
+      "question": "หากต้องการสลับทิศทางของ Singly Linked List (Reverse Linked List) ต้องใช้ Pointer ช่วยอย่างน้อยกี่ตัวในลูป?",
+      "choice_1": "1 ตัว (current)",
+      "choice_2": "2 ตัว (current, next)",
+      "choice_3": "3 ตัว (prev, current, next)",
+      "choice_4": "4 ตัว (head, tail, prev, next)",
+      "answer": 3
+    },
+    {
+      "question": "เทคนิค \"Floyd's Cycle-Finding Algorithm\" (หรือ Tortoise and Hare) มักใช้เพื่อแก้ปัญหาใดใน Linked List?",
+      "choice_1": "การกลับทิศทางของลิสต์",
+      "choice_2": "การหาค่าที่มากที่สุดในลิสต์",
+      "choice_3": "การตรวจหาการวนลูป (Cycle) ในลิสต์",
+      "choice_4": "การหาโหนดตัวแรกของลิสต์",
+      "answer": 3
+    }
+  ]
+}

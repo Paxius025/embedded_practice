@@ -1,0 +1,206 @@
+{
+  "unit_number": 3,
+  "unit_name": "โครงสร้างข้อมูลแบบสแต็ก (Stack)",
+  "questions": [
+    {
+      "question": "ข้อใดคือนิยามที่ถูกต้องที่สุดของโครงสร้างข้อมูลแบบสแต็ก (Stack)?",
+      "choice_1": "ข้อมูลที่เข้าก่อนจะออกก่อน (First In First Out)",
+      "choice_2": "ข้อมูลที่เข้าหลังสุดจะออกก่อน (Last In First Out)",
+      "choice_3": "ข้อมูลจะถูกจัดเรียงตามลำดับตัวอักษรเสมอ",
+      "choice_4": "ข้อมูลสามารถถูกดึงออกจากตำแหน่งใดก็ได้",
+      "answer": 2
+    },
+    {
+      "question": "ตัวย่อ LIFO หมายถึงอะไร?",
+      "choice_1": "Last In First Out",
+      "choice_2": "Last Index First Option",
+      "choice_3": "Low In First Out",
+      "choice_4": "Last Input Forward Output",
+      "answer": 1
+    },
+    {
+      "question": "การนำข้อมูลใส่ลงไปใน Stack เรียกว่าอะไร?",
+      "choice_1": "Pop",
+      "choice_2": "Push",
+      "choice_3": "Enqueue",
+      "choice_4": "Insert",
+      "answer": 2
+    },
+    {
+      "question": "การนำข้อมูลออกจาก Stack เรียกว่าอะไร?",
+      "choice_1": "Pop",
+      "choice_2": "Push",
+      "choice_3": "Dequeue",
+      "choice_4": "Delete",
+      "answer": 1
+    },
+    {
+      "question": "หากมีการ Push ข้อมูล A, B, C ลงใน Stack ตามลำดับ ข้อมูลใดจะถูก Pop ออกมาเป็นตัวแรก?",
+      "choice_1": "A",
+      "choice_2": "B",
+      "choice_3": "C",
+      "choice_4": "ไม่สามารถระบุได้",
+      "answer": 3
+    },
+    {
+      "question": "คำศัพท์ที่ใช้เรียกตำแหน่งข้อมูลที่อยู่บนสุดของ Stack คืออะไร?",
+      "choice_1": "Head",
+      "choice_2": "Tail",
+      "choice_3": "Top",
+      "choice_4": "Front",
+      "answer": 3
+    },
+    {
+      "question": "ฟังก์ชัน Top() หรือ Peek() ของ Stack ทำหน้าที่อะไร?",
+      "choice_1": "ดึงข้อมูลบนสุดออกมาและลบออกจาก Stack",
+      "choice_2": "ดูค่าข้อมูลบนสุดของ Stack โดยไม่ลบออก",
+      "choice_3": "ลบข้อมูลทั้งหมดใน Stack",
+      "choice_4": "คืนค่าความจุทั้งหมดของ Stack",
+      "answer": 2
+    },
+    {
+      "question": "อาการ Stack Overflow เกิดจากสาเหตุใด?",
+      "choice_1": "การพยายาม Pop ข้อมูลจาก Stack ที่ว่างเปล่า",
+      "choice_2": "การพยายาม Push ข้อมูลลงใน Stack ที่เต็มแล้ว",
+      "choice_3": "การจองหน่วยความจำผิดพลาด",
+      "choice_4": "การเข้าถึงตำแหน่ง Index ที่ติดลบ",
+      "answer": 2
+    },
+    {
+      "question": "อาการ Stack Underflow เกิดจากสาเหตุใด?",
+      "choice_1": "การพยายาม Pop ข้อมูลจาก Stack ที่ว่างเปล่า",
+      "choice_2": "การพยายาม Push ข้อมูลลงใน Stack ที่เต็มแล้ว",
+      "choice_3": "Stack มีข้อมูลน้อยเกินไป",
+      "choice_4": "ข้อมูลใน Stack มีชนิดไม่ตรงกัน",
+      "answer": 1
+    },
+    {
+      "question": "ตัวอย่างการใช้งานจริงของ Stack ในชีวิตประจำวันคือข้อใด?",
+      "choice_1": "การต่อแถวซื้อของที่ร้านสะดวกซื้อ",
+      "choice_2": "การซ้อนจานอาหารที่ล้างเสร็จแล้ว",
+      "choice_3": "การเรียกคิวตรวจที่โรงพยาบาล",
+      "choice_4": "การกระจายสัญญาณอินเทอร์เน็ต",
+      "answer": 2
+    },
+    {
+      "question": "ข้อใดไม่ใช่การประยุกต์ใช้งานโครงสร้างข้อมูลแบบ Stack ในคอมพิวเตอร์?",
+      "choice_1": "ระบบ Undo/Redo ในโปรแกรมแก้ไขข้อความ",
+      "choice_2": "ฟังก์ชัน Call Stack ในเวลาโปรแกรมทำงาน (Function Call)",
+      "choice_3": "ระบบคิวเครื่องพิมพ์ (Printer Spooler)",
+      "choice_4": "การตรวจสอบวงเล็บทางคณิตศาสตร์ (Balanced Parentheses)",
+      "answer": 3
+    },
+    {
+      "question": "หากใช้ Array ขนาด n ในการสร้าง Stack โดยให้ตัวแปร top เริ่มต้นที่ -1 เงื่อนไขใดใช้ตรวจสอบว่า Stack เต็ม?",
+      "choice_1": "top == 0",
+      "choice_2": "top == n",
+      "choice_3": "top == n - 1",
+      "choice_4": "top == -1",
+      "answer": 3
+    },
+    {
+      "question": "ในกรณีที่สร้าง Stack ด้วย Linked List เวลา (Time Complexity) ในการ Push และ Pop คือเท่าใด (เมื่อทำที่ Head)?",
+      "choice_1": "O(1)",
+      "choice_2": "O(log n)",
+      "choice_3": "O(n)",
+      "choice_4": "O(n^2)",
+      "answer": 1
+    },
+    {
+      "question": "หากอ่านนิพจน์คณิตศาสตร์ (2 + 3) * 5 โครงสร้างใดนิยมนำมาใช้แปลง Infix เป็น Postfix?",
+      "choice_1": "Array ธรรมดา",
+      "choice_2": "Queue",
+      "choice_3": "Stack",
+      "choice_4": "Graph",
+      "answer": 3
+    },
+    {
+      "question": "นิพจน์ 5 3 + 2 * อยู่ในรูปแบบใด?",
+      "choice_1": "Infix Expression",
+      "choice_2": "Prefix Expression",
+      "choice_3": "Postfix Expression",
+      "choice_4": "Boolean Expression",
+      "answer": 3
+    },
+    {
+      "question": "การหาผลลัพธ์ของ Postfix Expression \"4 5 * 2 +\" มีค่าเท่าใด?",
+      "choice_1": "22",
+      "choice_2": "28",
+      "choice_3": "36",
+      "choice_4": "11",
+      "answer": 1
+    },
+    {
+      "question": "เมื่อเขียนโปรแกรมแบบเรียกซ้ำ (Recursion) ระบบปฏิบัติการจะใช้โครงสร้างใดเก็บสถานะของฟังก์ชัน?",
+      "choice_1": "Queue",
+      "choice_2": "Stack",
+      "choice_3": "Tree",
+      "choice_4": "Heap",
+      "answer": 2
+    },
+    {
+      "question": "หาก Push 1, 2, 3 ลงไป แล้ว Pop หนึ่งครั้ง จากนั้น Push 4 แล้ว Pop อีกสองครั้ง ข้อมูลตัวใดจะถูก Pop เป็นตัวที่สอง?",
+      "choice_1": "1",
+      "choice_2": "2",
+      "choice_3": "3",
+      "choice_4": "4",
+      "answer": 4
+    },
+    {
+      "question": "หากใช้ Stack ในการสลับลำดับตัวอักษร (Reverse String) ของคำว่า \"HELLO\" ตัวอักษรใดจะถูก Push เป็นตัวแรก?",
+      "choice_1": "O",
+      "choice_2": "E",
+      "choice_3": "H",
+      "choice_4": "L",
+      "answer": 3
+    },
+    {
+      "question": "ปัญหา \"Balanced Parentheses\" เช่น { [ ( ) ] } สามารถเช็คความถูกต้องได้อย่างไรด้วย Stack?",
+      "choice_1": "Push เมื่อเจอวงเล็บเปิด และ Pop เมื่อเจอวงเล็บปิด",
+      "choice_2": "Push วงเล็บทั้งหมดลงไป แล้ว Pop ออกมานับจำนวน",
+      "choice_3": "Pop วงเล็บเปิด Push วงเล็บปิด",
+      "choice_4": "ใช้ Stack 2 ตัว ตัวหนึ่งเก็บวงเล็บเปิด อีกตัวเก็บวงเล็บปิด",
+      "answer": 1
+    },
+    {
+      "question": "ข้อเสียของการจำลอง Stack ด้วย Array ที่มีขนาดคงที่คืออะไร?",
+      "choice_1": "ไม่สามารถทำงานแบบ LIFO ได้จริง",
+      "choice_2": "เกิดปัญหา Stack Overflow ได้ง่ายหากข้อมูลเกินขนาดที่กำหนด",
+      "choice_3": "Pop ข้อมูลออกได้ช้า",
+      "choice_4": "เข้าถึงข้อมูลตัวบนสุด (Top) ได้ช้ากว่า Linked List",
+      "answer": 2
+    },
+    {
+      "question": "ถ้าต้องการสร้าง Queue โดยใช้โครงสร้าง Stack จะต้องใช้ Stack อย่างน้อยกี่ตัว?",
+      "choice_1": "1 ตัว",
+      "choice_2": "2 ตัว",
+      "choice_3": "3 ตัว",
+      "choice_4": "ไม่สามารถทำได้",
+      "answer": 2
+    },
+    {
+      "question": "Monotonic Stack นิยมนำมาใช้แก้ปัญหาประเภทใด?",
+      "choice_1": "การกลับทิศทางของ Linked List",
+      "choice_2": "การหาเส้นทางที่สั้นที่สุดในกราฟ",
+      "choice_3": "การค้นหาค่าที่มากกว่า/น้อยกว่า ตัวถัดไป (Next Greater Element)",
+      "choice_4": "การแปลงเลขฐานสิบเป็นเลขฐานสอง",
+      "answer": 3
+    },
+    {
+      "question": "หาก Monotonic Increasing Stack รับค่า [3, 1, 4, 2] ตามลำดับ เมื่อจบกระบวนการ Stack จะเหลือค่าอะไรบ้าง (จากล่างขึ้นบน)?",
+      "choice_1": "[1, 2]",
+      "choice_2": "[3, 4]",
+      "choice_3": "[1, 2, 3, 4]",
+      "choice_4": "[4, 2]",
+      "answer": 1
+    },
+    {
+      "question": "ในการแปลง Infix เป็น Postfix หากเจอเครื่องหมายคูณ (*) ในนิพจน์ และตำแหน่ง Top ของ Stack เป็นเครื่องหมายบวก (+) จะต้องทำอย่างไร?",
+      "choice_1": "Pop เครื่องหมาย + ออก แล้ว Push *",
+      "choice_2": "Push เครื่องหมาย * ลงใน Stack ทันที เพราะลำดับความสำคัญสูงกว่า",
+      "choice_3": "ทำลายข้อมูลใน Stack ทิ้ง",
+      "choice_4": "หยุดทำงาน เพราะรูปแบบผิดพลาด",
+      "answer": 2
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import { calculateScore } from '../utils/calculateScore'
 import { buildExamQuestions } from '../utils/shuffle'
 import type { PreparedQuestion, ScoreSummary, UnitQuizData } from '../types/quiz'
 
-export type SubjectKey = 'embedded' | 'flutter' | 'economic'
+export type SubjectKey = 'embedded' | 'flutter' | 'economic' | 'abstract-data-type'
 
 export type SubjectUnitQuizData = UnitQuizData & {
   subject: SubjectKey
@@ -30,6 +30,10 @@ const UNIT_SOURCES: { path: string; subject: SubjectKey }[] = [
   { path: '/data/economics/final/unit-10.json', subject: 'economic' },
   { path: '/data/economics/final/unit-11.json', subject: 'economic' },
   { path: '/data/economics/final/unit-12.json', subject: 'economic' },
+  { path: '/data/abstract-data-type/unit-1.json', subject: 'abstract-data-type' },
+  { path: '/data/abstract-data-type/unit-2.json', subject: 'abstract-data-type' },
+  { path: '/data/abstract-data-type/unit-3.json', subject: 'abstract-data-type' },
+  { path: '/data/abstract-data-type/unit-4.json', subject: 'abstract-data-type' },
 ]
 
 async function loadUnits(): Promise<SubjectUnitQuizData[]> {

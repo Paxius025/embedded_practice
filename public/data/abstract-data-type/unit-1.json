@@ -1,0 +1,206 @@
+{
+  "unit_number": 1,
+  "unit_name": "โครงสร้างข้อมูลแบบอาร์เรย์ (Array)",
+  "questions": [
+    {
+      "question": "ข้อใดคือลักษณะสำคัญของโครงสร้างข้อมูลแบบอาร์เรย์?",
+      "choice_1": "ข้อมูลแต่ละตัวสามารถจัดเก็บแบบกระจัดกระจายในหน่วยความจำได้",
+      "choice_2": "ข้อมูลต้องจัดเก็บในหน่วยความจำที่ต่อเนื่องกัน",
+      "choice_3": "สามารถขยายขนาดอาร์เรย์ได้อย่างอิสระตลอดเวลา",
+      "choice_4": "ไม่จำเป็นต้องกำหนดชนิดข้อมูลล่วงหน้า",
+      "answer": 2
+    },
+    {
+      "question": "โดยทั่วไปดัชนี (Index) ของอาร์เรย์ในภาษาโปรแกรมส่วนใหญ่เริ่มต้นที่หมายเลขใด?",
+      "choice_1": "-1",
+      "choice_2": "0",
+      "choice_3": "1",
+      "choice_4": "2",
+      "answer": 2
+    },
+    {
+      "question": "หากประกาศอาร์เรย์ A มีขนาด 10 สมาชิก สมาชิกตัวสุดท้ายจะอยู่ที่ดัชนี (Index) ใด?",
+      "choice_1": "8",
+      "choice_2": "9",
+      "choice_3": "10",
+      "choice_4": "11",
+      "answer": 2
+    },
+    {
+      "question": "การเข้าถึงข้อมูลในอาร์เรย์ (Accessing) ใช้เวลาแบบใด (Time Complexity)?",
+      "choice_1": "O(1)",
+      "choice_2": "O(n)",
+      "choice_3": "O(log n)",
+      "choice_4": "O(n^2)",
+      "answer": 1
+    },
+    {
+      "question": "โครงสร้างข้อมูลใดเหมาะกับการใช้งานแบบ Random Access (เข้าถึงข้อมูลตำแหน่งใดก็ได้ในทันที) มากที่สุด?",
+      "choice_1": "Linked List",
+      "choice_2": "Stack",
+      "choice_3": "Queue",
+      "choice_4": "Array",
+      "answer": 4
+    },
+    {
+      "question": "ข้อใดคือข้อเสียหลักของการใช้อาร์เรย์ขนาดคงที่ (Fixed-size Array)?",
+      "choice_1": "เข้าถึงข้อมูลได้ช้า",
+      "choice_2": "สิ้นเปลืองหน่วยความจำหากจองพื้นที่ไว้แล้วใช้ไม่หมด",
+      "choice_3": "ไม่สามารถเก็บข้อมูลประเภทตัวเลขได้",
+      "choice_4": "มีโครงสร้างที่ซับซ้อนเกินไป",
+      "answer": 2
+    },
+    {
+      "question": "หากต้องการเก็บชื่อของนักเรียน 50 คนในห้อง โครงสร้างข้อมูลใดเหมาะสมที่สุดและง่ายที่สุด?",
+      "choice_1": "Array ขนาด 50",
+      "choice_2": "Graph",
+      "choice_3": "Tree",
+      "choice_4": "Stack",
+      "answer": 1
+    },
+    {
+      "question": "ข้อมูลที่เก็บในอาร์เรย์มักจะมีลักษณะอย่างไร?",
+      "choice_1": "มีชนิดข้อมูลต่างกันทั้งหมด (Heterogeneous)",
+      "choice_2": "เป็นข้อมูลแบบสายอักขระเท่านั้น",
+      "choice_3": "มีชนิดข้อมูลเดียวกันทั้งหมด (Homogeneous)",
+      "choice_4": "ต้องเรียงลำดับจากน้อยไปมากเสมอ",
+      "answer": 3
+    },
+    {
+      "question": "ในการสร้างอาร์เรย์ 2 มิติ (2D Array) ขนาด M x N จะสามารถเก็บข้อมูลได้ทั้งหมดกี่ตัว?",
+      "choice_1": "M + N",
+      "choice_2": "M x N",
+      "choice_3": "M^N",
+      "choice_4": "M / N",
+      "answer": 2
+    },
+    {
+      "question": "Array ถูกจัดอยู่ในกลุ่มโครงสร้างข้อมูลประเภทใด?",
+      "choice_1": "Non-linear Data Structure",
+      "choice_2": "Linear Data Structure",
+      "choice_3": "Hierarchical Data Structure",
+      "choice_4": "Graph Data Structure",
+      "answer": 2
+    },
+    {
+      "question": "ค่าเริ่มต้นของการจองพื้นที่ในหน่วยความจำให้กับอาร์เรย์เรียกว่าอะไร?",
+      "choice_1": "Static Memory Allocation",
+      "choice_2": "Dynamic Memory Allocation",
+      "choice_3": "Virtual Memory Allocation",
+      "choice_4": "Cache Allocation",
+      "answer": 1
+    },
+    {
+      "question": "หากประกาศอาร์เรย์ int arr[5] = {1, 2, 3}; ค่าของ arr[4] ในภาษา C คืออะไร?",
+      "choice_1": "0",
+      "choice_2": "3",
+      "choice_3": "Garbage Value",
+      "choice_4": "เกิด Error",
+      "answer": 1
+    },
+    {
+      "question": "การแทรกข้อมูล (Insertion) ที่ตำแหน่งเริ่มต้น (Index 0) ของอาร์เรย์ที่มีข้อมูลอยู่เต็มแล้ว ต้องใช้ Time Complexity เท่าใด?",
+      "choice_1": "O(1)",
+      "choice_2": "O(log n)",
+      "choice_3": "O(n)",
+      "choice_4": "O(n^2)",
+      "answer": 3
+    },
+    {
+      "question": "การลบข้อมูล (Deletion) ที่ตำแหน่งสุดท้ายของอาร์เรย์ ใช้ Time Complexity เท่าใด?",
+      "choice_1": "O(1)",
+      "choice_2": "O(n)",
+      "choice_3": "O(log n)",
+      "choice_4": "O(n log n)",
+      "answer": 1
+    },
+    {
+      "question": "เหตุใดการลบข้อมูลในอาร์เรย์ตำแหน่งตรงกลาง จึงใช้เวลานานกว่าตำแหน่งสุดท้าย?",
+      "choice_1": "ต้องค้นหาข้อมูลตัวนั้นใหม่ทั้งหมด",
+      "choice_2": "ต้องทำการขยับ (Shift) ข้อมูลตัวที่เหลือมาแทนที่",
+      "choice_3": "ต้องจองหน่วยความจำใหม่ทั้งหมด",
+      "choice_4": "อาร์เรย์ไม่สามารถลบข้อมูลตรงกลางได้",
+      "answer": 2
+    },
+    {
+      "question": "อาร์เรย์ 2 มิติ (2D Array) สามารถมองให้อยู่ในรูปแบบของโครงสร้างใดได้?",
+      "choice_1": "ต้นไม้ (Tree)",
+      "choice_2": "ตารางหรือเมทริกซ์ (Table/Matrix)",
+      "choice_3": "กราฟ (Graph)",
+      "choice_4": "คิว (Queue)",
+      "answer": 2
+    },
+    {
+      "question": "ในหน่วยความจำหลัก อาร์เรย์ 2 มิติสามารถจัดเก็บในรูปแบบใดได้บ้าง?",
+      "choice_1": "Row-major order และ Column-major order",
+      "choice_2": "Stack order และ Queue order",
+      "choice_3": "Tree order และ Graph order",
+      "choice_4": "Linear order และ Non-linear order",
+      "answer": 1
+    },
+    {
+      "question": "ข้อใดคือการค้นหาข้อมูลในอาร์เรย์ที่ยังไม่ได้เรียงลำดับ (Unsorted Array) ที่มีประสิทธิภาพมากที่สุด?",
+      "choice_1": "Binary Search",
+      "choice_2": "Linear Search",
+      "choice_3": "Jump Search",
+      "choice_4": "Interpolation Search",
+      "answer": 2
+    },
+    {
+      "question": "หากนำ Binary Search มาใช้กับอาร์เรย์ที่เรียงลำดับแล้ว (Sorted Array) จะมี Time Complexity เท่าใด?",
+      "choice_1": "O(1)",
+      "choice_2": "O(n)",
+      "choice_3": "O(log n)",
+      "choice_4": "O(n^2)",
+      "answer": 3
+    },
+    {
+      "question": "ข้อใดคือความหมายของ Dynamic Array (เช่น std::vector ใน C++ หรือ ArrayList ใน Java)?",
+      "choice_1": "อาร์เรย์ที่ไม่สามารถลบข้อมูลได้",
+      "choice_2": "อาร์เรย์ที่สามารถขยายหรือลดขนาดได้อัตโนมัติ",
+      "choice_3": "อาร์เรย์ที่เก็บชนิดข้อมูลผสมกันได้",
+      "choice_4": "อาร์เรย์ที่ทำงานได้เร็วขึ้นแบบ O(1) เสมอเวลาขยายขนาด",
+      "answer": 2
+    },
+    {
+      "question": "โดยทั่วไปเมื่อ Dynamic Array เต็ม มันจะขยายขนาดเพิ่มขึ้นในอัตราส่วนเท่าใด?",
+      "choice_1": "เพิ่มทีละ 1",
+      "choice_2": "เพิ่มขึ้น 2 เท่า (หรือใกล้เคียง)",
+      "choice_3": "เพิ่มขึ้น 10 เท่าเสมอ",
+      "choice_4": "เพิ่มขนาดขึ้นอยู่กับหน่วยความจำที่เหลือในเครื่อง",
+      "answer": 2
+    },
+    {
+      "question": "Amortized time complexity ของการเพิ่มข้อมูลที่ท้าย (Append) ของ Dynamic Array คือเท่าใด?",
+      "choice_1": "O(1)",
+      "choice_2": "O(n)",
+      "choice_3": "O(log n)",
+      "choice_4": "O(n^2)",
+      "answer": 1
+    },
+    {
+      "question": "สูตรการคำนวณที่อยู่ (Address) ของ arr[i] ในหน่วยความจำ (1 มิติ) คืออะไร? กำหนดให้ B คือ Base address และ S คือขนาดของแต่ละข้อมูล",
+      "choice_1": "B + (i * S)",
+      "choice_2": "B * (i + S)",
+      "choice_3": "B + i + S",
+      "choice_4": "B * i * S",
+      "answer": 1
+    },
+    {
+      "question": "สาเหตุใดที่ทำให้อาร์เรย์มีประสิทธิภาพในการเข้าถึงข้อมูล (Access) ที่ดีมากเมื่อทำงานร่วมกับ CPU Cache (Spatial Locality)?",
+      "choice_1": "เพราะอาร์เรย์เก็บข้อมูลชนิดเดียวกัน",
+      "choice_2": "เพราะอาร์เรย์มีขนาดคงที่",
+      "choice_3": "เพราะอาร์เรย์จัดเก็บข้อมูลในพื้นที่หน่วยความจำที่ต่อเนื่องกัน",
+      "choice_4": "เพราะอาร์เรย์ไม่ต้องใช้พอยน์เตอร์ (Pointer)",
+      "answer": 3
+    },
+    {
+      "question": "หากใช้สูตร Row-major order คำนวณหาที่อยู่ของ A[i][j] ในอาร์เรย์ 2 มิติขนาด M แถว N คอลัมน์ (ดัชนีเริ่มที่ 0) สูตรคืออะไร? (B=Base, S=Size)",
+      "choice_1": "B + (j * M + i) * S",
+      "choice_2": "B + (i * N + j) * S",
+      "choice_3": "B + (i * M + j) * S",
+      "choice_4": "B + (i + j * N) * S",
+      "answer": 2
+    }
+  ]
+}

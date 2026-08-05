@@ -1,0 +1,206 @@
+{
+  "unit_number": 4,
+  "unit_name": "โครงสร้างข้อมูลแบบคิว (Queue)",
+  "questions": [
+    {
+      "question": "ข้อใดคือนิยามที่ถูกต้องที่สุดของโครงสร้างข้อมูลแบบคิว (Queue)?",
+      "choice_1": "ข้อมูลที่เข้าก่อนจะออกก่อน (First In First Out)",
+      "choice_2": "ข้อมูลที่เข้าหลังสุดจะออกก่อน (Last In First Out)",
+      "choice_3": "ข้อมูลจะถูกจัดเรียงตามลำดับตัวอักษรเสมอ",
+      "choice_4": "สามารถเพิ่มและลบข้อมูลจากตำแหน่งใดก็ได้ในทันที",
+      "answer": 1
+    },
+    {
+      "question": "ตัวย่อ FIFO ย่อมาจากคำว่าอะไร?",
+      "choice_1": "Fast In Fast Out",
+      "choice_2": "First In First Out",
+      "choice_3": "Forward In Forward Out",
+      "choice_4": "First Index First Output",
+      "answer": 2
+    },
+    {
+      "question": "การนำข้อมูลใส่ลงใน Queue เรียกว่าอะไร?",
+      "choice_1": "Push",
+      "choice_2": "Pop",
+      "choice_3": "Enqueue",
+      "choice_4": "Dequeue",
+      "answer": 3
+    },
+    {
+      "question": "การนำข้อมูลออกจาก Queue เรียกว่าอะไร?",
+      "choice_1": "Pop",
+      "choice_2": "Insert",
+      "choice_3": "Delete",
+      "choice_4": "Dequeue",
+      "answer": 4
+    },
+    {
+      "question": "ตำแหน่งที่ใช้สำหรับนำข้อมูลใหม่เข้าสู่ Queue เรียกว่าอะไร?",
+      "choice_1": "Front / Head",
+      "choice_2": "Rear / Tail",
+      "choice_3": "Top",
+      "choice_4": "Base",
+      "answer": 2
+    },
+    {
+      "question": "ตำแหน่งที่ข้อมูลจะถูกดึงออกจาก Queue เรียกว่าอะไร?",
+      "choice_1": "Front / Head",
+      "choice_2": "Rear / Tail",
+      "choice_3": "Top",
+      "choice_4": "Center",
+      "answer": 1
+    },
+    {
+      "question": "หาก Enqueue ข้อมูล A, B, C ลงใน Queue ตามลำดับ ข้อมูลใดจะถูก Dequeue ออกมาเป็นตัวแรก?",
+      "choice_1": "A",
+      "choice_2": "B",
+      "choice_3": "C",
+      "choice_4": "ออกพร้อมกัน",
+      "answer": 1
+    },
+    {
+      "question": "ตัวอย่างการใช้งาน Queue ในชีวิตประจำวันคืออะไร?",
+      "choice_1": "การเก็บจานซ้อนกัน",
+      "choice_2": "การเข้าแถวซื้อตั๋วหนัง",
+      "choice_3": "การค้นหาคำในพจนานุกรม",
+      "choice_4": "การย้อนกลับ (Undo) ข้อความ",
+      "answer": 2
+    },
+    {
+      "question": "ข้อใดคือการประยุกต์ใช้ Queue ในระบบคอมพิวเตอร์?",
+      "choice_1": "Call Stack สำหรับฟังก์ชัน",
+      "choice_2": "การตรวจสอบวงเล็บเปิดปิด",
+      "choice_3": "การจัดการงานที่รอการพิมพ์ (Printer Spooling)",
+      "choice_4": "การแปลง Infix เป็น Postfix",
+      "answer": 3
+    },
+    {
+      "question": "ปัญหาหลักของการจำลอง Queue ด้วย Array แบบปกติ (Linear Queue) คืออะไร?",
+      "choice_1": "ไม่สามารถ Enqueue ข้อมูลเกิน 10 ตัวได้",
+      "choice_2": "เกิดปัญหาพื้นที่ว่างด้านหน้า (False Full) หลังจากมีข้อมูลถูก Dequeue ออกไป",
+      "choice_3": "ข้อมูลเรียงสลับตำแหน่งกัน",
+      "choice_4": "ไม่รองรับข้อมูลประเภทข้อความ",
+      "answer": 2
+    },
+    {
+      "question": "วิธีใดที่สามารถแก้ปัญหา False Full ของ Linear Queue บน Array ได้ดีที่สุด?",
+      "choice_1": "เปลี่ยนไปใช้ Stack แทน",
+      "choice_2": "ใช้ Circular Queue",
+      "choice_3": "ใช้ Binary Tree",
+      "choice_4": "ขยายขนาด Array ขึ้นทีละ 1",
+      "answer": 2
+    },
+    {
+      "question": "ใน Circular Queue (ที่สร้างจาก Array ขนาด N) เงื่อนไขในการขยับตำแหน่ง Rear เมื่อทำการ Enqueue คือข้อใด?",
+      "choice_1": "Rear = Rear + 1",
+      "choice_2": "Rear = (Rear + 1) % N",
+      "choice_3": "Rear = (Rear + 1) / N",
+      "choice_4": "Rear = Rear % N",
+      "answer": 2
+    },
+    {
+      "question": "ใน Circular Queue ขนาด N เงื่อนไขตรวจสอบว่า Queue เต็ม (Full) แบบทั่วไปคืออะไร? (สมมติเว้นช่องว่าง 1 ช่องเพื่อแยกความแตกต่างระหว่าง Full กับ Empty)",
+      "choice_1": "Front == Rear",
+      "choice_2": "(Rear + 1) % N == Front",
+      "choice_3": "Front == 0 && Rear == N - 1",
+      "choice_4": "Rear == -1",
+      "answer": 2
+    },
+    {
+      "question": "หาก Queue ว่าง (Empty) ค่าของ Front และ Rear มักจะถูกกำหนดไว้เป็นค่าใด (ใน Linear Queue เริ่มต้น)?",
+      "choice_1": "Front = 0, Rear = 0",
+      "choice_2": "Front = -1, Rear = -1",
+      "choice_3": "Front = 1, Rear = 1",
+      "choice_4": "Front = Null, Rear = 0",
+      "answer": 2
+    },
+    {
+      "question": "Priority Queue แตกต่างจาก Queue ปกติอย่างไร?",
+      "choice_1": "ข้อมูลใหม่ล่าสุดจะถูกนำออกก่อนเสมอ",
+      "choice_2": "ข้อมูลแต่ละตัวจะมีลำดับความสำคัญกำกับอยู่ ข้อมูลที่สำคัญที่สุดจะถูกดึงออกก่อน",
+      "choice_3": "อนุญาตให้ข้อมูลเข้าทางด้านหน้าได้เท่านั้น",
+      "choice_4": "ต้องเก็บข้อมูลประเภทตัวเลขเท่านั้น",
+      "answer": 2
+    },
+    {
+      "question": "โครงสร้างข้อมูลใดเหมาะสมที่สุดในการนำมาสร้าง Priority Queue อย่างมีประสิทธิภาพ?",
+      "choice_1": "Array ธรรมดา",
+      "choice_2": "Stack",
+      "choice_3": "Heap (Min-Heap / Max-Heap)",
+      "choice_4": "Singly Linked List",
+      "answer": 3
+    },
+    {
+      "question": "การใช้งานตัวจัดการงาน (Task Scheduler) ของระบบปฏิบัติการ (OS) นิยมใช้ Queue ชนิดใด?",
+      "choice_1": "Priority Queue",
+      "choice_2": "Double Ended Queue (Deque)",
+      "choice_3": "Circular Queue แบบธรรมดา",
+      "choice_4": "Linear Queue",
+      "answer": 1
+    },
+    {
+      "question": "Double Ended Queue (Deque) มีลักษณะเฉพาะตัวอย่างไร?",
+      "choice_1": "สามารถเพิ่ม (Enqueue) และลบ (Dequeue) ข้อมูลได้ทั้งจากด้านหน้า (Front) และด้านหลัง (Rear)",
+      "choice_2": "สามารถจุข้อมูลได้เป็น 2 เท่าของ Queue ปกติ",
+      "choice_3": "ทำงานเหมือน Stack ทุกประการ",
+      "choice_4": "อนุญาตให้เข้าถึงข้อมูลตัวกลางได้ในเวลา O(1)",
+      "answer": 1
+    },
+    {
+      "question": "หากต้องการสร้าง Deque ที่มีประสิทธิภาพ (Time Complexity เป็น O(1) สำหรับการเพิ่ม/ลบ ทั้งสองด้าน) ควรใช้โครงสร้างใดเป็นพื้นฐาน?",
+      "choice_1": "Singly Linked List",
+      "choice_2": "Doubly Linked List หรือ Circular Array",
+      "choice_3": "Stack 2 ตัว",
+      "choice_4": "Binary Search Tree",
+      "answer": 2
+    },
+    {
+      "question": "เวลาที่ใช้ (Time Complexity) ในการ Dequeue ของ Linked List ที่มีเฉพาะ Head pointer คือเท่าใด (สมมติให้ Enqueue ที่ Tail)?",
+      "choice_1": "O(1)",
+      "choice_2": "O(n)",
+      "choice_3": "O(log n)",
+      "choice_4": "O(n^2)",
+      "answer": 1
+    },
+    {
+      "question": "อัลกอริทึม BFS (Breadth-First Search) ในกราฟ จำเป็นต้องใช้โครงสร้างข้อมูลใดในการทำงาน?",
+      "choice_1": "Stack",
+      "choice_2": "Queue",
+      "choice_3": "Hash Table",
+      "choice_4": "Binary Tree",
+      "answer": 2
+    },
+    {
+      "question": "ถ้าเราต้องการจำลองการทำงานของ Queue โดยใช้ Stack เราต้องใช้ Stack จำนวนกี่ตัว?",
+      "choice_1": "1 ตัว",
+      "choice_2": "2 ตัว",
+      "choice_3": "3 ตัว",
+      "choice_4": "ไม่สามารถทำได้",
+      "answer": 2
+    },
+    {
+      "question": "ในการจำลอง Queue ด้วย Stack 2 ตัว (S1 และ S2) การทำ Enqueue จะมีกระบวนการอย่างไร (วิธีที่ Enqueue เร็ว)?",
+      "choice_1": "Push ข้อมูลลงใน S1 เลย (O(1))",
+      "choice_2": "ย้ายข้อมูลจาก S1 ไป S2 ให้หมดก่อนแล้วค่อย Push",
+      "choice_3": "ลบข้อมูลทั้งหมดใน S2 ทิ้งก่อน Push",
+      "choice_4": "เปรียบเทียบค่าก่อนค่อยตัดสินใจว่าจะลง S1 หรือ S2",
+      "answer": 1
+    },
+    {
+      "question": "ต่อเนื่องจากข้อก่อนหน้า หากต้องการ Dequeue จะต้องทำอย่างไร (สมมติว่า S2 ไม่ว่าง)?",
+      "choice_1": "Pop ข้อมูลจาก S1 เลย",
+      "choice_2": "Pop ข้อมูลจาก S2 เลย (O(1))",
+      "choice_3": "ต้องย้าย S1 ไป S2 เสมอก่อน Pop",
+      "choice_4": "คืนค่า Error เสมอ",
+      "answer": 2
+    },
+    {
+      "question": "ข้อใดเป็นจริงเกี่ยวกับการใช้งาน Queue ໃນ Consumer-Producer Problem?",
+      "choice_1": "ช่วยลดเวลาประมวลผลของ CPU",
+      "choice_2": "ใช้เป็น Buffer ตรงกลางระหว่างกระบวนการสร้างและบริโภคข้อมูล",
+      "choice_3": "ป้องกันการเข้าถึงหน่วยความจำเกิน",
+      "choice_4": "สามารถแปลงข้อมูลจาก Producer เป็น Consumer ได้อัตโนมัติ",
+      "answer": 2
+    }
+  ]
+}

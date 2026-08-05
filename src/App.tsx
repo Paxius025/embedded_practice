@@ -48,6 +48,7 @@ function App() {
     { key: 'embedded', label: '01204322 Embedded System' },
     { key: 'flutter', label: '01219344 Mobile Software Development (Flutter)' },
     { key: 'economic', label: '01999041 Economics for Better Living' },
+    { key: 'abstract-data-type', label: 'Abstract Data Type' },
   ] as const
 
   const filteredUnits = useMemo(() => {
@@ -64,9 +65,8 @@ function App() {
   return (
     <main className="relative h-dvh overflow-hidden bg-[radial-gradient(circle_at_20%_20%,#fde68a_0%,transparent_35%),radial-gradient(circle_at_80%_0%,#fca5a5_0%,transparent_30%),linear-gradient(135deg,#f7f8fb_0%,#edf0f9_60%,#e5e7f1_100%)] px-2 py-2 md:px-3 md:py-3">
       <div
-        className={`mx-auto flex h-full w-full max-w-4xl flex-col gap-3 ${
-          isFinished ? 'overflow-y-auto pb-12 pr-1' : 'overflow-hidden'
-        }`}
+        className={`mx-auto flex h-full w-full max-w-4xl flex-col gap-3 ${isFinished ? 'overflow-y-auto pb-12 pr-1' : 'overflow-hidden'
+          }`}
       >
         {questions.length === 0 && (
           <header className="sticky top-2 z-40 rounded-2xl border border-zinc-200/80 bg-white/90 p-4 shadow-lg backdrop-blur md:p-5">
@@ -101,11 +101,10 @@ function App() {
                   key={subject.key}
                   type="button"
                   onClick={() => setSelectedSubject(subject.key)}
-                  className={`rounded-xl border px-3 py-2.5 text-center font-semibold transition ${
-                    selectedSubject === subject.key
+                  className={`rounded-xl border px-3 py-2.5 text-center font-semibold transition ${selectedSubject === subject.key
                       ? 'border-emerald-400 bg-emerald-100 text-zinc-900'
                       : 'border-zinc-300 bg-white text-zinc-700 hover:border-zinc-500'
-                  }`}
+                    }`}
                 >
                   {subject.label}
                 </button>
@@ -123,11 +122,10 @@ function App() {
                   key={option.value}
                   type="button"
                   onClick={() => setSelectedPercentage(option.value)}
-                  className={`rounded-xl border px-3 py-2.5 text-center font-semibold transition ${
-                    selectedPercentage === option.value
+                  className={`rounded-xl border px-3 py-2.5 text-center font-semibold transition ${selectedPercentage === option.value
                       ? 'border-amber-400 bg-amber-200 text-zinc-900'
                       : 'border-zinc-300 bg-white text-zinc-700 hover:border-zinc-500'
-                  }`}
+                    }`}
                 >
                   {option.label}
                 </button>
