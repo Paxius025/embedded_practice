@@ -3,37 +3,44 @@ import { calculateScore } from '../utils/calculateScore'
 import { buildExamQuestions } from '../utils/shuffle'
 import type { PreparedQuestion, ScoreSummary, UnitQuizData } from '../types/quiz'
 
-export type SubjectKey = 'embedded' | 'flutter' | 'economic' | 'abstract-data-type'
+export type SubjectKey = 'embedded' | 'flutter' | 'economic' | 'abstract-data-type' | 'cyber-security'
+export type ExamType = 'midterm' | 'final' | 'all'
 
 export type SubjectUnitQuizData = UnitQuizData & {
   subject: SubjectKey
+  examType: ExamType
 }
 
-const UNIT_SOURCES: { path: string; subject: SubjectKey }[] = [
-  { path: '/data/embedded/final/unit-1.json', subject: 'embedded' },
-  { path: '/data/embedded/final/unit-2.json', subject: 'embedded' },
-  { path: '/data/embedded/final/unit-3.json', subject: 'embedded' },
-  { path: '/data/embedded/final/unit-4.json', subject: 'embedded' },
-  { path: '/data/embedded/final/unit-5.json', subject: 'embedded' },
-  { path: '/data/embedded/final/unit-6.json', subject: 'embedded' },
-  { path: '/data/flutter_qestion/final/flutter_unit_7.json', subject: 'flutter' },
-  { path: '/data/flutter_qestion/final/flutter_unit_8.json', subject: 'flutter' },
-  { path: '/data/flutter_qestion/final/flutter_unit_9.json', subject: 'flutter' },
-  { path: '/data/flutter_qestion/final/flutter_unit_10.json', subject: 'flutter' },
-  { path: '/data/flutter_qestion/final/flutter_unit_11.json', subject: 'flutter' },
-  { path: '/data/flutter_qestion/final/flutter_unit_12.json', subject: 'flutter' },
-  { path: '/data/flutter_qestion/final/flutter_unit_13.json', subject: 'flutter' },
-  { path: '/data/flutter_qestion/final/flutter_unit_14.json', subject: 'flutter' },
-  { path: '/data/flutter_qestion/final/flutter_unit_15.json', subject: 'flutter' },
-  { path: '/data/economics/final/unit-8.json', subject: 'economic' },
-  { path: '/data/economics/final/unit-9.json', subject: 'economic' },
-  { path: '/data/economics/final/unit-10.json', subject: 'economic' },
-  { path: '/data/economics/final/unit-11.json', subject: 'economic' },
-  { path: '/data/economics/final/unit-12.json', subject: 'economic' },
-  { path: '/data/abstract-data-type/unit-1.json', subject: 'abstract-data-type' },
-  { path: '/data/abstract-data-type/unit-2.json', subject: 'abstract-data-type' },
-  { path: '/data/abstract-data-type/unit-3.json', subject: 'abstract-data-type' },
-  { path: '/data/abstract-data-type/unit-4.json', subject: 'abstract-data-type' },
+const UNIT_SOURCES: { path: string; subject: SubjectKey; examType: ExamType }[] = [
+  { path: '/data/embedded/final/unit-1.json', subject: 'embedded', examType: 'final' },
+  { path: '/data/embedded/final/unit-2.json', subject: 'embedded', examType: 'final' },
+  { path: '/data/embedded/final/unit-3.json', subject: 'embedded', examType: 'final' },
+  { path: '/data/embedded/final/unit-4.json', subject: 'embedded', examType: 'final' },
+  { path: '/data/embedded/final/unit-5.json', subject: 'embedded', examType: 'final' },
+  { path: '/data/embedded/final/unit-6.json', subject: 'embedded', examType: 'final' },
+  { path: '/data/flutter_qestion/final/flutter_unit_7.json', subject: 'flutter', examType: 'final' },
+  { path: '/data/flutter_qestion/final/flutter_unit_8.json', subject: 'flutter', examType: 'final' },
+  { path: '/data/flutter_qestion/final/flutter_unit_9.json', subject: 'flutter', examType: 'final' },
+  { path: '/data/flutter_qestion/final/flutter_unit_10.json', subject: 'flutter', examType: 'final' },
+  { path: '/data/flutter_qestion/final/flutter_unit_11.json', subject: 'flutter', examType: 'final' },
+  { path: '/data/flutter_qestion/final/flutter_unit_12.json', subject: 'flutter', examType: 'final' },
+  { path: '/data/flutter_qestion/final/flutter_unit_13.json', subject: 'flutter', examType: 'final' },
+  { path: '/data/flutter_qestion/final/flutter_unit_14.json', subject: 'flutter', examType: 'final' },
+  { path: '/data/flutter_qestion/final/flutter_unit_15.json', subject: 'flutter', examType: 'final' },
+  { path: '/data/economics/final/unit-8.json', subject: 'economic', examType: 'final' },
+  { path: '/data/economics/final/unit-9.json', subject: 'economic', examType: 'final' },
+  { path: '/data/economics/final/unit-10.json', subject: 'economic', examType: 'final' },
+  { path: '/data/economics/final/unit-11.json', subject: 'economic', examType: 'final' },
+  { path: '/data/economics/final/unit-12.json', subject: 'economic', examType: 'final' },
+  { path: '/data/abstract-data-type/unit-1.json', subject: 'abstract-data-type', examType: 'all' },
+  { path: '/data/abstract-data-type/unit-2.json', subject: 'abstract-data-type', examType: 'all' },
+  { path: '/data/abstract-data-type/unit-3.json', subject: 'abstract-data-type', examType: 'all' },
+  { path: '/data/abstract-data-type/unit-4.json', subject: 'abstract-data-type', examType: 'all' },
+  { path: '/data/cyber-security/midterm/unit-1.json', subject: 'cyber-security', examType: 'midterm' },
+  { path: '/data/cyber-security/midterm/unit-2.json', subject: 'cyber-security', examType: 'midterm' },
+  { path: '/data/cyber-security/midterm/unit-3.json', subject: 'cyber-security', examType: 'midterm' },
+  { path: '/data/cyber-security/midterm/unit-4.json', subject: 'cyber-security', examType: 'midterm' },
+  { path: '/data/cyber-security/midterm/unit-5.json', subject: 'cyber-security', examType: 'midterm' },
 ]
 
 async function loadUnits(): Promise<SubjectUnitQuizData[]> {
@@ -51,6 +58,7 @@ async function loadUnits(): Promise<SubjectUnitQuizData[]> {
       return {
         ...payload,
         subject: UNIT_SOURCES[index].subject,
+        examType: UNIT_SOURCES[index].examType,
       }
     }),
   )

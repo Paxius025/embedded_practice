@@ -1,0 +1,198 @@
+{
+  "unit_number": 2,
+  "unit_name": "Authentication and Access Control",
+  "questions": [
+    {
+      "question": "ขั้นตอนการระบุตัวตน (Identification) แตกต่างจากการพิสูจน์ตัวตน (Authentication) อย่างไร?",
+      "choice_1": "Identification คือการให้สิทธิ์ ส่วน Authentication คือการเก็บบันทึก",
+      "choice_2": "Identification คือการอ้างว่าเป็นใคร ส่วน Authentication คือการตรวจสอบว่าใช่คนนั้นจริงหรือไม่",
+      "choice_3": "Identification ใช้ลายนิ้วมือ ส่วน Authentication ใช้รหัสผ่านเท่านั้น",
+      "choice_4": "ทั้งสองมีความหมายเหมือนกัน",
+      "answer": 2
+    },
+    {
+      "question": "ข้อใดต่อไปนี้ไม่ใช่ปัจจัยที่ใช้ในการพิสูจน์ตัวตน (Authentication Factors)?",
+      "choice_1": "สิ่งที่ผู้ใช้รู้ (Knowledge)",
+      "choice_2": "สิ่งที่ผู้ใช้มี (Possession)",
+      "choice_3": "สิ่งที่ผู้ใช้เป็น (Inherence)",
+      "choice_4": "สิ่งที่ผู้ใช้คิด (Thinking)",
+      "answer": 4
+    },
+    {
+      "question": "การใช้รหัสผ่าน (Password) และคำถามความปลอดภัย จัดอยู่ในปัจจัยการพิสูจน์ตัวตนประเภทใด?",
+      "choice_1": "Knowledge-based",
+      "choice_2": "Possession-based",
+      "choice_3": "Inherence-based",
+      "choice_4": "Behavior-based",
+      "answer": 1
+    },
+    {
+      "question": "Dictionary Attack และ Rainbow Table เป็นการโจมตีต่อกลไกความปลอดภัยใด?",
+      "choice_1": "การพิสูจน์ตัวตนด้วยลายนิ้วมือ",
+      "choice_2": "การใช้ Smart Card",
+      "choice_3": "การพิสูจน์ตัวตนด้วยรหัสผ่าน",
+      "choice_4": "กลไก SSO",
+      "answer": 3
+    },
+    {
+      "question": "เทคนิคที่ใช้ในการเพิ่มสายอักขระสุ่มเข้าไปในรหัสผ่านก่อนนำไปเข้าฟังก์ชันแฮช (Hash) เพื่อป้องกัน Rainbow Table คืออะไร?",
+      "choice_1": "Hashing",
+      "choice_2": "Salting",
+      "choice_3": "Peppering",
+      "choice_4": "Encryption",
+      "answer": 2
+    },
+    {
+      "question": "การพิสูจน์ตัวตนแบบ Multi-Factor Authentication (MFA) ควรใช้ปัจจัยร่วมกันกี่ประเภท?",
+      "choice_1": "1 ประเภท",
+      "choice_2": "ตั้งแต่ 2 ประเภทที่แตกต่างกันขึ้นไป",
+      "choice_3": "2 ประเภทแบบเดียวกัน (เช่น รหัสผ่าน 2 ชุด)",
+      "choice_4": "กี่ประเภทก็ได้",
+      "answer": 2
+    },
+    {
+      "question": "Token แบบ Hard หรือ Soft และรหัส OTP จัดเป็นปัจจัยการพิสูจน์ตัวตนประเภทใด?",
+      "choice_1": "Knowledge",
+      "choice_2": "Possession",
+      "choice_3": "Inherence",
+      "choice_4": "Time",
+      "answer": 2
+    },
+    {
+      "question": "การพิสูจน์ตัวตนด้วย Biometrics เช่น ลายนิ้วมือหรือม่านตา จัดเป็นปัจจัยใด?",
+      "choice_1": "Knowledge",
+      "choice_2": "Possession",
+      "choice_3": "Inherence",
+      "choice_4": "Location",
+      "answer": 3
+    },
+    {
+      "question": "การหลอกลวงระบบ Biometrics ด้วยภาพถ่ายหรือหน้ากาก 3 มิติ เรียกว่าอะไร?",
+      "choice_1": "Biometric Bypassing",
+      "choice_2": "Biometric Spoofing",
+      "choice_3": "Biometric Hashing",
+      "choice_4": "Dictionary Attack",
+      "answer": 2
+    },
+    {
+      "question": "Single Sign-On (SSO) มีประโยชน์หลักอย่างไร?",
+      "choice_1": "ทำให้รหัสผ่านเดายากขึ้น",
+      "choice_2": "ผู้ใช้ล็อกอินเพียงครั้งเดียวก็สามารถใช้งานได้หลายระบบในเครือข่าย",
+      "choice_3": "จำกัดสิทธิ์ผู้ใช้ทุกคนให้เท่ากัน",
+      "choice_4": "ใช้ในการเข้ารหัสข้อมูลฮาร์ดดิสก์",
+      "answer": 2
+    },
+    {
+      "question": "Federated Identity Management (FIM) ต่างจาก SSO อย่างไร?",
+      "choice_1": "FIM ใช้ลายนิ้วมือ แต่ SSO ใช้รหัสผ่าน",
+      "choice_2": "FIM เป็นการจัดการตัวตนข้ามองค์กรหรือระหว่างพันธมิตร ส่วน SSO มักใช้ภายในองค์กรเดียวกัน",
+      "choice_3": "FIM ปลอดภัยน้อยกว่า SSO",
+      "choice_4": "FIM ไม่จำเป็นต้องมี Identity Provider",
+      "answer": 2
+    },
+    {
+      "question": "มาตรฐานใดที่นิยมใช้สำหรับการอนุญาต (Authorization) ให้แอปพลิเคชันหนึ่งเข้าถึงทรัพยากรในอีกแอปพลิเคชันหนึ่งโดยไม่ต้องให้รหัสผ่าน?",
+      "choice_1": "OAuth 2.0",
+      "choice_2": "IPSec",
+      "choice_3": "SSL/TLS",
+      "choice_4": "WEP",
+      "answer": 1
+    },
+    {
+      "question": "แนวคิดเรื่อง Reference Monitor ต้องมีคุณสมบัติที่สำคัญคืออะไร?",
+      "choice_1": "เปิดให้ทุกคนเข้าถึงได้เสมอ",
+      "choice_2": "ความเร็วสูงและไม่ต้องตรวจสอบ",
+      "choice_3": "ต้องมีการตรวจสอบทุกครั้ง (Complete Mediation) และป้องกันการแก้ไข (Tamper-proof)",
+      "choice_4": "ตรวจสอบเฉพาะการเข้าสู่ระบบครั้งแรก",
+      "answer": 3
+    },
+    {
+      "question": "รูปแบบการควบคุมการเข้าถึงที่ 'เจ้าของทรัพยากร' เป็นผู้กำหนดสิทธิ์ว่าให้ใครเข้าถึงได้บ้าง คืออะไร?",
+      "choice_1": "Mandatory Access Control (MAC)",
+      "choice_2": "Role-Based Access Control (RBAC)",
+      "choice_3": "Discretionary Access Control (DAC)",
+      "choice_4": "Attribute-Based Access Control (ABAC)",
+      "answer": 3
+    },
+    {
+      "question": "ระบบที่มีความเข้มงวดสูง ซึ่งผู้ดูแลระบบส่วนกลางเป็นผู้กำหนดสิทธิ์ (เช่นระดับความลับ Secret/Top Secret) ตรงกับข้อใด?",
+      "choice_1": "Mandatory Access Control (MAC)",
+      "choice_2": "Role-Based Access Control (RBAC)",
+      "choice_3": "Discretionary Access Control (DAC)",
+      "choice_4": "Complete Access Control",
+      "answer": 1
+    },
+    {
+      "question": "ข้อดีหลักของ Role-Based Access Control (RBAC) คืออะไร?",
+      "choice_1": "ให้ผู้ใช้กำหนดสิทธิ์ของตนเองได้",
+      "choice_2": "จัดการสิทธิ์ของผู้ใช้จำนวนมากในองค์กรได้ง่ายโดยอิงตามหน้าที่การทำงาน",
+      "choice_3": "ใช้ความปลอดภัยระดับฮาร์ดแวร์เพื่อบังคับใช้",
+      "choice_4": "วิเคราะห์บริบทต่างๆ อย่างซับซ้อนตาม Attribute",
+      "answer": 2
+    },
+    {
+      "question": "โมเดลใดที่มีความยืดหยุ่นมากที่สุด โดยพิจารณาจากคุณลักษณะของผู้ใช้, วัตถุ, สภาพแวดล้อม และเวลา?",
+      "choice_1": "MAC",
+      "choice_2": "DAC",
+      "choice_3": "RBAC",
+      "choice_4": "Attribute-Based Access Control (ABAC)",
+      "answer": 4
+    },
+    {
+      "question": "SELinux (Security-Enhanced Linux) จัดเป็นการควบคุมการเข้าถึงรูปแบบใดเป็นหลัก?",
+      "choice_1": "DAC",
+      "choice_2": "MAC",
+      "choice_3": "RBAC",
+      "choice_4": "ABAC",
+      "answer": 2
+    },
+    {
+      "question": "Active Directory (AD) เป็นบริการอะไรและใช้ทำหน้าที่อะไร?",
+      "choice_1": "บริการไฟร์วอลล์เพื่อป้องกันการบุกรุกเครือข่าย",
+      "choice_2": "บริการสารบบเพื่อใช้จัดการข้อมูลตัวตน ควบคุมและตรวจสอบสิทธิ์ในเครือข่ายแบบรวมศูนย์",
+      "choice_3": "บริการจัดการฐานข้อมูลเชิงสัมพันธ์",
+      "choice_4": "โปรโตคอลการเข้ารหัสอีเมล",
+      "answer": 2
+    },
+    {
+      "question": "โปรโตคอลมาตรฐานที่ใช้ดึงข้อมูลจาก Directory Services เช่น ค้นหาข้อมูลผู้ใช้ในระบบเครือข่าย คือโปรโตคอลใด?",
+      "choice_1": "HTTP",
+      "choice_2": "FTP",
+      "choice_3": "LDAP",
+      "choice_4": "SMTP",
+      "answer": 3
+    },
+    {
+      "question": "ปัญหา 'MFA Fatigue' หมายถึงอะไร?",
+      "choice_1": "กระบวนการพิสูจน์ตัวตนที่เร็วเกินไป",
+      "choice_2": "ผู้ใช้เกิดความล้าหรือรำคาญจากการถูกร้องขอให้พิสูจน์ตัวตนแบบ MFA บ่อยครั้งจนอาจกดยืนยันโดยไม่ตั้งใจ",
+      "choice_3": "ระบบล่มเนื่องจากมีการเข้าถึงพร้อมกัน",
+      "choice_4": "โทเคนแบตเตอรี่หมด",
+      "answer": 2
+    },
+    {
+      "question": "Role Explosion คือปัญหาที่พบได้ในโมเดลการควบคุมสิทธิ์แบบใด?",
+      "choice_1": "DAC",
+      "choice_2": "MAC",
+      "choice_3": "RBAC",
+      "choice_4": "ABAC",
+      "answer": 3
+    },
+    {
+      "question": "ระบบ Sandboxing ใน Android ทำหน้าที่เพื่ออะไร?",
+      "choice_1": "เพิ่มความเร็วในการรันแอปพลิเคชัน",
+      "choice_2": "แยกส่วนการทำงานของแต่ละแอปพลิเคชันเพื่อไม่ให้เข้าถึงข้อมูลข้ามกันโดยพลการ",
+      "choice_3": "ลบไฟล์ขยะอัตโนมัติ",
+      "choice_4": "สำรองข้อมูลขึ้นคลาวด์",
+      "answer": 2
+    },
+    {
+      "question": "Adaptive Authentication (Risk-based Authentication) แตกต่างจากการตรวจสอบตัวตนทั่วไปอย่างไร?",
+      "choice_1": "ไม่ต้องใช้รหัสผ่านเลย",
+      "choice_2": "ประเมินความเสี่ยงและบริบทของผู้ใช้แบบเรียลไทม์เพื่อปรับระดับความเข้มงวดในการล็อกอิน",
+      "choice_3": "ต้องใช้เครื่องแสกนลายนิ้วมือเสมอ",
+      "choice_4": "เป็นการยืนยันตัวตนสำหรับ Admin เท่านั้น",
+      "answer": 2
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import { QuizCard } from './components/QuizCard'
 import { ResultScreen } from './components/ResultScreen'
 import { StartModal } from './components/StartModal'
 import { useQuiz } from './hooks/useQuiz'
-import type { SubjectKey } from './hooks/useQuiz'
+import type { SubjectKey, ExamType } from './hooks/useQuiz'
 import { Analytics } from '@vercel/analytics/react'
 function App() {
   const {
@@ -32,6 +32,7 @@ function App() {
   } = useQuiz()
 
   const [selectedSubject, setSelectedSubject] = useState<SubjectKey>('embedded')
+  const [selectedExamType, setSelectedExamType] = useState<ExamType | null>(null)
 
   useEffect(() => {
     void initialize()
@@ -49,10 +50,23 @@ function App() {
     { key: 'flutter', label: '01219344 Mobile Software Development (Flutter)' },
     { key: 'economic', label: '01999041 Economics for Better Living' },
     { key: 'abstract-data-type', label: 'Abstract Data Type' },
+    { key: 'cyber-security', label: '01204437 Cyber Security' },
   ] as const
 
   const filteredUnits = useMemo(() => {
-    return units.filter((unit) => unit.subject === selectedSubject)
+    return units.filter((unit) => {
+      const isSubjectMatch = unit.subject === selectedSubject
+      const isExamMatch = !selectedExamType || unit.examType === 'all' || unit.examType === selectedExamType
+      return isSubjectMatch && isExamMatch
+    })
+  }, [selectedSubject, selectedExamType, units])
+
+  const hasMidterm = useMemo(() => {
+    return units.some(u => u.subject === selectedSubject && (u.examType === 'midterm' || u.examType === 'all'))
+  }, [selectedSubject, units])
+
+  const hasFinal = useMemo(() => {
+    return units.some(u => u.subject === selectedSubject && (u.examType === 'final' || u.examType === 'all'))
   }, [selectedSubject, units])
 
   const selectedBankQuestions = useMemo(
@@ -100,7 +114,10 @@ function App() {
                 <button
                   key={subject.key}
                   type="button"
-                  onClick={() => setSelectedSubject(subject.key)}
+                  onClick={() => {
+                    setSelectedSubject(subject.key)
+                    setSelectedExamType(null)
+                  }}
                   className={`rounded-xl border px-3 py-2.5 text-center font-semibold transition ${selectedSubject === subject.key
                       ? 'border-emerald-400 bg-emerald-100 text-zinc-900'
                       : 'border-zinc-300 bg-white text-zinc-700 hover:border-zinc-500'
@@ -111,7 +128,37 @@ function App() {
               ))}
             </div>
 
-            <h2 className="text-xl font-semibold text-zinc-900">เลือกขนาดข้อสอบ</h2>
+            {selectedSubject && (
+              <>
+                <h2 className="mt-5 text-xl font-semibold text-zinc-900">เลือกช่วงการสอบ</h2>
+                <div className="mt-3 grid grid-cols-2 gap-2.5">
+                  <button
+                    type="button"
+                    disabled={!hasMidterm}
+                    onClick={() => setSelectedExamType('midterm')}
+                    className={`rounded-xl border px-3 py-2.5 text-center font-semibold transition ${selectedExamType === 'midterm'
+                        ? 'border-blue-400 bg-blue-100 text-zinc-900'
+                        : 'border-zinc-300 bg-white text-zinc-700 hover:border-zinc-500'
+                      } disabled:opacity-40 disabled:cursor-not-allowed`}
+                  >
+                    Midterm
+                  </button>
+                  <button
+                    type="button"
+                    disabled={!hasFinal}
+                    onClick={() => setSelectedExamType('final')}
+                    className={`rounded-xl border px-3 py-2.5 text-center font-semibold transition ${selectedExamType === 'final'
+                        ? 'border-blue-400 bg-blue-100 text-zinc-900'
+                        : 'border-zinc-300 bg-white text-zinc-700 hover:border-zinc-500'
+                      } disabled:opacity-40 disabled:cursor-not-allowed`}
+                  >
+                    Final
+                  </button>
+                </div>
+              </>
+            )}
+
+            <h2 className="mt-5 text-xl font-semibold text-zinc-900">เลือกขนาดข้อสอบ</h2>
             <p className="mt-1.5 text-zinc-600">
               คลังข้อสอบที่เลือก {selectedBankQuestions} ข้อ จาก {filteredUnits.length} ยูนิต
             </p>
@@ -139,8 +186,8 @@ function App() {
             <button
               type="button"
               onClick={openStartModal}
-              disabled={selectedCount <= 0}
-              className="mt-4 rounded-lg bg-zinc-900 px-6 py-2.5 font-semibold text-white transition hover:bg-zinc-700 disabled:cursor-not-allowed disabled:opacity-40"
+              disabled={selectedCount <= 0 || !selectedExamType}
+              className="mt-4 w-full md:w-auto rounded-lg bg-zinc-900 px-6 py-2.5 font-semibold text-white transition hover:bg-zinc-700 disabled:cursor-not-allowed disabled:opacity-40"
             >
               เริ่มทำข้อสอบ
             </button>

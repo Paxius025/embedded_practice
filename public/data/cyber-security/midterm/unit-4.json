@@ -1,0 +1,198 @@
+{
+  "unit_number": 4,
+  "unit_name": "Program Security",
+  "questions": [
+    {
+      "question": "ช่องโหว่ซอฟต์แวร์ (Software Vulnerability) มักมีสาเหตุเริ่มต้นจากสิ่งใด?",
+      "choice_1": "ไวรัสคอมพิวเตอร์ทำงานผิดปกติ",
+      "choice_2": "ความผิดพลาดของมนุษย์ (Human Error) ในขั้นตอนการออกแบบและเขียนโปรแกรม",
+      "choice_3": "การอัปเดตระบบปฏิบัติการใหม่เกินไป",
+      "choice_4": "การใช้โปรแกรมป้องกันไวรัสหลายตัวพร้อมกัน",
+      "answer": 2
+    },
+    {
+      "question": "คำว่า 'Exploit' ในทางความปลอดภัยหมายถึงอะไร?",
+      "choice_1": "การสแกนหาช่องโหว่",
+      "choice_2": "การอุดช่องโหว่ของระบบ",
+      "choice_3": "โปรแกรมหรือวิธีการที่ใช้ประโยชน์จากช่องโหว่เพื่อโจมตีระบบ",
+      "choice_4": "ซอฟต์แวร์ฟรีแวร์ประเภทหนึ่ง",
+      "answer": 3
+    },
+    {
+      "question": "Call Stack ในโปรแกรมประกอบด้วยอะไรบ้าง?",
+      "choice_1": "Local variables, Frame pointer และ Return address",
+      "choice_2": "Global variables และ Heap space",
+      "choice_3": "Registers และ ALU",
+      "choice_4": "Source code และ Binary code",
+      "answer": 1
+    },
+    {
+      "question": "การโจมตีแบบ Stack-based Buffer Overflow มีเป้าหมายหลักในการเขียนทับข้อมูลใดเพื่อเปลี่ยนทิศทางการทำงานของโปรแกรม (Control Flow)?",
+      "choice_1": "Local variables",
+      "choice_2": "Global variables",
+      "choice_3": "Return address",
+      "choice_4": "CPU Registers",
+      "answer": 3
+    },
+    {
+      "question": "เทคนิค Return-to-libc เป็นการโจมตีเพื่อเลี่ยงการป้องกันแบบใด?",
+      "choice_1": "การป้องกันรหัสผ่าน",
+      "choice_2": "การตั้งค่าให้ Stack ไม่สามารถเอ็กซีคิวต์โค้ดได้ (Non-Executable Stack / DEP)",
+      "choice_3": "การสุ่มตำแหน่งหน่วยความจำ (ASLR)",
+      "choice_4": "การใช้ Stack Canary",
+      "answer": 2
+    },
+    {
+      "question": "ข้อใดเป็นช่องโหว่ที่เกิดจากการคำนวณตัวเลขทางคณิตศาสตร์ที่เกินขอบเขตตัวแปร?",
+      "choice_1": "Heap Overflow",
+      "choice_2": "Format String",
+      "choice_3": "Integer Overflow",
+      "choice_4": "Race Condition",
+      "answer": 3
+    },
+    {
+      "question": "หากโปรแกรมใช้ฟังก์ชัน printf() พิมพ์ข้อมูลโดยไม่ได้ระบุ format string ที่ชัดเจน อาจเกิดช่องโหว่ใด?",
+      "choice_1": "Integer Overflow",
+      "choice_2": "Format String Vulnerability",
+      "choice_3": "Heap Overflow",
+      "choice_4": "TOCTTOU",
+      "answer": 2
+    },
+    {
+      "question": "Meltdown และ Spectre คือช่องโหว่ที่ระดับใดของระบบคอมพิวเตอร์?",
+      "choice_1": "ระดับซอฟต์แวร์แอปพลิเคชัน",
+      "choice_2": "ระดับระบบปฏิบัติการ",
+      "choice_3": "ระดับสถาปัตยกรรมไมโครของซีพียู (Microarchitecture / Hardware)",
+      "choice_4": "ระดับเครือข่ายอินเทอร์เน็ต",
+      "answer": 3
+    },
+    {
+      "question": "เทคนิคใดในซีพียูสมัยใหม่ที่เป็นต้นเหตุของช่องโหว่ Meltdown และ Spectre?",
+      "choice_1": "Hyper-threading",
+      "choice_2": "Multi-core processing",
+      "choice_3": "Speculative Execution",
+      "choice_4": "Direct Memory Access (DMA)",
+      "answer": 3
+    },
+    {
+      "question": "Race Condition มักจะเกิดขึ้นจากสาเหตุใด?",
+      "choice_1": "การทำงานขนานกันของหลายโปรเซสที่เข้ามาแย่งใช้ทรัพยากรร่วมกันโดยไม่เข้าคิวให้ถูกต้อง",
+      "choice_2": "การเขียนข้อมูลเกินขนาดบัฟเฟอร์",
+      "choice_3": "การคำนวณค่าตัวเลขที่มากเกินไป",
+      "choice_4": "การตั้งค่าสิทธิ์เข้าถึงไฟล์ผิดพลาด",
+      "answer": 1
+    },
+    {
+      "question": "ช่องโหว่ TOCTTOU (Time-of-Check to Time-of-Use) จัดอยู่ในประเภทใด?",
+      "choice_1": "Buffer Overflow",
+      "choice_2": "Logic Flaw / Race Condition",
+      "choice_3": "Format String",
+      "choice_4": "Microarchitectural Attack",
+      "answer": 2
+    },
+    {
+      "question": "ข้อใดอธิบายความหมายของ Backdoor ได้ถูกต้องที่สุด?",
+      "choice_1": "โปรแกรมแอนตี้ไวรัสชนิดหนึ่ง",
+      "choice_2": "ช่องทางลับที่ข้ามการตรวจสอบตัวตน ซึ่งนักพัฒนาสร้างไว้และไม่ได้เอาออก",
+      "choice_3": "บั๊กที่ทำให้หน้าต่างโปรแกรมปิดเอง",
+      "choice_4": "เครือข่ายอินเทอร์เน็ตสำรอง",
+      "answer": 2
+    },
+    {
+      "question": "Off-by-one Error เกิดจากความผิดพลาดแบบใด?",
+      "choice_1": "การนับดัชนีผิดตำแหน่งเพียง 1 จุด (เช่น ลูปทำเกินไป 1 รอบ หรือจองอาร์เรย์ขาดไป 1 บล็อก)",
+      "choice_2": "การเขียนโค้ดหายไป 1 บรรทัด",
+      "choice_3": "รหัสผ่านสั้นเกินไป 1 ตัวอักษร",
+      "choice_4": "การต่อสายแลนผิด 1 ช่อง",
+      "answer": 1
+    },
+    {
+      "question": "Stack Canary หรือ StackGuard ใช้สำหรับป้องกันสิ่งใด?",
+      "choice_1": "การดักจับข้อมูลในเครือข่าย",
+      "choice_2": "การเขียนทับหน่วยความจำก่อนที่โปรแกรมจะรีเทิร์นออกจากฟังก์ชัน (Buffer Overflow)",
+      "choice_3": "การติดไวรัสจากแฟลชไดร์ฟ",
+      "choice_4": "การโจมตีแบบ Phishing",
+      "answer": 2
+    },
+    {
+      "question": "ASLR (Address Space Layout Randomization) คือกลไกการป้องกันแบบใด?",
+      "choice_1": "สุ่มตำแหน่งหน่วยความจำไม่ให้แฮกเกอร์คาดเดาตำแหน่งของโค้ดและไลบรารีได้ง่าย",
+      "choice_2": "สุ่มรหัสผ่านทุกครั้งที่ล็อกอิน",
+      "choice_3": "สุ่มเส้นทางการเชื่อมต่ออินเทอร์เน็ต",
+      "choice_4": "สุ่มแสกนไฟล์ทุก ๆ 1 ชั่วโมง",
+      "answer": 1
+    },
+    {
+      "question": "เทคนิคใดที่ป้องกันไม่ให้ CPU ไปรันโค้ดที่แฮกเกอร์ฉีดเข้าไปในพื้นที่เก็บข้อมูล (Data Section หรือ Stack)?",
+      "choice_1": "ASLR",
+      "choice_2": "DEP/NX (Data Execution Prevention / No-eXecute)",
+      "choice_3": "CFI (Control Flow Integrity)",
+      "choice_4": "Canary",
+      "answer": 2
+    },
+    {
+      "question": "มัลแวร์ประเภทใดที่จำเป็นต้องอาศัยไฟล์พาหะ (Host file) หรือโปรแกรมอื่นเพื่อแฝงตัว?",
+      "choice_1": "Worm",
+      "choice_2": "Trojan",
+      "choice_3": "Virus",
+      "choice_4": "Ransomware",
+      "answer": 3
+    },
+    {
+      "question": "ข้อใดคือลักษณะสำคัญของ Worm?",
+      "choice_1": "หลอกผู้ใช้ว่าเป็นโปรแกรมที่มีประโยชน์",
+      "choice_2": "สามารถจำลองตัวเองและแพร่กระจายผ่านเครือข่ายได้อัตโนมัติโดยไม่ต้องพึ่งพาไฟล์อื่นหรือคนคลิก",
+      "choice_3": "แอบแสดงโฆษณาตลอดเวลา",
+      "choice_4": "เรียกค่าไถ่เพื่อถอดรหัสไฟล์",
+      "answer": 2
+    },
+    {
+      "question": "มัลแวร์ที่ปลอมตัวเป็นแอปพลิเคชันที่ดูมีประโยชน์เพื่อให้ผู้ใช้หลงเชื่อติดตั้งลงเครื่องด้วยตนเอง คือข้อใด?",
+      "choice_1": "Worm",
+      "choice_2": "Trojan Horse",
+      "choice_3": "Virus",
+      "choice_4": "Spyware",
+      "answer": 2
+    },
+    {
+      "question": "Spyware คืออะไร?",
+      "choice_1": "โปรแกรมที่แอบฝังตัวเพื่อดักจับและขโมยข้อมูลส่วนตัว เช่น รหัสผ่าน หรือพฤติกรรมการพิมพ์",
+      "choice_2": "ซอฟต์แวร์ป้องกันไวรัสรุ่นฟรี",
+      "choice_3": "เครื่องมือแสกนช่องโหว่",
+      "choice_4": "โปรแกรมที่ทำให้จอฟ้า (Blue Screen)",
+      "answer": 1
+    },
+    {
+      "question": "เครือข่ายคอมพิวเตอร์ที่ติดมัลแวร์และถูกแฮกเกอร์ควบคุมสั่งการระยะไกลพร้อมๆ กันเรียกว่าอะไร?",
+      "choice_1": "Darknet",
+      "choice_2": "Blockchain",
+      "choice_3": "Botnet",
+      "choice_4": "Intranet",
+      "answer": 3
+    },
+    {
+      "question": "พฤติกรรมหลักของ Ransomware คืออะไร?",
+      "choice_1": "การขโมยเงินจากบัญชีธนาคารผ่านเว็บไซต์",
+      "choice_2": "การเข้ารหัสไฟล์หรือล็อกหน้าจอระบบ เพื่อบีบบังคับให้เหยื่อจ่ายค่าไถ่",
+      "choice_3": "การทำให้เครื่องทำงานหนักเพื่อขุดเหมืองคริปโต",
+      "choice_4": "การยิงทราฟฟิกให้เว็บไซต์ล่ม",
+      "answer": 2
+    },
+    {
+      "question": "การตรวจจับมัลแวร์แบบใดที่จะอาศัยรูปแบบของโค้ด (Signature) ที่มีอยู่ในฐานข้อมูลเป็นหลัก?",
+      "choice_1": "Heuristic-based Detection",
+      "choice_2": "Behavior-based Detection",
+      "choice_3": "Signature-based Detection",
+      "choice_4": "Machine Learning Analysis",
+      "answer": 3
+    },
+    {
+      "question": "Zero-day Attack คืออะไร?",
+      "choice_1": "การโจมตีในเวลาเที่ยงคืนตรง",
+      "choice_2": "การใช้ช่องโหว่ที่เพิ่งค้นพบใหม่และยังไม่มีแพตช์ (Patch) สำหรับแก้ไขจากผู้พัฒนา",
+      "choice_3": "การโจมตีที่ทำลายข้อมูลทั้งหมดให้เหลือ 0 ไบต์",
+      "choice_4": "มัลแวร์ที่ไม่ต้องใช้เวลาติดตั้งเลย",
+      "answer": 2
+    }
+  ]
+}

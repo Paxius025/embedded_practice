@@ -1,0 +1,198 @@
+{
+  "unit_number": 5,
+  "unit_name": "Web Application Security",
+  "questions": [
+    {
+      "question": "คุณสมบัติด้านความปลอดภัยใดในบริบทของเบราว์เซอร์ ที่ตรงกับการรักษาความลับ (Confidentiality) ใน CIA Triad?",
+      "choice_1": "ความถูกต้องสมบูรณ์ (Integrity)",
+      "choice_2": "ความเป็นส่วนตัว (Privacy)",
+      "choice_3": "ความพร้อมใช้งาน (Availability)",
+      "choice_4": "การตรวจสอบสิทธิ์ (Authentication)",
+      "answer": 2
+    },
+    {
+      "question": "Cookie ประเภทใดที่มักจะถูกลบออกเมื่อผู้ใช้ปิดเบราว์เซอร์?",
+      "choice_1": "Persistent Cookie",
+      "choice_2": "Third-party Cookie",
+      "choice_3": "Session Cookie",
+      "choice_4": "Secure Cookie",
+      "answer": 3
+    },
+    {
+      "question": "นโยบาย Same-Origin Policy (SOP) มีจุดประสงค์หลักเพื่ออะไร?",
+      "choice_1": "อนุญาตให้ทุกเว็บไซต์แชร์ข้อมูลกันได้อย่างอิสระ",
+      "choice_2": "จำกัดการเข้าถึงข้อมูลและสคริปต์ระหว่างเว็บไซต์ต่างโดเมน หรือต่างพอร์ต",
+      "choice_3": "ป้องกันการใช้งานคุกกี้ทั้งหมด",
+      "choice_4": "ลดความเร็วในการโหลดหน้าเว็บ",
+      "answer": 2
+    },
+    {
+      "question": "กลไกใดถูกออกแบบมาเพื่ออนุญาตให้ข้ามข้อจำกัดของ SOP ได้อย่างปลอดภัย เช่น การดึง API ข้ามโดเมน?",
+      "choice_1": "CORS (Cross-Origin Resource Sharing)",
+      "choice_2": "CSRF (Cross-Site Request Forgery)",
+      "choice_3": "XSS (Cross-Site Scripting)",
+      "choice_4": "SQL Injection",
+      "answer": 1
+    },
+    {
+      "question": "HTTP Header ใดใช้สำหรับกำหนดว่าอนุญาตให้โดเมนใดเข้าถึงข้อมูลผ่าน CORS ได้บ้าง?",
+      "choice_1": "Set-Cookie",
+      "choice_2": "X-Frame-Options",
+      "choice_3": "Access-Control-Allow-Origin",
+      "choice_4": "Content-Type",
+      "answer": 3
+    },
+    {
+      "question": "ช่องโหว่ Cross-Site Scripting (XSS) อาศัยการทำสิ่งใดเป็นหลัก?",
+      "choice_1": "ขโมยฐานข้อมูลจากเซิร์ฟเวอร์",
+      "choice_2": "ฝังโค้ดอันตราย (เช่น JavaScript) เพื่อให้ไปรันในเบราว์เซอร์ของเหยื่อ",
+      "choice_3": "สุ่มรหัสผ่าน",
+      "choice_4": "เปลี่ยนเส้นทางการเชื่อมต่อเครือข่าย",
+      "answer": 2
+    },
+    {
+      "question": "Stored XSS แตกต่างจาก Reflected XSS อย่างไร?",
+      "choice_1": "Stored XSS เกิดขึ้นที่ฝั่งไคลเอนต์เท่านั้น",
+      "choice_2": "Stored XSS คือสคริปต์อันตรายที่ถูกบันทึกลงในฐานข้อมูลของเซิร์ฟเวอร์ และแสดงผลให้ผู้ใช้ที่เข้ามาเปิดหน้าเว็บนั้น",
+      "choice_3": "Stored XSS ไม่มีอันตรายเท่า Reflected XSS",
+      "choice_4": "Stored XSS ใช้ได้เฉพาะกับเบราว์เซอร์รุ่นเก่า",
+      "answer": 2
+    },
+    {
+      "question": "การโจมตีแบบ Directory Traversal (Dot-Dot-Slash) มุ่งเป้าหมายไปที่อะไร?",
+      "choice_1": "ขโมยคุกกี้",
+      "choice_2": "หลอกผู้ใช้ให้คลิกปุ่มผิด",
+      "choice_3": "เข้าถึงไฟล์หรือไดเรกทอรีบนเซิร์ฟเวอร์ที่ไม่อนุญาตให้เข้าถึง (เช่น /etc/passwd)",
+      "choice_4": "ทำให้ฐานข้อมูลล่ม",
+      "answer": 3
+    },
+    {
+      "question": "ช่องโหว่ประเภทใดที่ทำให้แฮกเกอร์หลอกเบราว์เซอร์ให้ส่งคำสั่งบางอย่างแทนผู้ใช้ที่ล็อกอินอยู่ (เช่น สั่งโอนเงิน)?",
+      "choice_1": "XSS",
+      "choice_2": "CSRF",
+      "choice_3": "SSI Injection",
+      "choice_4": "Directory Traversal",
+      "answer": 2
+    },
+    {
+      "question": "ความแตกต่างหลักระหว่าง XSS และ CSRF คืออะไร?",
+      "choice_1": "XSS ใช้สำหรับแฮกฐานข้อมูล แต่ CSRF ใช้ดักฟังเครือข่าย",
+      "choice_2": "XSS ใช้อีเมลเป็นสื่อกลาง แต่ CSRF ใช้เว็บไซต์",
+      "choice_3": "XSS ขโมยข้อมูลไปจากผู้ใช้ (Steal Data) ส่วน CSRF คือหลอกผู้ใช้ให้ทำแอคชั่นบางอย่าง (Send Command)",
+      "choice_4": "ไม่มีความแตกต่างกัน",
+      "answer": 3
+    },
+    {
+      "question": "การโจมตีแบบ Clickjacking ทำงานอย่างไร?",
+      "choice_1": "ใช้ JavaScript เพื่อซ่อนเลเยอร์หรือปุ่มอันตรายเอาไว้ใต้ปุ่มปกติเพื่อหลอกให้ผู้ใช้คลิก",
+      "choice_2": "ดักจับการคลิกเมาส์ทุกครั้งบนคีย์บอร์ด",
+      "choice_3": "ส่งอีเมลหลอกให้ผู้ใช้คลิกลิงก์",
+      "choice_4": "ใช้เมาส์ขวาคลิกไม่ได้",
+      "answer": 1
+    },
+    {
+      "question": "การป้องกันที่ทำให้สคริปต์ฝั่งไคลเอนต์ (เช่น JavaScript) ไม่สามารถเข้าถึง Cookie ได้ คือการตั้งค่าใด?",
+      "choice_1": "Secure Flag",
+      "choice_2": "HttpOnly Flag",
+      "choice_3": "SameSite Attribute",
+      "choice_4": "CORS Flag",
+      "answer": 2
+    },
+    {
+      "question": "การตั้งค่า Secure Flag ใน Cookie มีไว้เพื่ออะไร?",
+      "choice_1": "ห้ามส่ง Cookie ผ่านการเชื่อมต่อที่ไม่เข้ารหัส (เช่น HTTP ปกติ) ต้องส่งผ่าน HTTPS เท่านั้น",
+      "choice_2": "ห้ามใช้ JavaScript อ่านคุกกี้",
+      "choice_3": "ห้ามส่งคุกกี้ข้ามโดเมน",
+      "choice_4": "เข้ารหัสคุกกี้ก่อนบันทึก",
+      "answer": 1
+    },
+    {
+      "question": "SameSite Cookie Attribute มีประโยชน์ในการป้องกันการโจมตีประเภทใดมากที่สุด?",
+      "choice_1": "SQL Injection",
+      "choice_2": "XSS",
+      "choice_3": "CSRF",
+      "choice_4": "Directory Traversal",
+      "answer": 3
+    },
+    {
+      "question": "X-Frame-Options Header ใช้เพื่อป้องกันการโจมตีประเภทใด?",
+      "choice_1": "Clickjacking (ไม่อนุญาตให้เอาหน้าเว็บไปฝังใน iframe)",
+      "choice_2": "XSS (ไม่อนุญาตให้รันสคริปต์)",
+      "choice_3": "CSRF (ตรวจสอบ Token)",
+      "choice_4": "Path Traversal",
+      "answer": 1
+    },
+    {
+      "question": "มาตรฐานใดใช้สำหรับป้องกันการปลอมแปลงผู้ส่งอีเมล (Email Spoofing) โดยระบุว่า IP ใดมีสิทธิ์ส่งอีเมลในนามโดเมนนั้นๆ?",
+      "choice_1": "DKIM",
+      "choice_2": "DMARC",
+      "choice_3": "SPF",
+      "choice_4": "PGP",
+      "answer": 3
+    },
+    {
+      "question": "DKIM ใช้เทคนิคใดในการตรวจสอบความถูกต้องของอีเมล?",
+      "choice_1": "Digital Signature แนบไปกับส่วนหัวอีเมล",
+      "choice_2": "เข้ารหัสอีเมลทั้งฉบับ",
+      "choice_3": "ตรวจสอบ IP แอดเดรส",
+      "choice_4": "บล็อกอีเมลขยะโดยอัตโนมัติ",
+      "answer": 1
+    },
+    {
+      "question": "DMARC คืออะไร?",
+      "choice_1": "โปรโตคอลเข้ารหัสรหัสผ่าน",
+      "choice_2": "นโยบายที่รวม SPF และ DKIM เข้าด้วยกัน เพื่อบอกเซิร์ฟเวอร์ผู้รับว่าควรทำอย่างไรหากอีเมลไม่ผ่านการตรวจสอบ",
+      "choice_3": "ระบบตรวจสอบไวรัสในไฟล์แนบ",
+      "choice_4": "โปรแกรมสำหรับดักจับข้อมูลในอีเมล",
+      "answer": 2
+    },
+    {
+      "question": "ช่องโหว่ SSI (Server-Side Include) Injection มักนำไปสู่ผลลัพธ์ใด?",
+      "choice_1": "การดาวน์โหลดโปรแกรมลงเครื่องผู้ใช้อัตโนมัติ",
+      "choice_2": "การขโมยคุกกี้จากเบราว์เซอร์ผู้ใช้",
+      "choice_3": "การรันคำสั่งบนระบบปฏิบัติการของเซิร์ฟเวอร์",
+      "choice_4": "การปิดกั้นไม่ให้เว็บไซต์เข้าถึงได้",
+      "answer": 3
+    },
+    {
+      "question": "Drive-By Download คือการโจมตีแบบใด?",
+      "choice_1": "การดาวน์โหลดไฟล์โดยใช้โปรแกรมช่วยโหลด",
+      "choice_2": "มัลแวร์ที่ถูกดาวน์โหลดและติดตั้งในพื้นหลังโดยที่ผู้ใช้ไม่รู้ตัวเพียงแค่เข้าชมเว็บไซต์ที่มีช่องโหว่",
+      "choice_3": "การโจมตีด้วยการส่งอีเมลแนบไฟล์ไวรัส",
+      "choice_4": "การส่งไฟล์ผ่านแฟลชไดร์ฟ",
+      "answer": 2
+    },
+    {
+      "question": "การโจมตีแบบ Page-in-the-Middle มักใช้ในกรณีใด?",
+      "choice_1": "การสร้างเว็บปลอมเพื่อทำ Phishing",
+      "choice_2": "การดักฟังแพ็กเกจบนเครือข่าย Wi-Fi",
+      "choice_3": "การดาวน์โหลดไฟล์ขนาดใหญ่",
+      "choice_4": "การบล็อกโฆษณา",
+      "answer": 1
+    },
+    {
+      "question": "นโยบาย Content Security Policy (CSP) มีส่วนช่วยในการป้องกันปัญหาใดเป็นหลัก?",
+      "choice_1": "CSRF",
+      "choice_2": "XSS (โดยควบคุมแหล่งที่มาของสคริปต์ที่อนุญาตให้รันได้)",
+      "choice_3": "Directory Traversal",
+      "choice_4": "DDoS",
+      "answer": 2
+    },
+    {
+      "question": "ในบริบทของคุกกี้ Third-party Cookie คืออะไร?",
+      "choice_1": "คุกกี้ที่ใช้รหัสผ่าน",
+      "choice_2": "คุกกี้ที่มาจากโดเมนอื่นที่ไม่ได้เป็นโดเมนเดียวกับเว็บไซต์ที่กำลังเข้าชม",
+      "choice_3": "คุกกี้ที่ผู้ใช้สร้างขึ้นเอง",
+      "choice_4": "คุกกี้ที่มีอายุการใช้งานเพียง 3 วินาที",
+      "answer": 2
+    },
+    {
+      "question": "ข้อใดเป็นวิธีการป้องกันปัญหา CSRF ที่ดีที่สุด?",
+      "choice_1": "ใช้ Anti-CSRF Token ที่สุ่มขึ้นมาทุกครั้งพร้อมกับการส่งฟอร์ม",
+      "choice_2": "เข้ารหัสฐานข้อมูลทั้งหมด",
+      "choice_3": "เปิดใช้งาน X-Frame-Options",
+      "choice_4": "ไม่บันทึก IP address ผู้ใช้",
+      "answer": 1
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "unit_number": 1,
+  "unit_name": "Introduction to Computer System Security",
+  "questions": [
+    {
+      "question": "เป้าหมายหลักของการรักษาความมั่นคงปลอดภัยของระบบคอมพิวเตอร์คืออะไร?",
+      "choice_1": "เพื่อให้ระบบทำงานได้เร็วที่สุด",
+      "choice_2": "เพื่อปกป้องทรัพย์สิน (Assets) ของระบบจากความเสี่ยง",
+      "choice_3": "เพื่อลดต้นทุนในการดูแลรักษาระบบ",
+      "choice_4": "เพื่อเพิ่มจำนวนผู้ใช้งานในระบบ",
+      "answer": 2
+    },
+    {
+      "question": "ข้อใดต่อไปนี้จัดเป็นทรัพย์สินประเภท 'ฮาร์ดแวร์' ของระบบคอมพิวเตอร์?",
+      "choice_1": "ระบบปฏิบัติการ",
+      "choice_2": "ข้อมูลผู้ใช้",
+      "choice_3": "อุปกรณ์เครือข่าย",
+      "choice_4": "แอปพลิเคชัน",
+      "answer": 3
+    },
+    {
+      "question": "CIA Triad ประกอบด้วยองค์ประกอบใดบ้าง?",
+      "choice_1": "Confidentiality, Integrity, Availability",
+      "choice_2": "Control, Identification, Authentication",
+      "choice_3": "Cyber, Information, Asset",
+      "choice_4": "Cryptography, Integrity, Authorization",
+      "answer": 1
+    },
+    {
+      "question": "การป้องกันไม่ให้ผู้ไม่มีสิทธิ์เข้าถึงหรือเปิดเผยข้อมูลตรงกับหลักการใด?",
+      "choice_1": "Integrity",
+      "choice_2": "Availability",
+      "choice_3": "Authentication",
+      "choice_4": "Confidentiality",
+      "answer": 4
+    },
+    {
+      "question": "หากข้อมูลถูกแก้ไขโดยไม่ได้รับอนุญาต แสดงว่าระบบสูญเสียคุณสมบัติด้านใด?",
+      "choice_1": "Confidentiality",
+      "choice_2": "Integrity",
+      "choice_3": "Availability",
+      "choice_4": "Accounting",
+      "answer": 2
+    },
+    {
+      "question": "การโจมตีแบบ DDoS (Distributed Denial of Service) ส่งผลกระทบต่อคุณสมบัติด้านใดมากที่สุด?",
+      "choice_1": "Availability",
+      "choice_2": "Confidentiality",
+      "choice_3": "Integrity",
+      "choice_4": "Authorization",
+      "answer": 1
+    },
+    {
+      "question": "การดักฟังข้อมูล (Interception) ถือเป็นภัยคุกคามต่อสิ่งใด?",
+      "choice_1": "Availability",
+      "choice_2": "Integrity",
+      "choice_3": "Confidentiality",
+      "choice_4": "Accounting",
+      "answer": 3
+    },
+    {
+      "question": "Vulnerability (ช่องโหว่) หมายถึงอะไร?",
+      "choice_1": "กลไกที่ใช้ป้องกันระบบ",
+      "choice_2": "จุดอ่อนของระบบที่อาจถูกใช้โจมตี",
+      "choice_3": "ปัจจัยที่อาจก่อให้เกิดความเสียหาย",
+      "choice_4": "การระบุตัวตนของผู้ใช้งาน",
+      "answer": 2
+    },
+    {
+      "question": "ในโมเดล VTC, 'Threat' หมายถึงอะไร?",
+      "choice_1": "ช่องโหว่ของระบบ",
+      "choice_2": "มาตรการควบคุมระบบ",
+      "choice_3": "เหตุการณ์ที่อาจก่อให้เกิดความเสียหาย",
+      "choice_4": "การบันทึกการทำงานของระบบ",
+      "answer": 3
+    },
+    {
+      "question": "CVE ย่อมาจากอะไร?",
+      "choice_1": "Common Vulnerabilities and Exposures",
+      "choice_2": "Computer Virus Evaluation",
+      "choice_3": "Cyber Vulnerability Exploits",
+      "choice_4": "Control and Vulnerability Execution",
+      "answer": 1
+    },
+    {
+      "question": "ระบบใดใช้ในการประเมินระดับความรุนแรงของช่องโหว่?",
+      "choice_1": "CVE",
+      "choice_2": "CIA",
+      "choice_3": "CVSS",
+      "choice_4": "AAA",
+      "answer": 3
+    },
+    {
+      "question": "AAA Framework ประกอบด้วยอะไรบ้าง?",
+      "choice_1": "Access, Authorization, Auditing",
+      "choice_2": "Authentication, Authorization, Accounting",
+      "choice_3": "Authentication, Availability, Accounting",
+      "choice_4": "Anti-virus, Anti-malware, Anti-spam",
+      "answer": 2
+    },
+    {
+      "question": "กระบวนการพิสูจน์ตัวตนว่าผู้ใช้คือใคร เรียกว่าอะไร?",
+      "choice_1": "Authorization",
+      "choice_2": "Accounting",
+      "choice_3": "Authentication",
+      "choice_4": "Auditing",
+      "answer": 3
+    },
+    {
+      "question": "การกำหนดสิทธิ์หลังการพิสูจน์ตัวตนสำเร็จแล้ว ตรงกับข้อใด?",
+      "choice_1": "Authentication",
+      "choice_2": "Authorization",
+      "choice_3": "Accounting",
+      "choice_4": "Auditing",
+      "answer": 2
+    },
+    {
+      "question": "หลักการ Least Privilege ของ Saltzer และ Schroeder คืออะไร?",
+      "choice_1": "การให้สิทธิ์เข้าถึงทั้งหมดแก่ผู้ดูแลระบบ",
+      "choice_2": "การให้สิทธิ์เข้าถึงเท่าที่จำเป็นต่อการปฏิบัติงานเท่านั้น",
+      "choice_3": "การให้สิทธิ์เฉพาะผู้ใช้ที่ลงทะเบียนล่าสุด",
+      "choice_4": "การปฏิเสธการเข้าถึงทั้งหมดไว้ก่อน",
+      "answer": 2
+    },
+    {
+      "question": "ความปลอดภัยไม่ควรขึ้นอยู่กับการปิดบังกลไกการทำงาน ตรงกับหลักการใด?",
+      "choice_1": "Least Privilege",
+      "choice_2": "Complete Mediation",
+      "choice_3": "Open Design",
+      "choice_4": "Economy of Mechanism",
+      "answer": 3
+    },
+    {
+      "question": "หลักการ Complete Mediation หมายถึงอะไร?",
+      "choice_1": "ทุกการเข้าถึงต้องผ่านการตรวจสอบอย่างต่อเนื่อง",
+      "choice_2": "การทำงานของระบบต้องเรียบง่ายที่สุด",
+      "choice_3": "ผู้ใช้ต้องยอมรับระบบความปลอดภัยที่ใช้งานง่าย",
+      "choice_4": "ระบบต้องแบ่งแยกสิทธิ์อย่างชัดเจน",
+      "answer": 1
+    },
+    {
+      "question": "Threat Modeling เริ่มต้นจากขั้นตอนใด?",
+      "choice_1": "การเขียนโค้ดแก้ไขช่องโหว่",
+      "choice_2": "การโจมตีระบบจริง",
+      "choice_3": "การระบุนโยบายความปลอดภัยและวิเคราะห์ผู้โจมตี",
+      "choice_4": "การปิดระบบชั่วคราว",
+      "answer": 3
+    },
+    {
+      "question": "แนวคิด 'Think Like an Attacker' มีประโยชน์อย่างไร?",
+      "choice_1": "ช่วยคาดการณ์แนวทางการโจมตีเพื่อออกแบบมาตรการป้องกัน",
+      "choice_2": "ช่วยลดการใช้ทรัพยากรของระบบ",
+      "choice_3": "ช่วยให้ระบบทำงานเร็วขึ้น",
+      "choice_4": "ช่วยลบมัลแวร์ออกจากเครื่อง",
+      "answer": 1
+    },
+    {
+      "question": "ข้อใดไม่ใช่ส่วนหนึ่งของทรัพย์สินข้อมูล (Data) ในระบบคอมพิวเตอร์?",
+      "choice_1": "เอกสารบริษัท",
+      "choice_2": "อีเมล",
+      "choice_3": "โปรแกรมเบราว์เซอร์",
+      "choice_4": "ไฟล์รหัสผ่าน",
+      "answer": 3
+    },
+    {
+      "question": "Control ในโมเดล VTC มีหน้าที่อะไร?",
+      "choice_1": "เพิ่มช่องโหว่ของระบบ",
+      "choice_2": "สร้างภัยคุกคามใหม่",
+      "choice_3": "ป้องกันหรือลดผลกระทบจากภัยคุกคาม",
+      "choice_4": "สแกนหาไวรัสในไฟล์",
+      "answer": 3
+    },
+    {
+      "question": "หลักการใดเกี่ยวข้องกับการประเมินพฤติกรรมหรือกิจกรรมของผู้ใช้ย้อนหลัง?",
+      "choice_1": "Authentication",
+      "choice_2": "Accounting",
+      "choice_3": "Authorization",
+      "choice_4": "Availability",
+      "answer": 2
+    },
+    {
+      "question": "Security through obscurity ถือเป็นการออกแบบความปลอดภัยที่ละเมิดหลักการใด?",
+      "choice_1": "Open Design",
+      "choice_2": "Least Privilege",
+      "choice_3": "Complete Mediation",
+      "choice_4": "Fail-Safe Defaults",
+      "answer": 1
+    },
+    {
+      "question": "ข้อใดคือตัวอย่างของ Availability Threat?",
+      "choice_1": "การเข้ารหัสข้อมูลผิดพลาด",
+      "choice_2": "การดักจับรหัสผ่าน",
+      "choice_3": "Ransomware ที่ล็อกไฟล์ไม่ให้ใช้งานได้",
+      "choice_4": "การเปลี่ยนแปลงยอดเงินในบัญชีธนาคาร",
+      "answer": 3
+    }
+  ]
+}
