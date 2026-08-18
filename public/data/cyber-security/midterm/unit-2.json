@@ -132,18 +132,18 @@
     },
     {
       "question": "โมเดลใดที่มีความยืดหยุ่นมากที่สุด โดยพิจารณาจากคุณลักษณะของผู้ใช้, วัตถุ, สภาพแวดล้อม และเวลา?",
-      "choice_1": "MAC",
-      "choice_2": "DAC",
-      "choice_3": "RBAC",
+      "choice_1": "Mandatory Access Control (MAC)",
+      "choice_2": "Discretionary Access Control (DAC)",
+      "choice_3": "Role-Based Access Control (RBAC)",
       "choice_4": "Attribute-Based Access Control (ABAC)",
       "answer": 4
     },
     {
       "question": "SELinux (Security-Enhanced Linux) จัดเป็นการควบคุมการเข้าถึงรูปแบบใดเป็นหลัก?",
-      "choice_1": "DAC",
-      "choice_2": "MAC",
-      "choice_3": "RBAC",
-      "choice_4": "ABAC",
+      "choice_1": "Mandatory Access Control (MAC)",
+      "choice_2": "Discretionary Access Control (DAC)",
+      "choice_3": "Role-Based Access Control (RBAC)",
+      "choice_4": "Attribute-Based Access Control (ABAC)",
       "answer": 2
     },
     {

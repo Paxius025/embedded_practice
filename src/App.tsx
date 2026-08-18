@@ -79,7 +79,7 @@ function App() {
   return (
     <main className="relative h-dvh overflow-hidden bg-[radial-gradient(circle_at_20%_20%,#fde68a_0%,transparent_35%),radial-gradient(circle_at_80%_0%,#fca5a5_0%,transparent_30%),linear-gradient(135deg,#f7f8fb_0%,#edf0f9_60%,#e5e7f1_100%)] px-2 py-2 md:px-3 md:py-3">
       <div
-        className={`mx-auto flex h-full w-full max-w-4xl flex-col gap-3 ${isFinished ? 'overflow-y-auto pb-12 pr-1' : 'overflow-hidden'
+        className={`mx-auto flex h-full w-full max-w-4xl flex-col gap-3 ${isFinished ? 'overflow-y-auto pb-12 pr-1' : 'overflow-y-auto pb-8'
           }`}
       >
         {questions.length === 0 && (
@@ -163,7 +163,7 @@ function App() {
               คลังข้อสอบที่เลือก {selectedBankQuestions} ข้อ จาก {filteredUnits.length} ยูนิต
             </p>
 
-            <div className="mt-3 grid grid-cols-2 gap-2.5 md:grid-cols-4">
+            <div className="mt-3 grid grid-cols-4 gap-2.5">
               {options.map((option) => (
                 <button
                   key={option.value}
@@ -214,15 +214,15 @@ function App() {
             onRestart={restart}
           />
         )}
+
+        <footer className="mt-auto pb-2 text-center text-xs font-medium text-zinc-600 md:text-sm">
+          จัดทำโดย Pantong Sanonok CPE9
+        </footer>
       </div>
 
       {showStartModal && (
         <StartModal onClose={closeStartModal} onConfirm={() => startExam(filteredUnits)} />
       )}
-
-      <footer className="pointer-events-none absolute inset-x-0 bottom-2 text-center text-xs font-medium text-zinc-600 md:text-sm">
-        จัดทำโดย Pantong Sanonok CPE9
-      </footer>
       <Analytics />
     </main>
   )

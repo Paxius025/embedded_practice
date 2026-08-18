@@ -27,7 +27,7 @@ export function QuizCard({
   const isLast = currentQuestionIndex === totalQuestions - 1
 
   return (
-    <section className="w-full rounded-2xl border border-zinc-200 bg-white/95 p-4 shadow-xl md:p-6">
+    <section className="my-auto w-full rounded-2xl border border-zinc-200 bg-white/95 p-4 shadow-xl md:p-6">
       <div className="mb-4">
         <div className="mb-2 flex flex-wrap items-center justify-between gap-2 text-sm text-zinc-600">
           <span className="rounded-full bg-zinc-100 px-3 py-1 font-medium">
