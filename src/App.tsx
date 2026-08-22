@@ -51,6 +51,7 @@ function App() {
     { key: 'economic', label: '01999041 Economics for Better Living' },
     { key: 'abstract-data-type', label: 'Abstract Data Type' },
     { key: 'cyber-security', label: '01204437 Cyber Security' },
+    { key: 'introduction-ai', label: 'Introduction to AI' },
   ] as const
 
   const filteredUnits = useMemo(() => {

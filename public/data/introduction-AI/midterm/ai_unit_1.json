@@ -1,0 +1,206 @@
+{
+  "unit_number": 1,
+  "unit_name": "ประวัติความเป็นมาของ AI",
+  "questions": [
+  {
+    "question": "ใครเป็นผู้บัญญัติคำว่า 'Artificial Intelligence' (AI) อย่างเป็นทางการในการประชุม Dartmouth Conference ปี ค.ศ. 1956?",
+    "choice_1": "Alan Turing",
+    "choice_2": "John McCarthy",
+    "choice_3": "Frank Rosenblatt",
+    "choice_4": "Joseph Weizenbaum",
+    "answer": 2
+  },
+  {
+    "question": "บุคคลใดได้รับการยกย่องว่าเป็น 'บิดาของวิทยาการคอมพิวเตอร์'?",
+    "choice_1": "John McCarthy",
+    "choice_2": "Alan Turing",
+    "choice_3": "Garry Kasparov",
+    "choice_4": "Frank Rosenblatt",
+    "answer": 2
+  },
+  {
+    "question": "ตามความหมายของคำว่า 'ปัญญาประดิษฐ์' (Artificial Intelligence) คำว่า 'ปัญญา' (Intelligence) มีความหมายตรงกับข้อใดตามเอกสาร?",
+    "choice_1": "สิ่งที่มนุษย์สร้างขึ้น",
+    "choice_2": "พลังแห่งความคิด",
+    "choice_3": "ระบบประมวลผลข้อมูล",
+    "choice_4": "การจดจำข้อมูลอย่างแม่นยำ",
+    "answer": 2
+  },
+  {
+    "question": "แนวคิดการทดสอบความสามารถของเครื่องจักรเพื่อพิสูจน์ความฉลาดเทียบเท่ามนุษย์ (Turing Test) ถูกเสนอขึ้นในปี ค.ศ. ใด?",
+    "choice_1": "ค.ศ. 1940",
+    "choice_2": "ค.ศ. 1950",
+    "choice_3": "ค.ศ. 1956",
+    "choice_4": "ค.ศ. 1960",
+    "answer": 2
+  },
+  {
+    "question": "แชทบอท 'ELIZA' ซึ่งเป็นแชทบอทเลียนแบบจิตแพทย์ตัวแรกของโลก ทำงานโดยใช้เทคนิคหลักการใด?",
+    "choice_1": "Deep Learning",
+    "choice_2": "Pattern Matching (การจับคู่รูปแบบ)",
+    "choice_3": "Reinforcement Learning",
+    "choice_4": "Artificial Neural Network",
+    "answer": 2
+  },
+  {
+    "question": "ใครคือผู้พัฒนาแชทบอทเลียนแบบจิตแพทย์ตัวแรกของโลกที่ชื่อว่า 'ELIZA'?",
+    "choice_1": "Alan Turing",
+    "choice_2": "John McCarthy",
+    "choice_3": "Joseph Weizenbaum",
+    "choice_4": "Frank Rosenblatt",
+    "answer": 3
+  },
+  {
+    "question": "แชทบอท ELIZA ได้รับการยอมรับว่าเป็นจุดเริ่มต้นที่วางรากฐานให้กับเทคโนโลยีใดในปัจจุบัน?",
+    "choice_1": "การมองเห็นของคอมพิวเตอร์ (Computer Vision)",
+    "choice_2": "การประมวลผลภาษาธรรมชาติ (NLP)",
+    "choice_3": "ยานยนต์ไร้คนขับ (Self-Driving Car)",
+    "choice_4": "การวิเคราะห์ข้อมูลขนาดใหญ่ (Big Data)",
+    "answer": 2
+  },
+  {
+    "question": "ข้อใดอธิบายความสัมพันธ์และขอบเขตระหว่าง AI, Machine Learning (ML) และ Deep Learning (DL) ได้ถูกต้องที่สุด?",
+    "choice_1": "ML มีขอบเขตใหญ่ที่สุด, AI เป็นเซตย่อยของ ML, และ DL เป็นเซตย่อยของ AI",
+    "choice_2": "AI มีขอบเขตใหญ่ที่สุด, DL เป็นเซตย่อยของ AI, และ ML เป็นเซตย่อยของ DL",
+    "choice_3": "AI มีขอบเขตใหญ่ที่สุด, ML เป็นเซตย่อยของ AI, และ DL เป็นเซตย่อยของ ML",
+    "choice_4": "DL มีขอบเขตใหญ่ที่สุด, ML เป็นเซตย่อยของ DL, และ AI เป็นเซตย่อยของ ML",
+    "answer": 3
+  },
+  {
+    "question": "คุณสมบัติสำคัญของระบบปัญญาประดิษฐ์ (AI) แบบดั้งเดิม (เช่น โปรแกรมแชทบอท ELIZA) แตกต่างจาก Machine Learning อย่างไร?",
+    "choice_1": "สามารถเรียนรู้และปรับปรุงตัวเองจากข้อมูลเพิ่มเติมได้เอง",
+    "choice_2": "ทำงานตามคำสั่งหรือกฎเกณฑ์ที่ถูกโปรแกรมขึ้นมาเท่านั้น และไม่สามารถเรียนรู้จากข้อมูลเพิ่มเติมได้เอง",
+    "choice_3": "ไม่ต้องใช้คอมพิวเตอร์ในการประมวลผล",
+    "choice_4": "ไม่มีความสามารถในการโต้ตอบกับมนุษย์",
+    "answer": 2
+  },
+  {
+    "question": "จุดเริ่มต้นก่อนยุค AI ในทศวรรษ 1940 เกิดจากการตั้งคำถามในเรื่องใดของนักวิทยาศาสตร์?",
+    "choice_1": "คอมพิวเตอร์จะแต่งเพลงและวาดภาพได้เมื่อใด?",
+    "choice_2": "หากสมองมนุษย์เป็นระบบประมวลผลข้อมูล เครื่องจักรจะสามารถเลียนแบบกระบวนการคิด วิเคราะห์ และตัดสินใจได้หรือไม่?",
+    "choice_3": "ระบบเครือข่ายอินเทอร์เน็ตจะมีความเร็วเพิ่มขึ้นกี่เท่าในอนาคต?",
+    "choice_4": "แชทบอทจิตแพทย์จะเข้ามาแทนที่มนุษย์จริง ๆ ได้อย่างไร?",
+    "answer": 2
+  },
+  {
+    "question": "เหตุการณ์สำคัญใดในปี ค.ศ. 1956 ที่ถือเป็นจุดกำเนิดของศาสตร์ AI อย่างเป็นทางการ?",
+    "choice_1": "การพ่ายแพ้ของ Lee Sedol ในเกมโกะ",
+    "choice_2": "การคิดค้นโมเดล Perceptron สำหรับโครงข่ายประสาทเทียม",
+    "choice_3": "การจัดการประชุม Dartmouth Conference",
+    "choice_4": "การเปิดตัวรายการเกมโชว์ Jeopardy ที่มี Watson เข้าร่วม",
+    "answer": 3
+  },
+  {
+    "question": "ใครคือผู้คิดค้น Perceptron ซึ่งเป็นแบบจำลองเซลล์ประสาทเทียมพื้นฐาน (Artificial Neuron) ในปี ค.ศ. 1958?",
+    "choice_1": "Joseph Weizenbaum",
+    "choice_2": "Garry Kasparov",
+    "choice_3": "Frank Rosenblatt",
+    "choice_4": "John McCarthy",
+    "answer": 3
+  },
+  {
+    "question": "แบบจำลองเซลล์ประสาทเทียม 'Perceptron' พัฒนาต่อมาเป็นพื้นฐานสำคัญของเทคโนโลยีใดในปัจจุบัน?",
+    "choice_1": "Traditional Programming",
+    "choice_2": "Pattern Matching",
+    "choice_3": "Artificial Neural Network (ANN) และ Deep Learning",
+    "choice_4": "Generative AI",
+    "answer": 3
+  },
+  {
+    "question": "เหตุการณ์สำคัญระดับโลกที่แสดงความก้าวหน้าของ AI ในปี ค.ศ. 1997 คือข้อใด?",
+    "choice_1": "ระบบ Watson ชนะเกมโชว์ Jeopardy",
+    "choice_2": "คอมพิวเตอร์ Deep Blue ของ IBM เอาชนะแชมป์โลกหมากรุก Garry Kasparov ได้เป็นครั้งแรก",
+    "choice_3": "AlphaGo ชนะแชมป์โลกโกะ Lee Sedol",
+    "choice_4": "ระบบนำทางรถยนต์ Tesla Autopilot เริ่มวิ่งบนถนนจริง",
+    "answer": 2
+  },
+  {
+    "question": "ความก้าวหน้าอย่างมากของ AI ในช่วงทศวรรษ 2010 เกิดจากการพัฒนาร่วมกันของปัจจัยสำคัญข้อใด?",
+    "choice_1": "การวิจัยด้าน Turing Test เพียงอย่างเดียว",
+    "choice_2": "การเกิดขึ้นของข้อมูลจำนวนมหาศาล (Big Data) และประสิทธิภาพฮาร์ดแวร์ที่สูงขึ้นมาก",
+    "choice_3": "การพัฒนาแชทบอทที่ตอบคำถามแบบ Pattern Matching",
+    "choice_4": "การแต่งเพลงและการวาดภาพของ AI",
+    "answer": 2
+  },
+  {
+    "question": "ในการแข่งขันรายการเกมโชว์ชื่อดัง 'Jeopardy' เมื่อปี ค.ศ. 2011 ระบบคอมพิวเตอร์ของ IBM ที่เอาชนะแชมป์เปี้ยนมนุษย์ได้มีชื่อว่าอะไร?",
+    "choice_1": "Deep Blue",
+    "choice_2": "AlphaGo",
+    "choice_3": "Watson",
+    "choice_4": "ELIZA",
+    "answer": 3
+  },
+  {
+    "question": "ในปี ค.ศ. 2016 AI ตัวใดที่สามารถสร้างประวัติศาสตร์เอาชนะแชมป์โลกโกะ 'Lee Sedol' ด้วยสกอร์ 4 ต่อ 1 ในการแข่งขัน 5 เกม?",
+    "choice_1": "Watson",
+    "choice_2": "AlphaStar",
+    "choice_3": "AlphaGo",
+    "choice_4": "Deep Blue",
+    "answer": 3
+  },
+  {
+    "question": "โมเดลปัญญาประดิษฐ์ 'AlphaGo' ที่โค่นแชมป์โลกโกะได้สำเร็จ ได้รับการพัฒนาโดยทีมวิจัยใด?",
+    "choice_1": "IBM",
+    "choice_2": "Google DeepMind",
+    "choice_3": "OpenAI",
+    "choice_4": "Microsoft",
+    "answer": 2
+  },
+  {
+    "question": "ภาพวาด 'Edmond de Belamy' ที่สร้างสรรค์ขึ้นโดยปัญญาประดิษฐ์ในปี ค.ศ. 2018 ถูกประมูลไปในราคาสูงถึงกี่ดอลลาร์สหรัฐ?",
+    "choice_1": "$100,000",
+    "choice_2": "$432,500",
+    "choice_3": "$500,000",
+    "choice_4": "$1,000,000",
+    "answer": 2
+  },
+  {
+    "question": "ในปี ค.ศ. 2019 AI ชื่อว่า 'AlphaStar' ประสบความสำเร็จในการเอาชนะโปรเพลเยอร์ในเกมกลยุทธ์เรียลไทม์ใด?",
+    "choice_1": "Dota 2",
+    "choice_2": "StarCraft II",
+    "choice_3": "League of Legends",
+    "choice_4": "Counter-Strike",
+    "answer": 2
+  },
+  {
+    "question": "ในโครงสร้างหลักของเซลล์ประสาทมนุษย์ ส่วนใดทำหน้าที่ 'รับสัญญาณ' จากเซลล์อื่น?",
+    "choice_1": "Axon (แอกซอน)",
+    "choice_2": "Dendrite (เดนไดรต์)",
+    "choice_3": "Soma (ตัวเซลล์)",
+    "choice_4": "Axon Terminal (ปลายแอกซอน)",
+    "answer": 2
+  },
+  {
+    "question": "ในโครงสร้างหลักของเซลล์ประสาทมนุษย์ ส่วนใดทำหน้าที่ 'ส่งสัญญาณออกไป'?",
+    "choice_1": "Dendrite (เดนไดรต์)",
+    "choice_2": "Axon (แอกซอน)",
+    "choice_3": "Cell Body (ตัวเซลล์)",
+    "choice_4": "Soma",
+    "answer": 2
+  },
+  {
+    "question": "ในโครงสร้างหลักของเซลล์ประสาทมนุษย์ ส่วนใดทำหน้าที่เปรียบเสมือน 'ศูนย์บัญชาการ' เพื่อคิดตัดสินใจว่าจะส่งข้อมูลต่อดีหรือไม่?",
+    "choice_1": "Dendrite (เดนไดรต์)",
+    "choice_2": "Cell Body หรือ Soma",
+    "choice_3": "Axon (แอกซอน)",
+    "choice_4": "Synapse (จุดเชื่อมต่อ)",
+    "answer": 2
+  },
+  {
+    "question": "สมองมนุษย์เมื่อฝึกฝนซ้ำ ๆ จะสร้างการเชื่อมต่อที่แข็งแรงขึ้น ทำให้ทำสิ่งเดิมได้ง่ายขึ้น กระบวนการนี้เรียกว่าอะไร?",
+    "choice_1": "Neuroplasticity (ความยืดหยุ่นของระบบประสาท)",
+    "choice_2": "Pattern Matching",
+    "choice_3": "Traditional Programming",
+    "choice_4": "Deep Learning",
+    "answer": 1
+  },
+  {
+    "question": "ยุคตั้งแต่ปี ค.ศ. 2020 จนถึงปัจจุบัน ที่โดดเด่นด้วยโมเดลแชทบอทและภาษา เช่น ChatGPT, Google Gemini และ Claude จัดเป็น AI ในกลุ่มเทคโนโลยีใดตามเอกสาร?",
+    "choice_1": "Traditional AI",
+    "choice_2": "Generative AI",
+    "choice_3": "Perceptron AI",
+    "choice_4": "Pattern Matching AI",
+    "answer": 2
+  }
+  ]
+}

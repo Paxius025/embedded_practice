@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react'
 import type { UnitQuizData } from '../types/quiz'
 
-export type SubjectKey = 'embedded' | 'flutter' | 'economic' | 'abstract-data-type' | 'cyber-security'
+export type SubjectKey = 'embedded' | 'flutter' | 'economic' | 'abstract-data-type' | 'cyber-security' | 'introduction-ai'
 export type ExamType = 'midterm' | 'final' | 'all'
 
 export type SubjectUnitQuizData = UnitQuizData & {
@@ -39,6 +39,10 @@ const UNIT_SOURCES: { path: string; subject: SubjectKey; examType: ExamType }[] 
   { path: '/data/cyber-security/midterm/unit-3.json', subject: 'cyber-security', examType: 'midterm' },
   { path: '/data/cyber-security/midterm/unit-4.json', subject: 'cyber-security', examType: 'midterm' },
   { path: '/data/cyber-security/midterm/unit-5.json', subject: 'cyber-security', examType: 'midterm' },
+  { path: '/data/introduction-AI/midterm/ai_unit_1.json', subject: 'introduction-ai', examType: 'midterm' },
+  { path: '/data/introduction-AI/midterm/ai_unit_2.json', subject: 'introduction-ai', examType: 'midterm' },
+  { path: '/data/introduction-AI/midterm/ai_unit_3.json', subject: 'introduction-ai', examType: 'midterm' },
+  { path: '/data/introduction-AI/midterm/ai_unit_4.json', subject: 'introduction-ai', examType: 'midterm' },
 ]
 
 async function loadUnits(): Promise<SubjectUnitQuizData[]> {
